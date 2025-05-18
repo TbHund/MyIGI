@@ -21,6 +21,7 @@ def Task():
         answer = ArcSin.arcsin_taylor(x, eps)
         print("{:<10} {:<10} {:<20} {:<20} {:<10}".format("x", "n", "F(x)", "Math F(x)", "eps"))
         print("{:<10} {:<10} {:<20} {:<20} {:<10}".format(x, answer[1], answer[0], math.asin(x), eps))
+        
         while True:    
             c = input("Repeate?[Y/N]: ").upper()
             if c != "N" and c != "Y": print("Unknown command. Retry input")
