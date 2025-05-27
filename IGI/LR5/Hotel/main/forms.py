@@ -1,20 +1,34 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import Client, Booking
+from .models import Client, Booking, Review
 from datetime import date
 from django.utils import timezone
+from django.core.exceptions import ValidationError
+
+def validate_age(birth_date):
+    today = date.today()
+    age = today.year - birth_date.year - ((today.month, today.day) < (birth_date.month, birth_date.day))
+    if age < 18:
+        raise ValidationError('Вам должно быть не менее 18 лет для регистрации.')
 
 class UserRegistrationForm(UserCreationForm):
     last_name = forms.CharField(max_length=30, required=True, label='Фамилия')
     first_name = forms.CharField(max_length=30, required=True, label='Имя')
     middle_name = forms.CharField(max_length=30, required=False, label='Отчество')
     email = forms.EmailField(required=True, label='Email')
+    birth_date = forms.DateField(
+        widget=forms.DateInput(attrs={'type': 'date'}),
+        required=True,
+        label='Дата рождения',
+        validators=[validate_age],
+        help_text='Вам должно быть не менее 18 лет'
+    )
     phone = forms.CharField(
         max_length=20, 
         required=True, 
         label='Номер телефона',
-        help_text='Введите номер телефона'
+        help_text='Введите номер телефона в формате +375 (XX) XXX-XX-XX'
     )
     has_child = forms.BooleanField(
         required=False, 
@@ -38,11 +52,17 @@ class UserRegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ('last_name', 'first_name', 'middle_name', 'email', 
-                 'phone', 'has_child', 'comments', 'password1', 'password2')
+                 'birth_date', 'phone', 'has_child', 'comments', 
+                 'password1', 'password2')
+
+    def clean_birth_date(self):
+        birth_date = self.cleaned_data.get('birth_date')
+        if birth_date:
+            validate_age(birth_date)
+        return birth_date
 
     def save(self, commit=True):
         user = super().save(commit=False)
-        # Генерируем username из email
         user.username = self.cleaned_data['email']
         user.email = self.cleaned_data['email']
         user.first_name = self.cleaned_data['first_name']
@@ -50,10 +70,10 @@ class UserRegistrationForm(UserCreationForm):
         
         if commit:
             user.save()
-            # Создаем профиль клиента
             Client.objects.create(
                 user=user,
                 middle_name=self.cleaned_data.get('middle_name', ''),
+                birth_date=self.cleaned_data['birth_date'],
                 phone_number=self.cleaned_data['phone'],
                 has_child=self.cleaned_data.get('has_child', False),
                 comments=self.cleaned_data.get('comments', '')

@@ -5,15 +5,18 @@ from django.core.exceptions import ValidationError
 from django.utils import timezone
 import re
 from django.utils.text import slugify
+from datetime import date
 
 def validate_phone_number(value):
     pattern = r'^\+375 \((?:29|33|44|25)\) \d{3}-\d{2}-\d{2}$'
     if not re.match(pattern, value):
         raise ValidationError('Phone number must be in format: +375 (29) XXX-XX-XX')
 
-def validate_age(value):
-    if value < 18:
-        raise ValidationError('Age must be 18+')
+def validate_age(birth_date):
+    today = date.today()
+    age = today.year - birth_date.year - ((today.month, today.day) < (birth_date.month, birth_date.day))
+    if age < 18:
+        raise ValidationError('Вам должно быть не менее 18 лет.')
 
 class RoomCategory(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название')
@@ -77,6 +80,12 @@ class Client(models.Model):
         max_length=50, 
         blank=True, 
         verbose_name='Отчество'
+    )
+    birth_date = models.DateField(
+        validators=[validate_age],
+        verbose_name='Дата рождения',
+        null=True,
+        blank=True
     )
     phone_number = models.CharField(
         max_length=20,

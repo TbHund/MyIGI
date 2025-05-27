@@ -4,8 +4,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.utils import timezone
 from django.db.models import Q
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, date
 from decimal import Decimal
+import calendar
+import pytz
 from .models import (
     News, FAQ, Contact, Vacancy, Review, 
     Promotion, CompanyInfo, Room, RoomCategory, Booking
@@ -15,15 +17,39 @@ from .forms import UserRegistrationForm, LoginForm, BookingForm
 
 def get_common_context():
     """Get common context data for all pages"""
+    # Получаем текущее время в UTC
+    utc_now = timezone.now()
+    
+    # Получаем временную зону Минска
+    minsk_tz = pytz.timezone('Europe/Minsk')
+    
+    # Конвертируем UTC время в минское
+    minsk_time = utc_now.astimezone(minsk_tz)
+    
+    # Создаем календарь на текущий месяц
+    cal = calendar.TextCalendar(calendar.MONDAY)
+    current_calendar = cal.formatmonth(minsk_time.year, minsk_time.month)
+    
     return {
         'random_dog': get_random_dog(),
-        'cat_fact': get_random_cat_fact()
+        'cat_fact': get_random_cat_fact(),
+        'current_time': minsk_time.strftime('%d/%m/%Y %H:%M:%S'),
+        'utc_time': utc_now.strftime('%d/%m/%Y %H:%M:%S'),
+        'user_timezone': 'Europe/Minsk (UTC+3)',
+        'calendar': current_calendar,
     }
 
 def home(request):
     latest_news = News.objects.filter(is_published=True).order_by('-created_at').first()
     rooms = Room.objects.filter(is_active=True)
     categories = RoomCategory.objects.all()
+    
+    # Получаем последние изменения в базе данных
+    latest_changes = {
+        'bookings': Booking.objects.order_by('-updated_at').first(),
+        'reviews': Review.objects.order_by('-created_at').first(),
+        'news': News.objects.order_by('-created_at').first(),
+    }
     
     # Фильтрация по категории
     category = request.GET.get('category')
@@ -64,6 +90,7 @@ def home(request):
         'selected_capacity': capacity,
         'check_in': check_in,
         'check_out': check_out,
+        'latest_changes': latest_changes,
         **get_common_context()
     }
     return render(request, 'main/home.html', context)

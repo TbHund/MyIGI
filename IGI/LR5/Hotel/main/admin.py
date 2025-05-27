@@ -3,6 +3,7 @@ from .models import (
     RoomCategory, Room, Client, Booking, Review,
     Promotion, CompanyInfo, News, FAQ, Contact, Vacancy
 )
+from datetime import date
 
 @admin.register(RoomCategory)
 class RoomCategoryAdmin(admin.ModelAdmin):
@@ -12,14 +13,23 @@ class RoomCategoryAdmin(admin.ModelAdmin):
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
     list_display = ('number', 'category', 'capacity', 'is_active')
-    list_filter = ('category', 'capacity', 'is_active')
-    search_fields = ('number',)
+    list_filter = ('category', 'is_active', 'capacity')
+    search_fields = ('number', 'description')
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
-    list_display = ('get_full_name', 'user', 'phone_number', 'has_child')
+    list_display = ('get_full_name', 'user', 'phone_number', 'get_age', 'has_child')
     search_fields = ('user__username', 'user__first_name', 'user__last_name', 'phone_number', 'middle_name')
     list_filter = ('has_child', 'user__date_joined')
+    readonly_fields = ('get_age',)
+
+    def get_age(self, obj):
+        if obj.birth_date:
+            today = date.today()
+            age = today.year - obj.birth_date.year - ((today.month, today.day) < (obj.birth_date.month, obj.birth_date.day))
+            return age
+        return 'Не указан'
+    get_age.short_description = 'Возраст'
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
