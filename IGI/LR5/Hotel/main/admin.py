@@ -59,10 +59,24 @@ class CompanyInfoAdmin(admin.ModelAdmin):
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ('title', 'created_at', 'is_published')
+    list_display = ('title', 'created_at', 'is_published', 'get_short_content')
     list_filter = ('is_published', 'created_at')
     search_fields = ('title', 'content')
     date_hierarchy = 'created_at'
+    list_editable = ('is_published',)
+    readonly_fields = ('created_at',)
+    fieldsets = (
+        ('Основная информация', {
+            'fields': ('title', 'content', 'image')
+        }),
+        ('Настройки публикации', {
+            'fields': ('is_published', 'created_at')
+        }),
+    )
+
+    def get_short_content(self, obj):
+        return obj.content[:100] + '...' if len(obj.content) > 100 else obj.content
+    get_short_content.short_description = 'Краткое содержание'
 
 @admin.register(FAQ)
 class FAQAdmin(admin.ModelAdmin):

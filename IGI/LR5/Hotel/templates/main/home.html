@@ -83,7 +83,7 @@
         </div>
 
         <div class="main-content">
-            <h2 class="content-title">Доступные номера</h2>
+            <h2 class="content-title">Наши номера</h2>
             {% if rooms %}
             <div class="rooms-grid">
                 {% for room in rooms %}
@@ -101,11 +101,17 @@
                             <p><strong>Цена за ночь:</strong> {{ room.category.price_per_night }} руб.</p>
                         </div>
                         <p class="room-description">{{ room.description|truncatewords:30 }}</p>
-                        {% if user.is_authenticated %}
-                        <a href="{% url 'book_room' room.id %}?check_in={{ check_in }}&check_out={{ check_out }}" 
-                           class="button button-primary">Забронировать</a>
+                        {% if check_in and check_out %}
+                            {% if user.is_authenticated %}
+                                <a href="{% url 'book_room' room.id %}?check_in={{ check_in }}&check_out={{ check_out }}" 
+                                   class="button button-primary">Забронировать</a>
+                            {% else %}
+                                <a href="{% url 'login' %}" class="button button-secondary">Войдите для бронирования</a>
+                            {% endif %}
                         {% else %}
-                        <a href="{% url 'login' %}" class="button button-secondary">Войдите для бронирования</a>
+                            <div class="warning-message-small">
+                                Выберите даты для бронирования
+                            </div>
                         {% endif %}
                     </div>
                 </div>
@@ -390,6 +396,17 @@ button[type="submit"]:hover {
     text-align: center;
     color: #4a5568;
     padding: 20px;
+}
+
+.warning-message-small {
+    padding: 8px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+    color: #856404;
+    font-size: 0.9em;
+    text-align: center;
+    margin-top: 10px;
 }
 </style>
 
