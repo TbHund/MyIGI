@@ -2,31 +2,26 @@ import requests
 from django.conf import settings
 from datetime import datetime
 
-def get_weather(city="Minsk", country_code="BY"):
+def get_random_dog():
     """
-    Get current weather for the hotel's city using OpenWeather API
+    Get a random dog image using Dog API
     """
     try:
-        url = f"https://api.openweathermap.org/data/2.5/weather"
-        params = {
-            'q': f"{city},{country_code}",
-            'appid': settings.OPENWEATHER_API_KEY,
-            'units': 'metric'
-        }
-        response = requests.get(url, params=params)
+        response = requests.get('https://dog.ceo/api/breeds/image/random')
         response.raise_for_status()
         data = response.json()
         
-        weather_info = {
-            'temperature': round(data['main']['temp']),
-            'description': data['weather'][0]['description'],
-            'icon': data['weather'][0]['icon'],
-            'humidity': data['main']['humidity'],
-            'wind_speed': data['wind']['speed'],
-            'timestamp': datetime.now()
-        }
-        return weather_info
+        if data['status'] == 'success':
+            # Получаем породу собаки из URL изображения
+            image_url = data['message']
+            breed = image_url.split('/breeds/')[1].split('/')[0].replace('-', ' ').title()
+            
+            return {
+                'image_url': image_url,
+                'breed': breed
+            }
     except Exception as e:
+        print(f"Error fetching dog image: {str(e)}")
         return None
 
 def get_random_cat_fact():
@@ -38,4 +33,5 @@ def get_random_cat_fact():
         response.raise_for_status()
         return response.json()['fact']
     except Exception as e:
+        print(f"Error fetching cat fact: {str(e)}")
         return None 

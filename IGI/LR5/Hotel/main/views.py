@@ -7,12 +7,12 @@ from .models import (
     News, FAQ, Contact, Vacancy, Review, 
     Promotion, CompanyInfo, Room, RoomCategory
 )
-from .api_utils import get_weather, get_random_cat_fact
+from .api_utils import get_random_dog, get_random_cat_fact
 
 def get_common_context():
     """Get common context data for all pages"""
     return {
-        'weather': get_weather(),
+        'random_dog': get_random_dog(),
         'cat_fact': get_random_cat_fact()
     }
 

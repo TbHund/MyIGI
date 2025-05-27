@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}О компании - Отель{% endblock %}
+
+{% block content %}
+<div class="about-page">
+    <h1 class="text-center mb-3">О нашем отеле</h1>
+
+    {% if company_info %}
+    <div class="company-info">
+        <h2>{{ company_info.title }}</h2>
+        <div class="content">
+            {{ company_info.content|linebreaks }}
+        </div>
+        <p class="updated-at">Последнее обновление: {{ company_info.updated_at|date:"d.m.Y" }}</p>
+    </div>
+    {% else %}
+    <p class="text-center">Информация о компании скоро появится.</p>
+    {% endif %}
+</div>
+
+<style>
+    .about-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .company-info {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .company-info h2 {
+        color: #2c5282;
+        margin-bottom: 1.5rem;
+    }
+
+    .content {
+        line-height: 1.8;
+        margin-bottom: 2rem;
+    }
+
+    .updated-at {
+        color: #666;
+        font-size: 0.9rem;
+        text-align: right;
+        font-style: italic;
+    }
+</style>
+{% endblock %} 

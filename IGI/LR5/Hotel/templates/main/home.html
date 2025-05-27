@@ -4,10 +4,10 @@
 
 {% block content %}
 <div class="home-page">
-    <h1 class="text-center mb-3">Добро пожаловать в наш отель</h1>
+    <h1>Добро пожаловать в наш отель</h1>
     
     {% if latest_news %}
-    <div class="latest-news mb-3">
+    <div class="latest-news">
         <h2>Последние новости</h2>
         <article>
             <h3>{{ latest_news.title }}</h3>
@@ -17,14 +17,24 @@
     </div>
     {% endif %}
 
-    {% if cat_fact %}
-    <div class="fun-fact mb-3">
-        <h3>Интересный факт дня:</h3>
-        <p>{{ cat_fact }}</p>
+    {% if random_dog %}
+    <div class="dog-section">
+        <h2>Наш питомец дня</h2>
+        <div class="dog-card">
+            <img src="{{ random_dog.image_url }}" alt="Собака породы {{ random_dog.breed }}" class="dog-image">
+            <p class="dog-breed">Порода: {{ random_dog.breed }}</p>
+        </div>
     </div>
     {% endif %}
 
-    <div class="room-categories mt-3">
+    {% if cat_fact %}
+    <div class="cat-fact-section">
+        <h2>Случайный факт о котах:</h2>
+        <p class="cat-fact">{{ cat_fact }}</p>
+    </div>
+    {% endif %}
+
+    <div class="room-categories">
         <h2>Наши номера</h2>
         <div class="categories-grid">
             {% for category in room_categories %}
@@ -43,16 +53,61 @@
         padding: 2rem 0;
     }
 
+    .home-page h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
     .latest-news {
         background-color: #f5f5f5;
         padding: 1rem;
         border-radius: 4px;
+        margin-bottom: 2rem;
     }
 
-    .fun-fact {
-        background-color: #e8f4f8;
+    .dog-section {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    .dog-card {
+        background-color: #fff;
         padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        display: inline-block;
+        max-width: 600px;
+    }
+
+    .dog-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
         border-radius: 4px;
+    }
+
+    .dog-breed {
+        margin-top: 1rem;
+        font-weight: bold;
+        color: #2c5282;
+    }
+
+    .cat-fact-section {
+        background-color: #f5f5f5;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .cat-fact {
+        font-style: italic;
+        color: #4a5568;
+        margin: 0;
+    }
+
+    .room-categories {
+        margin-top: 2rem;
     }
 
     .categories-grid {

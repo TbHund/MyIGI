@@ -1,0 +1,124 @@
+{% extends 'base.html' %}
+
+{% block title %}Отзывы - Отель{% endblock %}
+
+{% block content %}
+<div class="reviews-page">
+    <h1>Отзывы наших гостей</h1>
+
+    {% if user.is_authenticated %}
+    <div class="add-review-button">
+        <a href="{% url 'add_review' %}" class="button">Оставить отзыв</a>
+    </div>
+    {% endif %}
+
+    <div class="reviews-list">
+        {% if reviews %}
+            {% for review in reviews %}
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="review-info">
+                        <h2>{{ review.client.user.get_full_name }}</h2>
+                        <div class="rating">
+                            {% for i in "12345"|make_list %}
+                                {% if forloop.counter <= review.rating %}
+                                    <span class="star filled">★</span>
+                                {% else %}
+                                    <span class="star">☆</span>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <span class="date">{{ review.created_at|date:"d.m.Y" }}</span>
+                </div>
+                <div class="review-content">
+                    {{ review.text|linebreaks }}
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="no-data">Пока нет отзывов. Будьте первым!</p>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+    .reviews-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .reviews-page h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .add-review-button {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background-color: #2c5282;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .button:hover {
+        background-color: #2a4365;
+    }
+
+    .review-card {
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 1.5rem;
+    }
+
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+
+    .review-info h2 {
+        color: #2c5282;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .rating {
+        color: #ecc94b;
+        font-size: 1.2rem;
+    }
+
+    .star.filled {
+        color: #ecc94b;
+    }
+
+    .star {
+        color: #cbd5e0;
+    }
+
+    .date {
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .review-content {
+        line-height: 1.6;
+        color: #2d3748;
+    }
+
+    .no-data {
+        text-align: center;
+    }
+</style>
+{% endblock %} 

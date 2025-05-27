@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}Вакансии - Отель{% endblock %}
+
+{% block content %}
+<div class="vacancies-page">
+    <h1>Вакансии</h1>
+
+    <div class="vacancies-list">
+        {% if vacancies %}
+            {% for vacancy in vacancies %}
+            <div class="vacancy-card">
+                <h2>{{ vacancy.title }}</h2>
+                <div class="vacancy-content">
+                    <div class="description">
+                        <h3>Описание должности:</h3>
+                        {{ vacancy.description|linebreaks }}
+                    </div>
+                    <div class="requirements">
+                        <h3>Требования:</h3>
+                        {{ vacancy.requirements|linebreaks }}
+                    </div>
+                    {% if vacancy.salary_from or vacancy.salary_to %}
+                    <div class="salary">
+                        <h3>Заработная плата:</h3>
+                        {% if vacancy.salary_from and vacancy.salary_to %}
+                            {{ vacancy.salary_from }} - {{ vacancy.salary_to }} BYN
+                        {% elif vacancy.salary_from %}
+                            от {{ vacancy.salary_from }} BYN
+                        {% elif vacancy.salary_to %}
+                            до {{ vacancy.salary_to }} BYN
+                        {% endif %}
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="vacancy-footer">
+                    <span class="date">Опубликовано: {{ vacancy.created_at|date:"d.m.Y" }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="no-data">В данный момент нет открытых вакансий.</p>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+    .vacancies-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .vacancies-page h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .vacancy-card {
+        background-color: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+
+    .vacancy-card h2 {
+        color: #2c5282;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #edf2f7;
+    }
+
+    .vacancy-content {
+        line-height: 1.6;
+    }
+
+    .vacancy-content h3 {
+        color: #4a5568;
+        font-size: 1.1rem;
+        margin: 1.5rem 0 0.5rem 0;
+    }
+
+    .salary {
+        margin-top: 1.5rem;
+        font-weight: bold;
+        color: #2c5282;
+    }
+
+    .vacancy-footer {
+        margin-top: 1.5rem;
+        padding-top: 1rem;
+        border-top: 1px solid #edf2f7;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+    .no-data {
+        text-align: center;
+    }
+</style>
+{% endblock %} 

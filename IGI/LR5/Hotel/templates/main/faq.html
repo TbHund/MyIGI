@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block title %}Словарь терминов - Отель{% endblock %}
+
+{% block content %}
+<div class="faq-page">
+    <h1 class="text-center mb-3">Словарь терминов и часто задаваемые вопросы</h1>
+
+    <div class="faq-list">
+        {% if faqs %}
+            {% for faq in faqs %}
+            <div class="faq-item">
+                <h2 class="question">{{ faq.question }}</h2>
+                <div class="answer">
+                    {{ faq.answer|linebreaks }}
+                </div>
+                <div class="faq-meta">
+                    <span class="date">Добавлено: {{ faq.created_at|date:"d.m.Y" }}</span>
+                </div>
+            </div>
+            {% endfor %}
+        {% else %}
+            <p class="text-center">В данный момент словарь терминов пуст.</p>
+        {% endif %}
+    </div>
+</div>
+
+<style>
+    .faq-page {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+
+    .faq-list {
+        margin-top: 2rem;
+    }
+
+    .faq-item {
+        background-color: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 1.5rem;
+    }
+
+    .question {
+        color: #2c5282;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #edf2f7;
+    }
+
+    .answer {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+
+    .faq-meta {
+        font-size: 0.9rem;
+        color: #666;
+        text-align: right;
+    }
+
+    .date {
+        font-style: italic;
+    }
+</style>
+{% endblock %} 

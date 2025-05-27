@@ -134,6 +134,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # API Keys
 OPENWEATHER_API_KEY = 'your_api_key_here'  # You need to replace this with your actual API key
+TRAVELPAYOUTS_API_KEY = 'your_api_key_here'  # You need to replace this with your actual API key
 
 # Logging configuration
 LOGGING = {

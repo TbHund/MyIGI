@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -52,8 +53,6 @@
 
         /* Утилиты */
         .text-center { text-align: center; }
-        .mt-3 { margin-top: 1rem; }
-        .mb-3 { margin-bottom: 1rem; }
     </style>
 </head>
 <body>
@@ -99,11 +98,7 @@
         <div class="container">
             <div class="text-center">
                 <p>© {% now "Y" %} Отель. Все права защищены.</p>
-                <div class="weather-widget">
-                    {% if weather %}
-                        <p>Погода в Минске: {{ weather.temperature }}°C, {{ weather.description }}</p>
-                    {% endif %}
-                </div>
+                <a href="{% url 'privacy' %}">Политика конфиденциальности</a>
             </div>
         </div>
     </footer>
