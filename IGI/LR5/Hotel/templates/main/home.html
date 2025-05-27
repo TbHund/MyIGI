@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная - Отель{% endblock %}
+
+{% block content %}
+<div class="home-page">
+    <h1 class="text-center mb-3">Добро пожаловать в наш отель</h1>
+    
+    {% if latest_news %}
+    <div class="latest-news mb-3">
+        <h2>Последние новости</h2>
+        <article>
+            <h3>{{ latest_news.title }}</h3>
+            <p>{{ latest_news.content|truncatewords:30 }}</p>
+            <a href="{% url 'news_detail' latest_news.pk %}">Читать далее</a>
+        </article>
+    </div>
+    {% endif %}
+
+    {% if cat_fact %}
+    <div class="fun-fact mb-3">
+        <h3>Интересный факт дня:</h3>
+        <p>{{ cat_fact }}</p>
+    </div>
+    {% endif %}
+
+    <div class="room-categories mt-3">
+        <h2>Наши номера</h2>
+        <div class="categories-grid">
+            {% for category in room_categories %}
+            <div class="category-card">
+                <h3>{{ category.name }}</h3>
+                <p>{{ category.description|truncatewords:20 }}</p>
+                <p class="price">от {{ category.price_per_night }} BYN за ночь</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<style>
+    .home-page {
+        padding: 2rem 0;
+    }
+
+    .latest-news {
+        background-color: #f5f5f5;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .fun-fact {
+        background-color: #e8f4f8;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .categories-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .category-card {
+        background-color: #fff;
+        padding: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .price {
+        font-weight: bold;
+        color: #2c5282;
+    }
+</style>
+{% endblock %} 
