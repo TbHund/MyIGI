@@ -233,16 +233,20 @@ def book_room(request, room_id):
             # Проверяем, не занят ли номер на эти даты
             conflicting_bookings = Booking.objects.filter(
                 room=room,
+                status='active',  # Проверяем только активные бронирования
                 check_in_date__lte=booking.check_out_date,
                 check_out_date__gte=booking.check_in_date
             )
             
             if conflicting_bookings.exists():
-                messages.error(request, 'Этот номер уже забронирован на выбранные даты')
+                form.add_error(None, 'Этот номер уже забронирован на выбранные даты')
             else:
-                booking.save()
-                messages.success(request, 'Номер успешно забронирован!')
-                return redirect('profile')
+                try:
+                    booking.save()
+                    messages.success(request, 'Номер успешно забронирован!')
+                    return redirect('profile')
+                except Exception as e:
+                    form.add_error(None, f'Ошибка при сохранении бронирования: {str(e)}')
     else:
         # Предзаполняем даты из GET-параметров, если они есть
         initial = {}
@@ -252,16 +256,17 @@ def book_room(request, room_id):
             try:
                 initial['check_in_date'] = datetime.strptime(check_in, '%Y-%m-%d').date()
             except ValueError:
-                pass
+                messages.error(request, 'Неверный формат даты заезда')
         if check_out:
             try:
                 initial['check_out_date'] = datetime.strptime(check_out, '%Y-%m-%d').date()
             except ValueError:
-                pass
+                messages.error(request, 'Неверный формат даты выезда')
         form = BookingForm(initial=initial)
     
     context = {
         'form': form,
-        'room': room
+        'room': room,
+        **get_common_context()
     }
     return render(request, 'main/book_room.html', context)

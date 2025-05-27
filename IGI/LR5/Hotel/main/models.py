@@ -15,59 +15,152 @@ def validate_age(value):
         raise ValidationError('Age must be 18+')
 
 class RoomCategory(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField()
-    price_per_night = models.DecimalField(max_digits=10, decimal_places=2)
+    COMFORT_CHOICES = [
+        ('luxury', 'Люкс'),
+        ('semi_luxury', 'Полулюкс'),
+        ('standard', 'Обычный'),
+    ]
+
+    name = models.CharField(max_length=100, verbose_name='Название')
+    comfort_type = models.CharField(
+        max_length=20, 
+        choices=COMFORT_CHOICES, 
+        default='standard',
+        verbose_name='Тип комфортности'
+    )
+    description = models.TextField(verbose_name='Описание')
+    price_per_night = models.DecimalField(
+        max_digits=10, 
+        decimal_places=2,
+        verbose_name='Цена за ночь'
+    )
 
     def __str__(self):
-        return self.name
+        return f"{self.get_comfort_type_display()} - {self.name}"
 
     class Meta:
-        verbose_name_plural = 'Room categories'
+        verbose_name = 'Категория номера'
+        verbose_name_plural = 'Категории номеров'
 
 class Room(models.Model):
-    number = models.CharField(max_length=10, unique=True)
-    category = models.ForeignKey(RoomCategory, on_delete=models.PROTECT)
-    capacity = models.PositiveIntegerField()
-    description = models.TextField()
-    image = models.ImageField(upload_to='rooms/', null=True, blank=True)
-    is_active = models.BooleanField(default=True)
+    number = models.CharField(max_length=10, unique=True, verbose_name='Номер комнаты')
+    category = models.ForeignKey(
+        RoomCategory, 
+        on_delete=models.PROTECT,
+        verbose_name='Категория'
+    )
+    capacity = models.PositiveIntegerField(verbose_name='Вместимость')
+    description = models.TextField(verbose_name='Описание')
+    image = models.ImageField(
+        upload_to='rooms/', 
+        null=True, 
+        blank=True,
+        verbose_name='Фото номера'
+    )
+    is_active = models.BooleanField(default=True, verbose_name='Активен')
 
     def __str__(self):
-        return f"Room {self.number} ({self.category.name})"
+        return f"Номер {self.number} ({self.category.get_comfort_type_display()})"
+
+    class Meta:
+        verbose_name = 'Номер'
+        verbose_name_plural = 'Номера'
 
 class Client(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phone_number = models.CharField(max_length=19, validators=[validate_phone_number])
-    birth_date = models.DateField(validators=[validate_age])
-    has_child = models.BooleanField(default=False)
+    user = models.OneToOneField(
+        User, 
+        on_delete=models.CASCADE,
+        verbose_name='Пользователь'
+    )
+    middle_name = models.CharField(
+        max_length=50, 
+        blank=True, 
+        verbose_name='Отчество'
+    )
+    phone_number = models.CharField(
+        max_length=20,
+        verbose_name='Номер телефона'
+    )
+    has_child = models.BooleanField(
+        default=False,
+        verbose_name='Есть дети'
+    )
+    comments = models.TextField(
+        blank=True,
+        verbose_name='Комментарии'
+    )
+
+    def get_full_name(self):
+        full_name = f"{self.user.last_name} {self.user.first_name}"
+        if self.middle_name:
+            full_name += f" {self.middle_name}"
+        return full_name
 
     def __str__(self):
-        return f"{self.user.get_full_name()}"
+        return self.get_full_name()
+
+    class Meta:
+        verbose_name = 'Клиент'
+        verbose_name_plural = 'Клиенты'
 
 class Booking(models.Model):
     STATUS_CHOICES = [
-        ('pending', 'Pending'),
-        ('confirmed', 'Confirmed'),
-        ('cancelled', 'Cancelled'),
-        ('completed', 'Completed'),
+        ('active', 'Активно'),
+        ('completed', 'Завершено'),
+        ('cancelled', 'Отменено'),
     ]
 
-    client = models.ForeignKey(Client, on_delete=models.CASCADE)
-    room = models.ForeignKey(Room, on_delete=models.CASCADE)
-    check_in_date = models.DateField()
-    check_out_date = models.DateField()
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='pending')
-    total_price = models.DecimalField(max_digits=10, decimal_places=2)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    client = models.ForeignKey(
+        Client, 
+        on_delete=models.CASCADE,
+        verbose_name='Клиент'
+    )
+    room = models.ForeignKey(
+        Room, 
+        on_delete=models.CASCADE,
+        verbose_name='Номер'
+    )
+    check_in_date = models.DateField(verbose_name='Дата заезда')
+    check_out_date = models.DateField(verbose_name='Дата выезда')
+    actual_check_out_date = models.DateField(
+        null=True, 
+        blank=True,
+        verbose_name='Фактическая дата выезда'
+    )
+    status = models.CharField(
+        max_length=20, 
+        choices=STATUS_CHOICES, 
+        default='active',
+        verbose_name='Статус'
+    )
+    total_price = models.DecimalField(
+        max_digits=10, 
+        decimal_places=2,
+        verbose_name='Общая стоимость'
+    )
+    created_at = models.DateTimeField(
+        auto_now_add=True,
+        verbose_name='Дата создания'
+    )
+    updated_at = models.DateTimeField(
+        auto_now=True,
+        verbose_name='Дата обновления'
+    )
+    comments = models.TextField(
+        blank=True,
+        verbose_name='Комментарии'
+    )
 
     def clean(self):
         if self.check_out_date <= self.check_in_date:
-            raise ValidationError('Check-out date must be after check-in date')
+            raise ValidationError('Дата выезда должна быть позже даты заезда')
 
     def __str__(self):
-        return f"Booking {self.id} - {self.client} - {self.room}"
+        return f"Бронь {self.id} - {self.client} - {self.room}"
+
+    class Meta:
+        verbose_name = 'Бронирование'
+        verbose_name_plural = 'Бронирования'
 
 class Review(models.Model):
     client = models.ForeignKey(Client, on_delete=models.CASCADE)

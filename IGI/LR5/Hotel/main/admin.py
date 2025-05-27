@@ -17,9 +17,9 @@ class RoomAdmin(admin.ModelAdmin):
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
-    list_display = ('user', 'phone_number', 'birth_date', 'has_child')
-    search_fields = ('user__username', 'user__first_name', 'user__last_name', 'phone_number')
-    list_filter = ('has_child',)
+    list_display = ('get_full_name', 'user', 'phone_number', 'has_child')
+    search_fields = ('user__username', 'user__first_name', 'user__last_name', 'phone_number', 'middle_name')
+    list_filter = ('has_child', 'user__date_joined')
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):

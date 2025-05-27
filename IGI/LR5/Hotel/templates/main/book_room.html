@@ -16,6 +16,14 @@
         </div>
     </div>
     
+    {% if form.non_field_errors %}
+    <div class="form-errors">
+        {% for error in form.non_field_errors %}
+            <p class="error">{{ error }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+
     <form method="post" class="booking-form">
         {% csrf_token %}
         
@@ -23,6 +31,9 @@
         <div class="form-group">
             <label for="{{ field.id_for_label }}">{{ field.label }}</label>
             {{ field }}
+            {% if field.help_text %}
+            <div class="help-text">{{ field.help_text }}</div>
+            {% endif %}
             {% if field.errors %}
             <div class="error-message">
                 {% for error in field.errors %}
@@ -121,6 +132,27 @@
 
     .error-message {
         color: #e53e3e;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+        padding: 0.5rem;
+        background-color: #fff5f5;
+        border-radius: 4px;
+    }
+
+    .form-errors {
+        background-color: #fff5f5;
+        color: #e53e3e;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-bottom: 1rem;
+    }
+
+    .form-errors p {
+        margin: 0;
+    }
+
+    .help-text {
+        color: #718096;
         font-size: 0.875rem;
         margin-top: 0.25rem;
     }

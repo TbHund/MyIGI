@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+
+{% block title %}Личный кабинет - Отель{% endblock %}
+
+{% block content %}
+<div class="profile-page">
+    <div class="profile-info">
+        <h1>Личный кабинет</h1>
+        
+        <div class="user-details">
+            <h2>Информация о клиенте</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">ФИО:</span>
+                    <span class="value">{{ user.client.get_full_name }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Email:</span>
+                    <span class="value">{{ user.email }}</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Телефон:</span>
+                    <span class="value">{{ user.client.phone_number }}</span>
+                </div>
+                {% if user.client.comments %}
+                <div class="info-item full-width">
+                    <span class="label">Комментарии:</span>
+                    <span class="value">{{ user.client.comments }}</span>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="bookings">
+            <h2>Мои бронирования</h2>
+            {% if bookings %}
+                {% for booking in bookings %}
+                <div class="booking-card">
+                    <div class="booking-header">
+                        <h3>{{ booking.room.category.get_comfort_type_display }} - Номер {{ booking.room.number }}</h3>
+                        <span class="status {{ booking.status }}">{{ booking.get_status_display }}</span>
+                    </div>
+                    
+                    <div class="booking-details">
+                        <div class="dates">
+                            <div class="check-in">
+                                <span class="label">Заезд:</span>
+                                <span class="value">{{ booking.check_in_date }}</span>
+                            </div>
+                            <div class="check-out">
+                                <span class="label">Выезд:</span>
+                                <span class="value">{{ booking.check_out_date }}</span>
+                            </div>
+                            {% if booking.actual_check_out_date %}
+                            <div class="actual-check-out">
+                                <span class="label">Фактический выезд:</span>
+                                <span class="value">{{ booking.actual_check_out_date }}</span>
+                            </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="room-info">
+                            <p class="capacity">Вместимость: {{ booking.room.capacity }} чел.</p>
+                            <p class="price">Стоимость: {{ booking.total_price }} BYN</p>
+                        </div>
+
+                        {% if booking.comments %}
+                        <div class="booking-comments">
+                            <span class="label">Комментарии:</span>
+                            <p>{{ booking.comments }}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="no-bookings">У вас пока нет бронирований</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<style>
+    .profile-page {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    .profile-info h1 {
+        color: #2c5282;
+        margin-bottom: 2rem;
+    }
+
+    .user-details {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .info-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-item.full-width {
+        grid-column: 1 / -1;
+    }
+
+    .label {
+        color: #4a5568;
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .value {
+        color: #2d3748;
+        font-weight: 500;
+    }
+
+    .bookings {
+        margin-top: 2rem;
+    }
+
+    .booking-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .booking-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .booking-header h3 {
+        margin: 0;
+        color: #2c5282;
+    }
+
+    .status {
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+
+    .status.active {
+        background-color: #9ae6b4;
+        color: #22543d;
+    }
+
+    .status.completed {
+        background-color: #cbd5e0;
+        color: #2d3748;
+    }
+
+    .status.cancelled {
+        background-color: #feb2b2;
+        color: #742a2a;
+    }
+
+    .booking-details {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .dates {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .room-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f7fafc;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .capacity {
+        color: #4a5568;
+        margin: 0;
+    }
+
+    .price {
+        color: #2c5282;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .booking-comments {
+        background-color: #f7fafc;
+        padding: 1rem;
+        border-radius: 4px;
+    }
+
+    .booking-comments p {
+        margin: 0.5rem 0 0 0;
+        color: #4a5568;
+    }
+
+    .no-bookings {
+        text-align: center;
+        color: #4a5568;
+        padding: 2rem;
+        background-color: #f7fafc;
+        border-radius: 8px;
+    }
+</style>
+{% endblock %} 
