@@ -1,320 +1,287 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Главная - Отель{% endblock %}
 
 {% block content %}
-<div class="home-page">
-    <h1>Добро пожаловать в наш отель</h1>
-    
+<div class="main-container">
     {% if latest_news %}
-    <div class="latest-news">
-        <h2>Последние новости</h2>
-        <article>
-            <h3>{{ latest_news.title }}</h3>
-            <p>{{ latest_news.content|truncatewords:30 }}</p>
-            <a href="{% url 'news_detail' latest_news.pk %}">Читать далее</a>
-        </article>
+    <div class="news-alert">
+        <h4>{{ latest_news.title }}</h4>
+        <p>{{ latest_news.content|truncatewords:50 }}</p>
+        <a href="{% url 'news_detail' latest_news.pk %}" class="button button-info">Читать далее</a>
     </div>
     {% endif %}
 
-    <div class="search-section">
-        <h2>Поиск номеров</h2>
-        <form method="get" class="search-form">
-            <div class="form-group">
-                <label for="check_in">Дата заезда:</label>
-                <input type="date" id="check_in" name="check_in" value="{{ check_in }}" required>
-            </div>
-            <div class="form-group">
-                <label for="check_out">Дата выезда:</label>
-                <input type="date" id="check_out" name="check_out" value="{{ check_out }}" required>
-            </div>
-            <button type="submit" class="search-button">Найти номера</button>
-        </form>
-    </div>
-
-    <div class="room-categories">
-        <h2>Доступные номера</h2>
-        <div class="categories-grid">
-            {% for room in rooms %}
-            <div class="room-card">
-                <div class="room-image">
-                    {% if room.image %}
-                        <img src="{{ room.image.url }}" alt="{{ room.category.name }}">
-                    {% else %}
-                        <div class="no-image">
-                            <span>Фото не доступно</span>
-                        </div>
-                    {% endif %}
-                </div>
-                <div class="room-content">
-                    <h3>{{ room.category.name }}</h3>
-                    <p class="room-number">Номер: {{ room.number }}</p>
-                    <p class="room-description">{{ room.category.description|truncatewords:20 }}</p>
-                    <div class="room-details">
-                        <p class="capacity">Вместимость: {{ room.capacity }} чел.</p>
-                        <p class="price">{{ room.category.price_per_night }} BYN за ночь</p>
+    <div class="content-wrapper">
+        <div class="sidebar">
+            <div class="filter-card">
+                <h5 class="filter-title">Фильтры поиска</h5>
+                <form method="get" class="filter-form">
+                    <div class="form-group">
+                        <label for="category">Категория номера:</label>
+                        <select name="category" id="category">
+                            <option value="">Все категории</option>
+                            {% for category in categories %}
+                            <option value="{{ category.slug }}" {% if selected_category == category.slug %}selected{% endif %}>
+                                {{ category.name }}
+                            </option>
+                            {% endfor %}
+                        </select>
                     </div>
-                    {% if user.is_authenticated %}
-                        {% if check_in and check_out %}
-                        <a href="{% url 'book_room' room.id %}?check_in={{ check_in }}&check_out={{ check_out }}" class="book-button">Забронировать</a>
-                        {% else %}
-                        <p class="select-dates">Выберите даты для бронирования</p>
-                        {% endif %}
-                    {% else %}
-                        <a href="{% url 'login' %}" class="login-prompt">Войдите для бронирования</a>
+
+                    <div class="form-group">
+                        <label for="capacity">Минимальная вместимость:</label>
+                        <input type="number" name="capacity" id="capacity" 
+                               value="{{ selected_capacity }}" min="1" max="10">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="check_in">Дата заезда:</label>
+                        <input type="date" name="check_in" id="check_in" 
+                               value="{{ check_in }}" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="check_out">Дата выезда:</label>
+                        <input type="date" name="check_out" id="check_out" 
+                               value="{{ check_out }}" required>
+                    </div>
+
+                    <button type="submit" class="button button-primary">Найти номера</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h2 class="content-title">Доступные номера</h2>
+            {% if rooms %}
+            <div class="rooms-grid">
+                {% for room in rooms %}
+                <div class="room-card">
+                    {% if room.image %}
+                    <div class="room-image-container">
+                        <img src="{{ room.image.url }}" class="room-image" alt="{{ room.number }}">
+                    </div>
                     {% endif %}
+                    <div class="room-details">
+                        <h5 class="room-title">Номер {{ room.number }}</h5>
+                        <div class="room-info">
+                            <p><strong>Категория:</strong> {{ room.category.name }}</p>
+                            <p><strong>Вместимость:</strong> {{ room.capacity }} чел.</p>
+                            <p><strong>Цена за ночь:</strong> {{ room.category.price_per_night }} руб.</p>
+                        </div>
+                        <p class="room-description">{{ room.description|truncatewords:30 }}</p>
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'book_room' room.id %}?check_in={{ check_in }}&check_out={{ check_out }}" 
+                           class="button button-primary">Забронировать</a>
+                        {% else %}
+                        <a href="{% url 'login' %}" class="button button-secondary">Войдите для бронирования</a>
+                        {% endif %}
+                    </div>
                 </div>
+                {% endfor %}
             </div>
-            {% empty %}
-            <div class="no-rooms">
-                <p>{% if check_in and check_out %}На выбранные даты нет свободных номеров{% else %}Выберите даты для просмотра доступных номеров{% endif %}</p>
+            {% else %}
+            <div class="warning-message">
+                К сожалению, на выбранные даты нет свободных номеров.
             </div>
-            {% endfor %}
+            {% endif %}
         </div>
     </div>
-
-    {% if random_dog %}
-    <div class="dog-section">
-        <h2>Наш питомец дня</h2>
-        <div class="dog-card">
-            <img src="{{ random_dog.image_url }}" alt="Собака породы {{ random_dog.breed }}" class="dog-image">
-            <p class="dog-breed">Порода: {{ random_dog.breed }}</p>
-        </div>
-    </div>
-    {% endif %}
-
-    {% if cat_fact %}
-    <div class="cat-fact-section">
-        <h2>Случайный факт о котах:</h2>
-        <p class="cat-fact">{{ cat_fact }}</p>
-    </div>
-    {% endif %}
 </div>
 
 <style>
-    .home-page {
-        padding: 2rem 0;
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.news-alert {
+    background-color: #e3f2fd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.filter-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-title {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.rooms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.room-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.room-image-container {
+    height: 200px;
+    overflow: hidden;
+}
+
+.room-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room-details {
+    padding: 15px;
+}
+
+.room-title {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+}
+
+.room-info {
+    margin-bottom: 10px;
+}
+
+.room-info p {
+    margin: 5px 0;
+}
+
+.room-description {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.button-primary {
+    background-color: #4a90e2;
+    color: white;
+    width: 100%;
+}
+
+.button-secondary {
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100%;
+}
+
+.button-info {
+    background-color: #5bc0de;
+    color: white;
+}
+
+.warning-message {
+    padding: 15px;
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    border-radius: 4px;
+    color: #856404;
+}
+
+.content-title {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
     }
 
-    .home-page h1 {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .latest-news {
-        background-color: #f5f5f5;
-        padding: 1rem;
-        border-radius: 4px;
-        margin-bottom: 2rem;
-    }
-
-    .search-section {
-        background-color: #f8fafc;
-        padding: 2rem;
-        border-radius: 8px;
-        margin-bottom: 2rem;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .search-form {
-        display: flex;
-        gap: 1rem;
-        align-items: flex-end;
-        flex-wrap: wrap;
-    }
-
-    .form-group {
-        flex: 1;
-        min-width: 200px;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 0.5rem;
-        color: #4a5568;
-        font-weight: bold;
-    }
-
-    .form-group input {
+    .sidebar {
         width: 100%;
-        padding: 0.5rem;
-        border: 1px solid #e2e8f0;
-        border-radius: 4px;
-        font-size: 1rem;
     }
 
-    .search-button {
-        background-color: #2c5282;
-        color: white;
-        padding: 0.5rem 2rem;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 1rem;
-        height: 38px;
+    .rooms-grid {
+        grid-template-columns: 1fr;
     }
-
-    .search-button:hover {
-        background-color: #2a4365;
-    }
-
-    .room-card {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        overflow: hidden;
-    }
-
-    .room-image {
-        height: 200px;
-        overflow: hidden;
-    }
-
-    .room-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .room-content {
-        padding: 1.5rem;
-    }
-
-    .room-card h3 {
-        color: #2c5282;
-        margin: 0 0 1rem 0;
-    }
-
-    .room-number {
-        color: #4a5568;
-        font-size: 0.9rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .room-description {
-        color: #718096;
-        margin-bottom: 1rem;
-        flex-grow: 1;
-    }
-
-    .room-details {
-        margin-bottom: 1rem;
-    }
-
-    .capacity {
-        color: #4a5568;
-        margin-bottom: 0.5rem;
-    }
-
-    .price {
-        color: #2c5282;
-        font-weight: bold;
-        font-size: 1.1rem;
-    }
-
-    .book-button {
-        background-color: #48bb78;
-        color: white;
-        padding: 0.5rem;
-        border-radius: 4px;
-        text-align: center;
-        text-decoration: none;
-        margin-top: auto;
-    }
-
-    .book-button:hover {
-        background-color: #38a169;
-    }
-
-    .login-prompt {
-        background-color: #edf2f7;
-        color: #4a5568;
-        padding: 0.5rem;
-        border-radius: 4px;
-        text-align: center;
-        text-decoration: none;
-        margin-top: auto;
-    }
-
-    .login-prompt:hover {
-        background-color: #e2e8f0;
-    }
-
-    .select-dates {
-        color: #718096;
-        text-align: center;
-        margin-top: auto;
-        padding: 0.5rem;
-        background-color: #f7fafc;
-        border-radius: 4px;
-    }
-
-    .no-rooms {
-        grid-column: 1 / -1;
-        text-align: center;
-        padding: 2rem;
-        background-color: #f7fafc;
-        border-radius: 8px;
-        color: #4a5568;
-    }
-
-    .dog-section {
-        margin: 2rem 0;
-        text-align: center;
-    }
-
-    .dog-card {
-        background-color: #fff;
-        padding: 1rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        display: inline-block;
-        max-width: 600px;
-    }
-
-    .dog-image {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 4px;
-    }
-
-    .dog-breed {
-        margin-top: 1rem;
-        font-weight: bold;
-        color: #2c5282;
-    }
-
-    .cat-fact-section {
-        background-color: #f5f5f5;
-        padding: 1.5rem;
-        margin: 2rem 0;
-        border-radius: 8px;
-        text-align: center;
-    }
-
-    .cat-fact {
-        font-style: italic;
-        color: #4a5568;
-        margin: 0;
-    }
-
-    .categories-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-    }
-
-    .no-image {
-        width: 100%;
-        height: 100%;
-        background-color: #f7fafc;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #a0aec0;
-        font-style: italic;
-    }
+}
 </style>
+
+{% if user.is_authenticated %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const checkInInput = document.getElementById('check_in');
+    const checkOutInput = document.getElementById('check_out');
+    
+    // Устанавливаем минимальную дату заезда как сегодня
+    const today = new Date().toISOString().split('T')[0];
+    checkInInput.min = today;
+    
+    // При изменении даты заезда обновляем минимальную дату выезда
+    checkInInput.addEventListener('change', function() {
+        if (checkInInput.value) {
+            const nextDay = new Date(checkInInput.value);
+            nextDay.setDate(nextDay.getDate() + 1);
+            checkOutInput.min = nextDay.toISOString().split('T')[0];
+            
+            // Если дата выезда меньше новой минимальной, очищаем её
+            if (checkOutInput.value && checkOutInput.value < checkOutInput.min) {
+                checkOutInput.value = '';
+            }
+        }
+    });
+});
+</script>
+{% endif %}
 {% endblock %} 

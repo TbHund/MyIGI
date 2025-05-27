@@ -4,6 +4,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 from django.core.exceptions import ValidationError
 from django.utils import timezone
 import re
+from django.utils.text import slugify
 
 def validate_phone_number(value):
     pattern = r'^\+375 \((?:29|33|44|25)\) \d{3}-\d{2}-\d{2}$'
@@ -15,19 +16,8 @@ def validate_age(value):
         raise ValidationError('Age must be 18+')
 
 class RoomCategory(models.Model):
-    COMFORT_CHOICES = [
-        ('luxury', 'Люкс'),
-        ('semi_luxury', 'Полулюкс'),
-        ('standard', 'Обычный'),
-    ]
-
     name = models.CharField(max_length=100, verbose_name='Название')
-    comfort_type = models.CharField(
-        max_length=20, 
-        choices=COMFORT_CHOICES, 
-        default='standard',
-        verbose_name='Тип комфортности'
-    )
+    slug = models.SlugField(unique=True, verbose_name='URL-идентификатор', null=True, blank=True)
     description = models.TextField(verbose_name='Описание')
     price_per_night = models.DecimalField(
         max_digits=10, 
@@ -36,11 +26,22 @@ class RoomCategory(models.Model):
     )
 
     def __str__(self):
-        return f"{self.get_comfort_type_display()} - {self.name}"
+        return self.name
 
     class Meta:
         verbose_name = 'Категория номера'
         verbose_name_plural = 'Категории номеров'
+
+    def save(self, *args, **kwargs):
+        if not self.slug:
+            self.slug = slugify(self.name)
+            # Если такой slug уже существует, добавляем числовой суффикс
+            original_slug = self.slug
+            counter = 1
+            while RoomCategory.objects.filter(slug=self.slug).exists():
+                self.slug = f'{original_slug}-{counter}'
+                counter += 1
+        super().save(*args, **kwargs)
 
 class Room(models.Model):
     number = models.CharField(max_length=10, unique=True, verbose_name='Номер комнаты')

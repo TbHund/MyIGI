@@ -23,6 +23,17 @@ def get_common_context():
 def home(request):
     latest_news = News.objects.filter(is_published=True).order_by('-created_at').first()
     rooms = Room.objects.filter(is_active=True)
+    categories = RoomCategory.objects.all()
+    
+    # Фильтрация по категории
+    category = request.GET.get('category')
+    if category:
+        rooms = rooms.filter(category__slug=category)
+    
+    # Фильтрация по вместимости
+    capacity = request.GET.get('capacity')
+    if capacity and capacity.isdigit():
+        rooms = rooms.filter(capacity__gte=int(capacity))
     
     # Фильтрация по датам, если они указаны
     check_in = request.GET.get('check_in')
@@ -33,10 +44,11 @@ def home(request):
             check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
             check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
             
-            # Получаем занятые номера на указанные даты
+            # Получаем занятые номера на указанные даты (только активные бронирования)
             booked_rooms = Booking.objects.filter(
                 Q(check_in_date__lte=check_out_date) & 
-                Q(check_out_date__gte=check_in_date)
+                Q(check_out_date__gte=check_in_date),
+                status='active'  # Учитываем только активные бронирования
             ).values_list('room_id', flat=True)
             
             # Исключаем занятые номера из списка
@@ -47,6 +59,9 @@ def home(request):
     context = {
         'latest_news': latest_news,
         'rooms': rooms,
+        'categories': categories,
+        'selected_category': category,
+        'selected_capacity': capacity,
         'check_in': check_in,
         'check_out': check_out,
         **get_common_context()
@@ -196,10 +211,11 @@ def room_list(request):
             check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
             check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
             
-            # Получаем занятые номера на указанные даты
+            # Получаем занятые номера на указанные даты (только активные бронирования)
             booked_rooms = Booking.objects.filter(
                 Q(check_in_date__lte=check_out_date) & 
-                Q(check_out_date__gte=check_in_date)
+                Q(check_out_date__gte=check_in_date),
+                status='active'  # Учитываем только активные бронирования
             ).values_list('room_id', flat=True)
             
             # Исключаем занятые номера из списка
@@ -211,7 +227,8 @@ def room_list(request):
         'categories': categories,
         'rooms': rooms,
         'check_in': check_in,
-        'check_out': check_out
+        'check_out': check_out,
+        **get_common_context()
     }
     return render(request, 'main/room_list.html', context)
 
@@ -270,3 +287,146 @@ def book_room(request, room_id):
         **get_common_context()
     }
     return render(request, 'main/book_room.html', context)
+
+def news_archive(request, year, month):
+    news = News.objects.filter(
+        created_at__year=int(year),
+        created_at__month=int(month),
+        is_published=True
+    ).order_by('-created_at')
+    
+    context = {
+        'news': news,
+        'year': year,
+        'month': month,
+        **get_common_context()
+    }
+    return render(request, 'main/news_archive.html', context)
+
+def vacancies_by_category(request, category):
+    vacancies = Vacancy.objects.filter(
+        category=category,
+        is_active=True
+    ).order_by('-created_at')
+    
+    context = {
+        'vacancies': vacancies,
+        'category': category,
+        **get_common_context()
+    }
+    return render(request, 'main/vacancies.html', context)
+
+def reviews_by_rating(request, rating):
+    reviews = Review.objects.filter(
+        rating=rating
+    ).order_by('-created_at')
+    
+    context = {
+        'reviews': reviews,
+        'current_rating': rating,
+        **get_common_context()
+    }
+    return render(request, 'main/reviews.html', context)
+
+def promotion_detail(request, code):
+    promotion = get_object_or_404(
+        Promotion,
+        code=code,
+        is_active=True,
+        valid_from__lte=timezone.now(),
+        valid_until__gte=timezone.now()
+    )
+    
+    context = {
+        'promotion': promotion,
+        **get_common_context()
+    }
+    return render(request, 'main/promotion_detail.html', context)
+
+@login_required
+def profile_bookings(request, status):
+    bookings = request.user.client.booking_set.filter(
+        status=status
+    ).order_by('-created_at')
+    
+    context = {
+        'bookings': bookings,
+        'current_status': status,
+        **get_common_context()
+    }
+    return render(request, 'main/profile_bookings.html', context)
+
+def rooms_by_category(request, category_slug):
+    category = get_object_or_404(RoomCategory, slug=category_slug)
+    rooms = Room.objects.filter(
+        category=category,
+        is_active=True
+    )
+    
+    # Фильтрация по датам, если они указаны
+    check_in = request.GET.get('check_in')
+    check_out = request.GET.get('check_out')
+    
+    if check_in and check_out:
+        try:
+            check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
+            check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
+            
+            # Получаем занятые номера на указанные даты (только активные бронирования)
+            booked_rooms = Booking.objects.filter(
+                Q(check_in_date__lte=check_out_date) & 
+                Q(check_out_date__gte=check_in_date),
+                status='active'
+            ).values_list('room_id', flat=True)
+            
+            # Исключаем занятые номера из списка
+            rooms = rooms.exclude(id__in=booked_rooms)
+        except ValueError:
+            messages.error(request, 'Неверный формат даты')
+    
+    context = {
+        'category': category,
+        'rooms': rooms,
+        'check_in': check_in,
+        'check_out': check_out,
+        **get_common_context()
+    }
+    return render(request, 'main/rooms_by_category.html', context)
+
+def rooms_search(request, capacity, comfort_type):
+    rooms = Room.objects.filter(
+        capacity__gte=capacity,
+        category__comfort_type=comfort_type,
+        is_active=True
+    )
+    
+    # Фильтрация по датам, если они указаны
+    check_in = request.GET.get('check_in')
+    check_out = request.GET.get('check_out')
+    
+    if check_in and check_out:
+        try:
+            check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
+            check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
+            
+            # Получаем занятые номера на указанные даты (только активные бронирования)
+            booked_rooms = Booking.objects.filter(
+                Q(check_in_date__lte=check_out_date) & 
+                Q(check_out_date__gte=check_in_date),
+                status='active'
+            ).values_list('room_id', flat=True)
+            
+            # Исключаем занятые номера из списка
+            rooms = rooms.exclude(id__in=booked_rooms)
+        except ValueError:
+            messages.error(request, 'Неверный формат даты')
+    
+    context = {
+        'rooms': rooms,
+        'capacity': capacity,
+        'comfort_type': comfort_type,
+        'check_in': check_in,
+        'check_out': check_out,
+        **get_common_context()
+    }
+    return render(request, 'main/rooms_search.html', context)
