@@ -179,3 +179,75 @@ class BookingForm(forms.ModelForm):
                 raise ValidationError({'promo_code': 'Недействительный промокод'})
 
         return cleaned_data 
+
+class ReviewForm(forms.ModelForm):
+    rating = forms.IntegerField(
+        min_value=1,
+        max_value=5,
+        widget=forms.NumberInput(attrs={
+            'class': 'form-control',
+            'placeholder': 'Оценка от 1 до 5'
+        }),
+        label='Оценка'
+    )
+    text = forms.CharField(
+        widget=forms.Textarea(attrs={
+            'class': 'form-control',
+            'placeholder': 'Поделитесь своими впечатлениями',
+            'rows': 4
+        }),
+        label='Текст отзыва'
+    )
+
+    class Meta:
+        model = Review
+        fields = ['rating', 'text']
+
+class ProfileEditForm(forms.ModelForm):
+    first_name = forms.CharField(max_length=30, required=True, label='Имя')
+    last_name = forms.CharField(max_length=30, required=True, label='Фамилия')
+    email = forms.EmailField(required=True, label='Email')
+    middle_name = forms.CharField(max_length=30, required=False, label='Отчество')
+    phone_number = forms.CharField(
+        max_length=20,
+        required=True,
+        label='Номер телефона',
+        help_text='Введите номер телефона в формате +375 (29) XXX-XX-XX',
+        validators=[validate_phone_number]
+    )
+    has_child = forms.BooleanField(
+        required=False,
+        label='Есть дети',
+        initial=False
+    )
+    comments = forms.CharField(
+        widget=forms.Textarea,
+        required=False,
+        label='Комментарии'
+    )
+
+    class Meta:
+        model = Client
+        fields = ['middle_name', 'phone_number', 'has_child', 'comments']
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        if self.instance and self.instance.user:
+            self.fields['first_name'].initial = self.instance.user.first_name
+            self.fields['last_name'].initial = self.instance.user.last_name
+            self.fields['email'].initial = self.instance.user.email
+
+    def save(self, commit=True):
+        client = super().save(commit=False)
+        
+        # Обновляем данные пользователя
+        user = client.user
+        user.first_name = self.cleaned_data['first_name']
+        user.last_name = self.cleaned_data['last_name']
+        user.email = self.cleaned_data['email']
+        
+        if commit:
+            user.save()
+            client.save()
+        
+        return client 

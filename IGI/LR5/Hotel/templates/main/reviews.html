@@ -6,11 +6,9 @@
 <div class="reviews-page">
     <h1>Отзывы наших гостей</h1>
 
-    {% if user.is_authenticated %}
     <div class="add-review-button">
         <a href="{% url 'add_review' %}" class="button">Оставить отзыв</a>
     </div>
-    {% endif %}
 
     <div class="reviews-list">
         {% if reviews %}

@@ -13,7 +13,7 @@ from .models import (
     Promotion, CompanyInfo, Room, RoomCategory, Booking, Client
 )
 from .api_utils import get_random_dog, get_random_cat_fact
-from .forms import UserRegistrationForm, LoginForm, BookingForm
+from .forms import UserRegistrationForm, LoginForm, BookingForm, ReviewForm, ProfileEditForm
 from django.core.exceptions import PermissionDenied
 from django.db.models.functions import ExtractYear, Now
 from statistics import median
@@ -157,29 +157,45 @@ def reviews(request):
     }
     return render(request, 'main/reviews.html', context)
 
-@login_required
 def add_review(request):
+    if not request.user.is_authenticated:
+        messages.info(request, 'Для добавления отзыва необходимо зарегистрироваться')
+        return redirect('register')
+        
     if request.method == 'POST':
-        rating = request.POST.get('rating')
-        text = request.POST.get('text')
-        if rating and text:
-            Review.objects.create(
-                client=request.user.client,
-                rating=rating,
-                text=text
-            )
+        form = ReviewForm(request.POST)
+        if form.is_valid():
+            review = form.save(commit=False)
+            review.client = request.user.client
+            review.save()
             messages.success(request, 'Спасибо за ваш отзыв!')
             return redirect('reviews')
-    return render(request, 'main/add_review.html', get_common_context())
+    else:
+        form = ReviewForm()
+    
+    context = {
+        'form': form,
+        **get_common_context()
+    }
+    return render(request, 'main/add_review.html', context)
 
 def promotions(request):
+    # Get active promotions
     active_promotions = Promotion.objects.filter(
         is_active=True,
         valid_from__lte=timezone.now(),
         valid_until__gte=timezone.now()
     ).order_by('valid_until')
+    
+    # Get expired promotions
+    expired_promotions = Promotion.objects.filter(
+        Q(valid_until__lt=timezone.now()) |  # Expired by date
+        Q(is_active=False)  # Or manually deactivated
+    ).order_by('-valid_until')  # Most recently expired first
+    
     context = {
-        'promotions': active_promotions,
+        'active_promotions': active_promotions,
+        'expired_promotions': expired_promotions,
         **get_common_context()
     }
     return render(request, 'main/promotions.html', context)
@@ -641,3 +657,40 @@ def staff_analytics(request):
         **get_common_context()
     }
     return render(request, 'main/staff/analytics.html', context)
+
+@login_required
+def edit_profile(request):
+    if request.method == 'POST':
+        form = ProfileEditForm(request.POST, instance=request.user.client)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Профиль успешно обновлен!')
+            return redirect('profile')
+    else:
+        form = ProfileEditForm(instance=request.user.client)
+    
+    context = {
+        'form': form,
+        **get_common_context()
+    }
+    return render(request, 'main/edit_profile.html', context)
+
+@login_required
+def cancel_booking(request, booking_id):
+    booking = get_object_or_404(Booking, id=booking_id, client=request.user.client)
+    
+    # Проверяем, можно ли отменить бронирование
+    if booking.status != 'active':
+        messages.error(request, 'Можно отменить только активные бронирования')
+        return redirect('profile')
+    
+    # Проверяем, не слишком ли поздно для отмены (например, за 24 часа до заезда)
+    if booking.check_in_date <= timezone.now().date() + timedelta(days=1):
+        messages.error(request, 'Бронирование можно отменить не позднее чем за 24 часа до заезда')
+        return redirect('profile')
+    
+    booking.status = 'cancelled'
+    booking.save()
+    
+    messages.success(request, 'Бронирование успешно отменено')
+    return redirect('profile')

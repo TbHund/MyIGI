@@ -6,33 +6,68 @@
 <div class="promotions-page">
     <h1>Акции и специальные предложения</h1>
 
-    <div class="promotions-grid">
-        {% if promotions %}
-            {% for promotion in promotions %}
-            <div class="promotion-card">
-                <div class="promotion-content">
-                    <h2>Промокод: {{ promotion.code }}</h2>
-                    <div class="promotion-dates">
-                        <span class="date-range">
-                            Действует с {{ promotion.valid_from|date:"d.m.Y" }}
-                            по {{ promotion.valid_until|date:"d.m.Y" }}
-                        </span>
-                    </div>
-                    <p class="description">{{ promotion.description|linebreaks }}</p>
-                    <div class="discount">
-                        <span class="discount-value">-{{ promotion.discount_percent }}%</span>
-                    </div>
-                    <div class="promo-code">
-                        <span>Промокод: </span>
-                        <code>{{ promotion.code }}</code>
+    <!-- Active Promotions -->
+    <section class="promotions-section">
+        <h2>Действующие акции</h2>
+        <div class="promotions-grid">
+            {% if active_promotions %}
+                {% for promotion in active_promotions %}
+                <div class="promotion-card">
+                    <div class="promotion-content">
+                        <h3>Промокод: {{ promotion.code }}</h3>
+                        <div class="promotion-dates">
+                            <span class="date-range">
+                                Действует с {{ promotion.valid_from|date:"d.m.Y" }}
+                                по {{ promotion.valid_until|date:"d.m.Y" }}
+                            </span>
+                        </div>
+                        <p class="description">{{ promotion.description|linebreaks }}</p>
+                        <div class="discount">
+                            <span class="discount-value">-{{ promotion.discount_percent }}%</span>
+                        </div>
+                        <div class="promo-code">
+                            <span>Промокод: </span>
+                            <code>{{ promotion.code }}</code>
+                        </div>
                     </div>
                 </div>
-            </div>
-            {% endfor %}
-        {% else %}
-            <p class="no-data">В данный момент нет активных акций.</p>
-        {% endif %}
-    </div>
+                {% endfor %}
+            {% else %}
+                <p class="no-data">В данный момент нет активных акций.</p>
+            {% endif %}
+        </div>
+    </section>
+
+    <!-- Expired Promotions -->
+    <section class="promotions-section expired-section">
+        <h2>Архив акций</h2>
+        <div class="promotions-grid">
+            {% if expired_promotions %}
+                {% for promotion in expired_promotions %}
+                <div class="promotion-card expired">
+                    <div class="promotion-content">
+                        <h3>Промокод: {{ promotion.code }}</h3>
+                        <div class="promotion-dates">
+                            <span class="date-range">
+                                Действовал с {{ promotion.valid_from|date:"d.m.Y" }}
+                                по {{ promotion.valid_until|date:"d.m.Y" }}
+                            </span>
+                        </div>
+                        <p class="description">{{ promotion.description|linebreaks }}</p>
+                        <div class="discount">
+                            <span class="discount-value">-{{ promotion.discount_percent }}%</span>
+                        </div>
+                        <div class="expired-badge">
+                            Акция завершена
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <p class="no-data">Нет завершенных акций.</p>
+            {% endif %}
+        </div>
+    </section>
 </div>
 
 <style>
@@ -46,6 +81,21 @@
         text-align: center;
         margin-bottom: 2rem;
         color: #2c5282;
+    }
+
+    .promotions-section {
+        margin-bottom: 3rem;
+    }
+
+    .promotions-section h2 {
+        color: #2c5282;
+        margin-bottom: 1.5rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #e2e8f0;
+    }
+
+    .expired-section {
+        opacity: 0.8;
     }
 
     .promotions-grid {
@@ -66,11 +116,15 @@
         transform: translateY(-5px);
     }
 
+    .promotion-card.expired {
+        background-color: #f7fafc;
+    }
+
     .promotion-content {
         padding: 1.5rem;
     }
 
-    .promotion-content h2 {
+    .promotion-content h3 {
         color: #2c5282;
         font-size: 1.25rem;
         margin-bottom: 1rem;
@@ -123,6 +177,16 @@
         font-weight: bold;
     }
 
+    .expired-badge {
+        background-color: #718096;
+        color: white;
+        text-align: center;
+        padding: 0.5rem;
+        border-radius: 4px;
+        margin-top: 1rem;
+        font-size: 0.9rem;
+    }
+
     .no-data {
         text-align: center;
         grid-column: 1 / -1;
@@ -130,6 +194,16 @@
         padding: 2rem;
         background-color: #f7fafc;
         border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .promotions-page {
+            padding: 1rem;
+        }
+
+        .promotions-grid {
+            grid-template-columns: 1fr;
+        }
     }
 </style>
 {% endblock %} 

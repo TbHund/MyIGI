@@ -30,6 +30,9 @@
                 </div>
                 {% endif %}
             </div>
+            <div class="edit-profile-button">
+                <a href="{% url 'edit_profile' %}" class="button">Редактировать профиль</a>
+            </div>
         </div>
 
         <div class="bookings">
@@ -38,7 +41,7 @@
                 {% for booking in bookings %}
                 <div class="booking-card">
                     <div class="booking-header">
-                        <h3>{{ booking.room.category.get_comfort_type_display }} - Номер {{ booking.room.number }}</h3>
+                        <h3>{{ booking.room.category.name }} - Номер {{ booking.room.number }}</h3>
                         <span class="status {{ booking.status }}">{{ booking.get_status_display }}</span>
                     </div>
                     
@@ -69,6 +72,15 @@
                         <div class="booking-comments">
                             <span class="label">Комментарии:</span>
                             <p>{{ booking.comments }}</p>
+                        </div>
+                        {% endif %}
+
+                        {% if booking.status == 'active' %}
+                        <div class="booking-actions">
+                            <a href="{% url 'cancel_booking' booking.id %}" class="cancel-booking-button" 
+                               onclick="return confirm('Вы уверены, что хотите отменить бронирование?')">
+                                Отменить бронирование
+                            </a>
                         </div>
                         {% endif %}
                     </div>
@@ -126,6 +138,25 @@
     .value {
         color: #2d3748;
         font-weight: 500;
+    }
+
+    .edit-profile-button {
+        margin-top: 1.5rem;
+        text-align: right;
+    }
+
+    .button {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background-color: #2c5282;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .button:hover {
+        background-color: #2a4365;
     }
 
     .bookings {
@@ -218,12 +249,47 @@
         color: #4a5568;
     }
 
+    .booking-actions {
+        margin-top: 1rem;
+        text-align: right;
+    }
+
+    .cancel-booking-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: #f56565;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .cancel-booking-button:hover {
+        background-color: #c53030;
+    }
+
     .no-bookings {
         text-align: center;
         color: #4a5568;
         padding: 2rem;
         background-color: #f7fafc;
         border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+        .info-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .dates {
+            grid-template-columns: 1fr;
+        }
+
+        .room-info {
+            flex-direction: column;
+            gap: 0.5rem;
+            text-align: center;
+        }
     }
 </style>
 {% endblock %} 
