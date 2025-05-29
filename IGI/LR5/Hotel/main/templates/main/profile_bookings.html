@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block title %}Мои бронирования - {{ current_status }}{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-4">Мои бронирования</h1>
+    
+    <div class="btn-group mb-4" role="group">
+        <a href="{% url 'profile_bookings' 'active' %}" class="btn btn-{% if current_status == 'active' %}primary{% else %}outline-primary{% endif %}">Активные</a>
+        <a href="{% url 'profile_bookings' 'completed' %}" class="btn btn-{% if current_status == 'completed' %}primary{% else %}outline-primary{% endif %}">Завершенные</a>
+        <a href="{% url 'profile_bookings' 'cancelled' %}" class="btn btn-{% if current_status == 'cancelled' %}primary{% else %}outline-primary{% endif %}">Отмененные</a>
+    </div>
+
+    <div class="row">
+        {% for booking in bookings %}
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ booking.room }}</h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Даты:</strong> {{ booking.check_in_date|date:"d.m.Y" }} - {{ booking.check_out_date|date:"d.m.Y" }}</li>
+                        <li><strong>Статус:</strong> {{ booking.get_status_display }}</li>
+                        <li><strong>Стоимость:</strong> {{ booking.total_price }} BYN</li>
+                        {% if booking.promotion %}
+                        <li><strong>Промокод:</strong> {{ booking.promotion.code }} (-{{ booking.promotion.discount_percent }}%)</li>
+                        {% endif %}
+                    </ul>
+                    {% if booking.status == 'active' %}
+                    <a href="{% url 'cancel_booking' booking.id %}" class="btn btn-danger" onclick="return confirm('Вы уверены, что хотите отменить бронирование?')">Отменить</a>
+                    {% endif %}
+                </div>
+                <div class="card-footer text-muted">
+                    Создано: {{ booking.created_at|date:"d.m.Y H:i" }}
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <div class="col-12">
+            <div class="alert alert-info">
+                У вас нет {{ current_status }} бронирований.
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %} 
