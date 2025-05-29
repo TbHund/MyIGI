@@ -199,6 +199,6 @@ LOGGING = {
     },
 }
 
-# Создаем директорию для логов, если её нет
+# сделать папку для логов если ее нет
 if not os.path.exists(os.path.join(BASE_DIR, 'logs')):
     os.makedirs(os.path.join(BASE_DIR, 'logs'))

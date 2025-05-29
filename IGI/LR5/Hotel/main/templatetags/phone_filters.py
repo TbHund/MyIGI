@@ -8,7 +8,7 @@ def phone_format(phone_number):
     if not phone_number:
         return phone_number
     
-    # Удаляем все нецифровые символы
+    #удалить все что не цифра
     digits = ''.join(filter(str.isdigit, str(phone_number)))
     
     if len(digits) == 12 and digits.startswith('375'):

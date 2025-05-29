@@ -667,3 +667,125 @@ django.core.exceptions.PermissionDenied: У вас нет прав для дос
 [2025-05-29 21:53:26] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
 [2025-05-29 21:55:38] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
 [2025-05-29 21:55:39] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 23:27:51] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 23:27:56] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 23:27:59] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8309
+[2025-05-29 23:28:01] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 23:30:03] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 23:30:06] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 23:30:09] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-29 23:30:09] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 23:30:10] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5946
+[2025-05-29 23:30:18] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 200 6236
+[2025-05-29 23:30:31] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 200 6236
+[2025-05-29 23:30:35] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-05-29 23:30:36] INFO basehttp.log_message - "GET / HTTP/1.1" 200 18110
+[2025-05-29 23:30:39] INFO basehttp.log_message - "GET /staff/bookings/ HTTP/1.1" 200 14677
+[2025-05-29 23:30:50] WARNING log.log_response - Not Found: /staff/bookings/1
+[2025-05-29 23:30:50] WARNING basehttp.log_message - "GET /staff/bookings/1 HTTP/1.1" 404 10038
+[2025-05-29 23:30:53] WARNING log.log_response - Not Found: /staff/bookings/2
+[2025-05-29 23:30:53] WARNING basehttp.log_message - "GET /staff/bookings/2 HTTP/1.1" 404 10038
+[2025-05-29 23:31:07] INFO basehttp.log_message - "GET /staff/booking/2 HTTP/1.1" 301 0
+[2025-05-29 23:31:07] ERROR log.log_response - Internal Server Error: /staff/booking/2/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 485, in wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 567, in staff_booking_detail
+    return render(request, 'main/staff/booking_detail.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/staff/booking_detail.html
+[2025-05-29 23:31:07] ERROR basehttp.log_message - "GET /staff/booking/2/ HTTP/1.1" 500 102201
+[2025-05-29 23:31:20] WARNING log.log_response - Not Found: /staff/booking
+[2025-05-29 23:31:20] WARNING basehttp.log_message - "GET /staff/booking HTTP/1.1" 404 10029
+[2025-05-29 23:32:20] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17869
+[2025-05-29 23:32:22] INFO basehttp.log_message - "GET /staff/bookings/ HTTP/1.1" 200 14677
+[2025-05-29 23:32:24] INFO basehttp.log_message - "GET /staff/clients/ HTTP/1.1" 200 10050
+[2025-05-29 23:35:41] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
+[2025-05-29 23:35:43] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 23:41:45] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 23:41:48] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17869
+[2025-05-29 23:41:55] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 4908
+[2025-05-29 23:41:57] INFO basehttp.log_message - "POST /admin/logout/ HTTP/1.1" 200 3836
+[2025-05-29 23:41:59] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-05-29 23:41:59] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4378
+[2025-05-29 23:42:01] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-05-29 23:42:02] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17589
+[2025-05-29 23:42:11] INFO basehttp.log_message - "GET /admin/main/roomcategory/ HTTP/1.1" 200 15790
+[2025-05-29 23:42:12] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:42:28] INFO basehttp.log_message - "GET /admin/main/roomcategory/?q=luxe HTTP/1.1" 200 15662
+[2025-05-29 23:42:28] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:42:31] INFO basehttp.log_message - "GET /admin/main/roomcategory/?q= HTTP/1.1" 200 15903
+[2025-05-29 23:42:31] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:42:40] INFO basehttp.log_message - "GET /admin/main/roomcategory/1/change/?_changelist_filters=q%3D HTTP/1.1" 200 15916
+[2025-05-29 23:42:40] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:42:44] INFO basehttp.log_message - "GET /admin/main/roomcategory/?q= HTTP/1.1" 200 15903
+[2025-05-29 23:42:47] INFO basehttp.log_message - "GET /admin/main/roomcategory/1/change/?_changelist_filters=q%3D HTTP/1.1" 200 15916
+[2025-05-29 23:42:47] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:43:07] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 18945
+[2025-05-29 23:43:07] INFO basehttp.log_message - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[2025-05-29 23:43:07] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:43:34] INFO basehttp.log_message - "GET /admin/main/room/?category__id__exact=1 HTTP/1.1" 200 17978
+[2025-05-29 23:43:34] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:43:36] INFO basehttp.log_message - "GET /admin/main/room/? HTTP/1.1" 200 18945
+[2025-05-29 23:43:36] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:44:51] INFO basehttp.log_message - "GET /admin/main/room/?q=101 HTTP/1.1" 200 17620
+[2025-05-29 23:44:51] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:44:57] INFO basehttp.log_message - "GET /admin/main/room/?q=regular HTTP/1.1" 200 15852
+[2025-05-29 23:44:57] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:44:59] INFO basehttp.log_message - "GET /admin/main/room/?q= HTTP/1.1" 200 19180
+[2025-05-29 23:45:00] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:45:05] INFO basehttp.log_message - "GET /admin/main/room/?q=REG HTTP/1.1" 200 15796
+[2025-05-29 23:45:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:45:09] INFO basehttp.log_message - "GET /admin/main/room/?q=REGULAR HTTP/1.1" 200 15852
+[2025-05-29 23:45:09] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:45:10] INFO basehttp.log_message - "GET /admin/main/room/?q=REGULAR HTTP/1.1" 200 15852
+[2025-05-29 23:45:10] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:45:12] INFO basehttp.log_message - "GET /admin/main/room/?q= HTTP/1.1" 200 19180
+[2025-05-29 23:45:12] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:45:31] INFO basehttp.log_message - "GET /admin/main/room/4/change/?_changelist_filters=q%3D HTTP/1.1" 200 20294
+[2025-05-29 23:45:31] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:45:33] INFO basehttp.log_message - "GET /admin/main/room/?q= HTTP/1.1" 200 19180
+[2025-05-29 23:45:37] INFO basehttp.log_message - "GET /admin/main/room/?q=small HTTP/1.1" 200 17660
+[2025-05-29 23:45:37] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:46:23] INFO basehttp.log_message - "GET /admin/main/roomcategory/ HTTP/1.1" 200 15790
+[2025-05-29 23:46:23] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:46:27] INFO basehttp.log_message - "GET /admin/main/roomcategory/add/ HTTP/1.1" 200 15615
+[2025-05-29 23:46:27] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:46:30] INFO basehttp.log_message - "GET /admin/main/roomcategory/ HTTP/1.1" 200 15790
+[2025-05-29 23:46:47] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 23:46:59] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2030-10-10&check_out=2030-10-11 HTTP/1.1" 200 17914
+[2025-05-29 23:47:01] INFO basehttp.log_message - "GET /book/1/?check_in=2030-10-10&check_out=2030-10-11 HTTP/1.1" 200 8052
+[2025-05-29 23:48:14] INFO basehttp.log_message - "GET /admin/main/roomcategory/ HTTP/1.1" 200 15790
+[2025-05-29 23:48:15] INFO basehttp.log_message - "GET /admin/main/client/ HTTP/1.1" 200 20261
+[2025-05-29 23:48:15] INFO basehttp.log_message - "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[2025-05-29 23:48:15] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:49:05] INFO basehttp.log_message - "GET /admin/main/client/4/change/ HTTP/1.1" 200 19578
+[2025-05-29 23:49:05] INFO basehttp.log_message - "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2025-05-29 23:49:05] INFO basehttp.log_message - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2025-05-29 23:49:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:49:05] INFO basehttp.log_message - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[2025-05-29 23:49:12] INFO basehttp.log_message - "GET /admin/main/client/ HTTP/1.1" 200 20261
+[2025-05-29 23:49:23] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 25992
+[2025-05-29 23:49:23] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 23:49:36] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\admin.py changed, reloading.
+[2025-05-29 23:49:38] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 23:50:20] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\api_utils.py changed, reloading.
+[2025-05-29 23:50:21] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader

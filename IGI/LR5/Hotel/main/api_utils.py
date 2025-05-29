@@ -2,10 +2,9 @@ import requests
 from django.conf import settings
 from datetime import datetime
 
+#рандомный факт о котах и рандомная фотка собаки
+
 def get_random_dog():
-    """
-    Get a random dog image using Dog API
-    """
     try:
         response = requests.get('https://dog.ceo/api/breeds/image/random')
         response.raise_for_status()
@@ -25,9 +24,6 @@ def get_random_dog():
         return None
 
 def get_random_cat_fact():
-    """
-    Get a random cat fact using Cat Facts API
-    """
     try:
         response = requests.get('https://catfact.ninja/fact')
         response.raise_for_status()
