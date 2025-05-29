@@ -22,7 +22,6 @@ import logging
 logger = logging.getLogger('main.booking')
 
 def get_common_context():
-    """Get common context data for all pages"""
     #текущее время в UTC
     utc_now = timezone.now()
     
@@ -36,6 +35,7 @@ def get_common_context():
     cal = calendar.TextCalendar(calendar.MONDAY)
     current_calendar = cal.formatmonth(minsk_time.year, minsk_time.month)
     
+    #эти переменные используются в хтмл шаблонах
     return {
         'random_dog': get_random_dog(),
         'cat_fact': get_random_cat_fact(),
@@ -50,14 +50,12 @@ def home(request):
     rooms = Room.objects.filter(is_active=True)
     categories = RoomCategory.objects.all()
     
-    # Получаем последние изменения в базе данных
     latest_changes = {
         'bookings': Booking.objects.order_by('-updated_at').first(),
         'reviews': Review.objects.order_by('-created_at').first(),
         'news': News.objects.order_by('-created_at').first(),
     }
     
-    # Фильтрация по категории
     category = request.GET.get('category')
     if category:
         rooms = rooms.filter(category__slug=category)
@@ -67,7 +65,7 @@ def home(request):
     if capacity and capacity.isdigit():
         rooms = rooms.filter(capacity__gte=int(capacity))
     
-    # Фильтрация по датам, если они указаны
+    # Фильтрация по датам, без нее нельзя забронировать номер
     check_in = request.GET.get('check_in')
     check_out = request.GET.get('check_out')
     
@@ -76,14 +74,14 @@ def home(request):
             check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
             check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
             
-            # Получаем занятые номера на указанные даты (только активные бронирования)
+            #занятые номера на указанные даты
             booked_rooms = Booking.objects.filter(
                 Q(check_in_date__lte=check_out_date) & 
                 Q(check_out_date__gte=check_in_date),
-                status='active'  # Учитываем только активные бронирования
+                status='active'  #только активные бронирования
             ).values_list('room_id', flat=True)
             
-            # Исключаем занятые номера из списка
+            #занятые номера из списка выписываем
             rooms = rooms.exclude(id__in=booked_rooms)
         except ValueError:
             messages.error(request, 'Неверный формат даты')
@@ -193,7 +191,7 @@ def promotions(request):
     
     # уже нерабочие скидки
     expired_promotions = Promotion.objects.filter(
-        Q(valid_until__lt=timezone.now()) |  # по даты закончились
+        Q(valid_until__lt=timezone.now()) |  # по дате закончились
         Q(is_active=False)  # вручную через админку деактивированны
     ).order_by('-valid_until')  # самая недавне-закончившаяся акция
     
@@ -282,6 +280,7 @@ def room_list(request):
     }
     return render(request, 'main/room_list.html', context)
 
+#супер важно
 @login_required
 def book_room(request, room_id):
     room = get_object_or_404(Room, id=room_id, is_active=True)

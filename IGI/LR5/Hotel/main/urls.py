@@ -41,9 +41,9 @@ urlpatterns = [
     path('staff/bookings/', views.staff_bookings, name='staff_bookings'),
     path('staff/clients/', views.staff_clients, name='staff_clients'),
     path('staff/analytics/', views.staff_analytics, name='staff_analytics'),
-    path('staff/booking/<int:booking_id>/', views.staff_booking_detail, name='staff_booking_detail'),
-    path('staff/client/<int:client_id>/', views.staff_client_detail, name='staff_client_detail'),
+    #path('staff/booking/<int:booking_id>/', views.staff_booking_detail, name='staff_booking_detail'),
+    #path('staff/client/<int:client_id>/', views.staff_client_detail, name='staff_client_detail'),
     
     path('profile/edit/', views.edit_profile, name='edit_profile'),
-    path('booking/<int:booking_id>/cancel/', views.cancel_booking, name='cancel_booking'),
+    #path('booking/<int:booking_id>/cancel/', views.cancel_booking, name='cancel_booking'),
 ] 

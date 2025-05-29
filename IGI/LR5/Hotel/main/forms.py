@@ -74,7 +74,7 @@ class UserRegistrationForm(UserCreationForm):
             # Удаляем все нецифровые символы
             digits = ''.join(filter(str.isdigit, phone))
             if len(digits) == 12 and digits.startswith('375'):
-                # Форматируем номер в нужный формат
+                #Форматируем номер в нужный формат
                 formatted_number = f'+375 ({digits[3:5]}) {digits[5:8]}-{digits[8:10]}-{digits[10:12]}'
                 return formatted_number
             else:
@@ -160,7 +160,8 @@ class BookingForm(forms.ModelForm):
                     'Дата выезда должна быть позже даты заезда'
                 )
             
-            # Проверяем, что бронирование не более чем на 30 дней
+            #бронь максимум на 30 дней
+            #30 потому что 30
             if (check_out_date - check_in_date).days > 30:
                 raise forms.ValidationError(
                     'Максимальный срок бронирования - 30 дней'
@@ -240,7 +241,7 @@ class ProfileEditForm(forms.ModelForm):
     def save(self, commit=True):
         client = super().save(commit=False)
         
-        # Обновляем данные пользователя
+        #Обновление данных пользователя
         user = client.user
         user.first_name = self.cleaned_data['first_name']
         user.last_name = self.cleaned_data['last_name']

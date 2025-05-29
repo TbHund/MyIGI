@@ -123,6 +123,8 @@ class Booking(models.Model):
         ('cancelled', 'Отменено'),
     ]
 
+    #каскад - по удалению удаляется ВСЕ
+    #при удалении клиента из бд удалятся все его брони
     client = models.ForeignKey(
         Client, 
         on_delete=models.CASCADE,
