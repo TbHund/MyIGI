@@ -23,16 +23,16 @@ logger = logging.getLogger('main.booking')
 
 def get_common_context():
     """Get common context data for all pages"""
-    # Получаем текущее время в UTC
+    #текущее время в UTC
     utc_now = timezone.now()
     
-    # Получаем временную зону Минска
+    #временная зона минска
     minsk_tz = pytz.timezone('Europe/Minsk')
     
-    # Конвертируем UTC время в минское
+    #конверт UTC время в минское
     minsk_time = utc_now.astimezone(minsk_tz)
     
-    # Создаем календарь на текущий месяц
+    #календарь
     cal = calendar.TextCalendar(calendar.MONDAY)
     current_calendar = cal.formatmonth(minsk_time.year, minsk_time.month)
     
@@ -117,6 +117,7 @@ def news_list(request):
     }
     return render(request, 'main/news_list.html', context)
 
+# после кнопки читакть далее
 def news_detail(request, pk):
     news_item = get_object_or_404(News, pk=pk, is_published=True)
     context = {
@@ -183,18 +184,18 @@ def add_review(request):
     return render(request, 'main/add_review.html', context)
 
 def promotions(request):
-    # Get active promotions
+    # рабочие скидки
     active_promotions = Promotion.objects.filter(
         is_active=True,
         valid_from__lte=timezone.now(),
         valid_until__gte=timezone.now()
     ).order_by('valid_until')
     
-    # Get expired promotions
+    # уже нерабочие скидки
     expired_promotions = Promotion.objects.filter(
-        Q(valid_until__lt=timezone.now()) |  # Expired by date
-        Q(is_active=False)  # Or manually deactivated
-    ).order_by('-valid_until')  # Most recently expired first
+        Q(valid_until__lt=timezone.now()) |  # по даты закончились
+        Q(is_active=False)  # вручную через админку деактивированны
+    ).order_by('-valid_until')  # самая недавне-закончившаяся акция
     
     context = {
         'active_promotions': active_promotions,

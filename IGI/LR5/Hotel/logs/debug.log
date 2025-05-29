@@ -599,3 +599,71 @@ django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no cl
 [2025-05-29 20:02:52] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 83842
 [2025-05-29 20:02:55] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
 [2025-05-29 20:02:55] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 20:05:05] WARNING log.log_response - Forbidden (Permission denied): /staff/bookings/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 483, in wrapper
+    raise PermissionDenied("У вас нет прав для доступа к этой странице")
+django.core.exceptions.PermissionDenied: У вас нет прав для доступа к этой странице
+[2025-05-29 20:30:43] WARNING log.log_response - Forbidden (Permission denied): /staff/bookings/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 483, in wrapper
+    raise PermissionDenied("У вас нет прав для доступа к этой странице")
+django.core.exceptions.PermissionDenied: У вас нет прав для доступа к этой странице
+[2025-05-29 20:31:04] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 20:31:07] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 20:31:08] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5946
+[2025-05-29 20:31:17] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 200 6238
+[2025-05-29 20:31:26] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-05-29 20:31:27] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17923
+[2025-05-29 20:31:28] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8232
+[2025-05-29 20:31:31] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 19639
+[2025-05-29 20:31:34] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8232
+[2025-05-29 20:31:39] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 19639
+[2025-05-29 20:31:50] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 20:31:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8143
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14588
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 304 0
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 304 0
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 304 0
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 304 0
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 304 0
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-29 20:32:00] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 304 0
+[2025-05-29 20:32:03] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9536
+[2025-05-29 20:36:26] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 20:36:30] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 20:36:32] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-29 20:36:32] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 20:36:33] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5946
+[2025-05-29 20:36:52] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-05-29 20:36:53] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17923
+[2025-05-29 20:36:57] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 19639
+[2025-05-29 21:47:09] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 21:47:19] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 21:47:19] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 21:47:19] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 21:47:25] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8296
+[2025-05-29 21:51:53] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-29 21:51:55] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 21:53:25] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-29 21:53:26] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 21:55:38] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-29 21:55:39] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader

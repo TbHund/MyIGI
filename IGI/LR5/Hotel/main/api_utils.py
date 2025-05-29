@@ -12,7 +12,7 @@ def get_random_dog():
         data = response.json()
         
         if data['status'] == 'success':
-            # Получаем породу собаки из URL изображения
+            #получить породу собаки из URL
             image_url = data['message']
             breed = image_url.split('/breeds/')[1].split('/')[0].replace('-', ' ').title()
             
