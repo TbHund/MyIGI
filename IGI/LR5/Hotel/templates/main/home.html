@@ -98,7 +98,7 @@
                         <div class="room-info">
                             <p><strong>Категория:</strong> {{ room.category.name }}</p>
                             <p><strong>Вместимость:</strong> {{ room.capacity }} чел.</p>
-                            <p><strong>Цена за ночь:</strong> {{ room.category.price_per_night }} руб.</p>
+                            <p><strong>Цена за ночь:</strong> {{ room.price_per_night }} руб.</p>
                         </div>
                         <p class="room-description">{{ room.description|truncatewords:30 }}</p>
                         {% if check_in and check_out %}

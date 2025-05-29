@@ -36,4 +36,11 @@ urlpatterns = [
     
     #Бронирование с   регулярными выражениями
     re_path(r'^book/(?P<room_id>\d+)/$', views.book_room, name='book_room'),
+    
+    # Маршруты для сотрудников
+    path('staff/bookings/', views.staff_bookings, name='staff_bookings'),
+    path('staff/clients/', views.staff_clients, name='staff_clients'),
+    path('staff/analytics/', views.staff_analytics, name='staff_analytics'),
+    path('staff/booking/<int:booking_id>/', views.staff_booking_detail, name='staff_booking_detail'),
+    path('staff/client/<int:client_id>/', views.staff_client_detail, name='staff_client_detail'),
 ] 

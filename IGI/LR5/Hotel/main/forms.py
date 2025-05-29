@@ -1,16 +1,22 @@
 from django import forms
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
-from .models import Client, Booking, Review
+from .models import Client, Booking, Review, Promotion
 from datetime import date
 from django.utils import timezone
 from django.core.exceptions import ValidationError
+import re
 
 def validate_age(birth_date):
     today = date.today()
     age = today.year - birth_date.year - ((today.month, today.day) < (birth_date.month, birth_date.day))
     if age < 18:
         raise ValidationError('Вам должно быть не менее 18 лет для регистрации.')
+
+def validate_phone_number(phone):
+    pattern = r'^\+375 \((?:29|33|44|25)\) \d{3}-\d{2}-\d{2}$'
+    if not re.match(pattern, phone):
+        raise ValidationError('Номер телефона должен быть в формате: +375 (29) XXX-XX-XX')
 
 class UserRegistrationForm(UserCreationForm):
     last_name = forms.CharField(max_length=30, required=True, label='Фамилия')
@@ -28,7 +34,8 @@ class UserRegistrationForm(UserCreationForm):
         max_length=20, 
         required=True, 
         label='Номер телефона',
-        help_text='Введите номер телефона в формате +375 (XX) XXX-XX-XX'
+        help_text='Введите номер телефона в формате +375 (29) XXX-XX-XX',
+        validators=[validate_phone_number]
     )
     has_child = forms.BooleanField(
         required=False, 
@@ -60,6 +67,19 @@ class UserRegistrationForm(UserCreationForm):
         if birth_date:
             validate_age(birth_date)
         return birth_date
+
+    def clean_phone(self):
+        phone = self.cleaned_data.get('phone')
+        if phone:
+            # Удаляем все нецифровые символы
+            digits = ''.join(filter(str.isdigit, phone))
+            if len(digits) == 12 and digits.startswith('375'):
+                # Форматируем номер в нужный формат
+                formatted_number = f'+375 ({digits[3:5]}) {digits[5:8]}-{digits[8:10]}-{digits[10:12]}'
+                return formatted_number
+            else:
+                raise ValidationError('Неверный формат номера телефона')
+        return phone
 
     def save(self, commit=True):
         user = super().save(commit=False)
@@ -106,15 +126,26 @@ class BookingForm(forms.ModelForm):
         required=False,
         label='Комментарии к бронированию'
     )
+    promo_code = forms.CharField(
+        max_length=20,
+        required=False,
+        label='Промокод',
+        help_text='Если у вас есть промокод, введите его здесь'
+    )
 
     class Meta:
         model = Booking
-        fields = ['check_in_date', 'check_out_date', 'comments']
+        fields = ['check_in_date', 'check_out_date', 'comments', 'promo_code']
+        widgets = {
+            'check_in_date': forms.DateInput(attrs={'type': 'date'}),
+            'check_out_date': forms.DateInput(attrs={'type': 'date'}),
+        }
 
     def clean(self):
         cleaned_data = super().clean()
         check_in_date = cleaned_data.get('check_in_date')
         check_out_date = cleaned_data.get('check_out_date')
+        promo_code = cleaned_data.get('promo_code')
 
         if check_in_date and check_out_date:
             today = timezone.now().date()
@@ -134,5 +165,17 @@ class BookingForm(forms.ModelForm):
                 raise forms.ValidationError(
                     'Максимальный срок бронирования - 30 дней'
                 )
+
+        if promo_code:
+            try:
+                promotion = Promotion.objects.get(
+                    code=promo_code,
+                    is_active=True,
+                    valid_from__lte=timezone.now(),
+                    valid_until__gte=timezone.now()
+                )
+                cleaned_data['promotion'] = promotion
+            except Promotion.DoesNotExist:
+                raise ValidationError({'promo_code': 'Недействительный промокод'})
 
         return cleaned_data 

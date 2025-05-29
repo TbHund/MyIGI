@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="staff-panel">
+    <div class="staff-sidebar">
+        <h3>Панель сотрудника</h3>
+        <nav>
+            <ul>
+                <li><a href="{% url 'staff_bookings' %}" {% if request.resolver_match.url_name == 'staff_bookings' %}class="active"{% endif %}>Бронирования</a></li>
+                <li><a href="{% url 'staff_clients' %}" {% if request.resolver_match.url_name == 'staff_clients' %}class="active"{% endif %}>Клиенты</a></li>
+                <li><a href="{% url 'staff_analytics' %}" {% if request.resolver_match.url_name == 'staff_analytics' %}class="active"{% endif %}>Аналитика</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="staff-content">
+        {% block staff_content %}{% endblock %}
+    </div>
+</div>
+
+<style>
+    .staff-panel {
+        display: flex;
+        gap: 2rem;
+        padding: 2rem;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .staff-sidebar {
+        width: 250px;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .staff-sidebar h3 {
+        color: #2c5282;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .staff-sidebar nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .staff-sidebar nav ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .staff-sidebar nav ul li a {
+        display: block;
+        padding: 0.75rem 1rem;
+        color: #4a5568;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: all 0.2s;
+    }
+
+    .staff-sidebar nav ul li a:hover {
+        background: #edf2f7;
+        color: #2c5282;
+    }
+
+    .staff-sidebar nav ul li a.active {
+        background: #2c5282;
+        color: white;
+    }
+
+    .staff-content {
+        flex: 1;
+        background: #fff;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+</style>
+{% endblock %} 

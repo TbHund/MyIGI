@@ -7,43 +7,58 @@ from datetime import date
 
 @admin.register(RoomCategory)
 class RoomCategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'price_per_night')
+    list_display = ('name',)
     search_fields = ('name',)
+    prepopulated_fields = {'slug': ('name',)}
 
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):
-    list_display = ('number', 'category', 'capacity', 'is_active')
+    list_display = ('number', 'category', 'capacity', 'price_per_night', 'is_active')
     list_filter = ('category', 'is_active', 'capacity')
     search_fields = ('number', 'description')
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
-    list_display = ('get_full_name', 'user', 'phone_number', 'get_age', 'has_child')
-    search_fields = ('user__username', 'user__first_name', 'user__last_name', 'phone_number', 'middle_name')
-    list_filter = ('has_child', 'user__date_joined')
-    readonly_fields = ('get_age',)
-
-    def get_age(self, obj):
-        if obj.birth_date:
-            today = date.today()
-            age = today.year - obj.birth_date.year - ((today.month, today.day) < (obj.birth_date.month, obj.birth_date.day))
-            return age
-        return 'Не указан'
-    get_age.short_description = 'Возраст'
+    list_display = ('get_full_name', 'phone_number', 'birth_date', 'has_child', 'get_email', 'is_staff')
+    list_filter = ('has_child', 'is_staff')
+    search_fields = ('user__first_name', 'user__last_name', 'middle_name', 'phone_number')
+    list_editable = ('is_staff',)
+    
+    def get_email(self, obj):
+        return obj.user.email
+    get_email.short_description = 'Email'
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ('id', 'client', 'room', 'check_in_date', 'check_out_date', 'status', 'total_price')
+    list_display = (
+        'id', 
+        'get_client_full_name',
+        'room',
+        'check_in_date',
+        'check_out_date',
+        'total_price',
+        'status',
+        'promotion',
+        'created_at'
+    )
     list_filter = ('status', 'check_in_date', 'check_out_date')
-    search_fields = ('client__user__username', 'room__number')
-    date_hierarchy = 'check_in_date'
+    search_fields = (
+        'client__user__first_name',
+        'client__user__last_name',
+        'room__number',
+        'promotion__code'
+    )
+    readonly_fields = ('created_at', 'updated_at')
+    
+    def get_client_full_name(self, obj):
+        return obj.client.get_full_name()
+    get_client_full_name.short_description = 'Клиент'
 
 @admin.register(Review)
 class ReviewAdmin(admin.ModelAdmin):
     list_display = ('client', 'rating', 'created_at')
     list_filter = ('rating', 'created_at')
-    search_fields = ('client__user__username', 'text')
-    date_hierarchy = 'created_at'
+    search_fields = ('client__user__first_name', 'client__user__last_name', 'text')
 
 @admin.register(Promotion)
 class PromotionAdmin(admin.ModelAdmin):
@@ -59,30 +74,14 @@ class CompanyInfoAdmin(admin.ModelAdmin):
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
-    list_display = ('title', 'created_at', 'is_published', 'get_short_content')
+    list_display = ('title', 'created_at', 'is_published')
     list_filter = ('is_published', 'created_at')
     search_fields = ('title', 'content')
-    date_hierarchy = 'created_at'
-    list_editable = ('is_published',)
-    readonly_fields = ('created_at',)
-    fieldsets = (
-        ('Основная информация', {
-            'fields': ('title', 'content', 'image')
-        }),
-        ('Настройки публикации', {
-            'fields': ('is_published', 'created_at')
-        }),
-    )
-
-    def get_short_content(self, obj):
-        return obj.content[:100] + '...' if len(obj.content) > 100 else obj.content
-    get_short_content.short_description = 'Краткое содержание'
 
 @admin.register(FAQ)
 class FAQAdmin(admin.ModelAdmin):
     list_display = ('question', 'created_at')
     search_fields = ('question', 'answer')
-    date_hierarchy = 'created_at'
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
@@ -94,4 +93,3 @@ class VacancyAdmin(admin.ModelAdmin):
     list_display = ('title', 'salary_from', 'salary_to', 'is_active', 'created_at')
     list_filter = ('is_active', 'created_at')
     search_fields = ('title', 'description', 'requirements')
-    date_hierarchy = 'created_at'

@@ -1,0 +1,171 @@
+{% extends 'main/staff/staff_base.html' %}
+
+{% block staff_content %}
+<div class="clients-list">
+    <h2>Клиенты</h2>
+
+    <div class="filters">
+        <form method="get" class="filter-form">
+            <div class="form-group">
+                <label for="search">Поиск:</label>
+                <input type="text" name="search" id="search" 
+                       placeholder="ФИО или телефон" 
+                       value="{{ search_query }}">
+            </div>
+
+            <div class="form-group">
+                <label for="has_child">Наличие детей:</label>
+                <select name="has_child" id="has_child">
+                    <option value="">Все</option>
+                    <option value="true" {% if has_child == 'true' %}selected{% endif %}>Есть дети</option>
+                    <option value="false" {% if has_child == 'false' %}selected{% endif %}>Нет детей</option>
+                </select>
+            </div>
+
+            <button type="submit" class="filter-button">Применить фильтры</button>
+        </form>
+    </div>
+
+    <div class="clients-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>ФИО</th>
+                    <th>Email</th>
+                    <th>Телефон</th>
+                    <th>Дата рождения</th>
+                    <th>Дети</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for client in clients %}
+                <tr>
+                    <td>{{ client.id }}</td>
+                    <td>{{ client.get_full_name }}</td>
+                    <td>{{ client.user.email }}</td>
+                    <td>{{ client.phone_number }}</td>
+                    <td>{{ client.birth_date|date:"d.m.Y" }}</td>
+                    <td>{% if client.has_child %}Да{% else %}Нет{% endif %}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="6" class="empty-message">Клиентов не найдено</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    .clients-list h2 {
+        color: #2c5282;
+        margin-bottom: 2rem;
+    }
+
+    .filters {
+        background: #f7fafc;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+    }
+
+    .filter-form {
+        display: flex;
+        gap: 1.5rem;
+        align-items: flex-end;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .form-group label {
+        color: #4a5568;
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 0.5rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 4px;
+        min-width: 200px;
+    }
+
+    .filter-button {
+        background: #2c5282;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        height: 38px;
+    }
+
+    .filter-button:hover {
+        background: #2a4365;
+    }
+
+    .clients-table {
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 1rem;
+        text-align: left;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    th {
+        background: #f7fafc;
+        color: #4a5568;
+        font-weight: 600;
+    }
+
+    .badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px;
+        font-size: 0.875rem;
+    }
+
+    .badge-success {
+        background: #9ae6b4;
+        color: #22543d;
+    }
+
+    .badge-secondary {
+        background: #e2e8f0;
+        color: #4a5568;
+    }
+
+    .action-button {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background: #edf2f7;
+        color: #2c5282;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .action-button:hover {
+        background: #e2e8f0;
+        text-decoration: none;
+    }
+
+    .empty-message {
+        text-align: center;
+        color: #718096;
+        padding: 2rem;
+    }
+</style>
+{% endblock %} 

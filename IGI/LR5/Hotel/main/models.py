@@ -10,7 +10,7 @@ from datetime import date
 def validate_phone_number(value):
     pattern = r'^\+375 \((?:29|33|44|25)\) \d{3}-\d{2}-\d{2}$'
     if not re.match(pattern, value):
-        raise ValidationError('Phone number must be in format: +375 (29) XXX-XX-XX')
+        raise ValidationError('Номер телефона должен быть в формате: +375 (29) XXX-XX-XX')
 
 def validate_age(birth_date):
     today = date.today()
@@ -22,11 +22,6 @@ class RoomCategory(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название')
     slug = models.SlugField(unique=True, verbose_name='URL-идентификатор', null=True, blank=True)
     description = models.TextField(verbose_name='Описание')
-    price_per_night = models.DecimalField(
-        max_digits=10, 
-        decimal_places=2,
-        verbose_name='Цена за ночь'
-    )
 
     def __str__(self):
         return self.name
@@ -38,7 +33,6 @@ class RoomCategory(models.Model):
     def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.name)
-            # Если такой slug уже существует, добавляем числовой суффикс
             original_slug = self.slug
             counter = 1
             while RoomCategory.objects.filter(slug=self.slug).exists():
@@ -55,6 +49,11 @@ class Room(models.Model):
     )
     capacity = models.PositiveIntegerField(verbose_name='Вместимость')
     description = models.TextField(verbose_name='Описание')
+    price_per_night = models.DecimalField(
+        max_digits=10,
+        decimal_places=2,
+        verbose_name='Цена за ночь'
+    )
     image = models.ImageField(
         upload_to='rooms/', 
         null=True, 
@@ -64,7 +63,7 @@ class Room(models.Model):
     is_active = models.BooleanField(default=True, verbose_name='Активен')
 
     def __str__(self):
-        return f"Номер {self.number} ({self.category.get_comfort_type_display()})"
+        return f"Номер {self.number} ({self.category.name})"
 
     class Meta:
         verbose_name = 'Номер'
@@ -99,6 +98,10 @@ class Client(models.Model):
         blank=True,
         verbose_name='Комментарии'
     )
+    is_staff = models.BooleanField(
+        default=False,
+        verbose_name='Сотрудник'
+    )
 
     def get_full_name(self):
         full_name = f"{self.user.last_name} {self.user.first_name}"
@@ -129,6 +132,13 @@ class Booking(models.Model):
         Room, 
         on_delete=models.CASCADE,
         verbose_name='Номер'
+    )
+    promotion = models.ForeignKey(
+        'Promotion',
+        on_delete=models.SET_NULL,
+        null=True,
+        blank=True,
+        verbose_name='Использованный промокод'
     )
     check_in_date = models.DateField(verbose_name='Дата заезда')
     check_out_date = models.DateField(verbose_name='Дата выезда')

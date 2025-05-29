@@ -1,0 +1,259 @@
+{% extends 'main/staff/staff_base.html' %}
+
+{% block staff_content %}
+<div class="analytics-container">
+    <h2>Аналитика</h2>
+    
+    <div class="charts-grid">
+        <div class="chart-section">
+            <h3>Распределение клиентов по наличию детей</h3>
+            <div class="chart-container">
+                <canvas id="clientsChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h3>Популярность номеров</h3>
+            <div class="chart-container">
+                <canvas id="roomsChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h3>Возрастные группы клиентов</h3>
+            <div class="age-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Средний возраст:</span>
+                    <span class="stat-value">{{ avg_age }} лет</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Медианный возраст:</span>
+                    <span class="stat-value">{{ median_age }} лет</span>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="ageChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h3>Прибыль по категориям номеров</h3>
+            <div class="chart-container">
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Диаграмма клиентов
+        const clientsCtx = document.getElementById('clientsChart').getContext('2d');
+        new Chart(clientsCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Клиенты с детьми', 'Клиенты без детей'],
+                datasets: [{
+                    data: [{{ clients_with_children }}, {{ clients_without_children }}],
+                    backgroundColor: [
+                        '#4CAF50',
+                        '#2196F3'
+                    ],
+                    borderColor: [
+                        '#388E3C',
+                        '#1976D2'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                const value = context.raw;
+                                const percentage = ((value / total) * 100).toFixed(1);
+                                return `${context.label}: ${value} (${percentage}%)`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Диаграмма номеров
+        const roomsCtx = document.getElementById('roomsChart').getContext('2d');
+        new Chart(roomsCtx, {
+            type: 'bar',
+            data: {
+                labels: {{ room_numbers|safe }},
+                datasets: [{
+                    label: 'Количество бронирований',
+                    data: {{ booking_counts }},
+                    backgroundColor: '#3182ce',
+                    borderColor: '#2c5282',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `Бронирований: ${context.raw}`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+
+        // Диаграмма возрастных групп
+        const ageCtx = document.getElementById('ageChart').getContext('2d');
+        new Chart(ageCtx, {
+            type: 'bar',
+            data: {
+                labels: {{ age_groups|safe }},
+                datasets: [{
+                    label: 'Количество клиентов',
+                    data: {{ age_counts }},
+                    backgroundColor: '#38a169',
+                    borderColor: '#2f855a',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            stepSize: 1
+                        }
+                    }
+                }
+            }
+        });
+
+        // Диаграмма прибыли
+        const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+        new Chart(revenueCtx, {
+            type: 'bar',
+            data: {
+                labels: {{ category_names|safe }},
+                datasets: [{
+                    label: 'Прибыль (BYN)',
+                    data: {{ category_revenues }},
+                    backgroundColor: '#805ad5',
+                    borderColor: '#6b46c1',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return `Прибыль: ${context.raw.toFixed(2)} BYN`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+
+<style>
+    .analytics-container {
+        padding: 2rem;
+    }
+
+    .analytics-container h2 {
+        color: #2c5282;
+        margin-bottom: 2rem;
+    }
+
+    .charts-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 2rem;
+    }
+
+    .chart-section {
+        background: white;
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .chart-section h3 {
+        color: #4a5568;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .chart-container {
+        height: 400px;
+    }
+
+    .age-stats {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+        background: #f7fafc;
+        border-radius: 8px;
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-label {
+        display: block;
+        color: #4a5568;
+        font-size: 0.9rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .stat-value {
+        color: #2c5282;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+</style>
+{% endblock %} 

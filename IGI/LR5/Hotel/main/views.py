@@ -3,17 +3,20 @@ from django.contrib.auth import login, logout, authenticate
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.utils import timezone
-from django.db.models import Q
+from django.db.models import Q, Count, Avg, Sum
 from datetime import datetime, timedelta, date
 from decimal import Decimal
 import calendar
 import pytz
 from .models import (
     News, FAQ, Contact, Vacancy, Review, 
-    Promotion, CompanyInfo, Room, RoomCategory, Booking
+    Promotion, CompanyInfo, Room, RoomCategory, Booking, Client
 )
 from .api_utils import get_random_dog, get_random_cat_fact
 from .forms import UserRegistrationForm, LoginForm, BookingForm
+from django.core.exceptions import PermissionDenied
+from django.db.models.functions import ExtractYear, Now
+from statistics import median
 
 def get_common_context():
     """Get common context data for all pages"""
@@ -272,12 +275,24 @@ def book_room(request, room_id):
             
             # Расчет стоимости
             days = (booking.check_out_date - booking.check_in_date).days
-            booking.total_price = room.category.price_per_night * Decimal(days)
+            total_price = room.price_per_night * Decimal(days)
+            
+            # Применяем скидку, если есть действующий промокод
+            promotion = form.cleaned_data.get('promotion')
+            if promotion:
+                discount = total_price * (promotion.discount_percent / Decimal('100'))
+                total_price -= discount
+                messages.success(
+                    request,
+                    f'Промокод применен! Скидка: {promotion.discount_percent}%'
+                )
+            
+            booking.total_price = total_price
             
             # Проверяем, не занят ли номер на эти даты
             conflicting_bookings = Booking.objects.filter(
                 room=room,
-                status='active',  # Проверяем только активные бронирования
+                status='active',
                 check_in_date__lte=booking.check_out_date,
                 check_out_date__gte=booking.check_in_date
             )
@@ -287,26 +302,15 @@ def book_room(request, room_id):
             else:
                 try:
                     booking.save()
-                    messages.success(request, 'Номер успешно забронирован!')
+                    messages.success(
+                        request,
+                        f'Номер успешно забронирован! Итоговая стоимость: {total_price} BYN'
+                    )
                     return redirect('profile')
                 except Exception as e:
                     form.add_error(None, f'Ошибка при сохранении бронирования: {str(e)}')
     else:
-        # Предзаполняем даты из GET-параметров, если они есть
-        initial = {}
-        check_in = request.GET.get('check_in')
-        check_out = request.GET.get('check_out')
-        if check_in:
-            try:
-                initial['check_in_date'] = datetime.strptime(check_in, '%Y-%m-%d').date()
-            except ValueError:
-                messages.error(request, 'Неверный формат даты заезда')
-        if check_out:
-            try:
-                initial['check_out_date'] = datetime.strptime(check_out, '%Y-%m-%d').date()
-            except ValueError:
-                messages.error(request, 'Неверный формат даты выезда')
-        form = BookingForm(initial=initial)
+        form = BookingForm()
     
     context = {
         'form': form,
@@ -399,14 +403,14 @@ def rooms_by_category(request, category_slug):
             check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
             check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
             
-            # Получаем занятые номера на указанные даты (только активные бронирования)
+            #Получаем занятые номера на указанные даты (только активные
             booked_rooms = Booking.objects.filter(
                 Q(check_in_date__lte=check_out_date) & 
                 Q(check_out_date__gte=check_in_date),
                 status='active'
             ).values_list('room_id', flat=True)
             
-            # Исключаем занятые номера из списка
+            #Искл занятые номера из списка
             rooms = rooms.exclude(id__in=booked_rooms)
         except ValueError:
             messages.error(request, 'Неверный формат даты')
@@ -427,7 +431,7 @@ def rooms_search(request, capacity, comfort_type):
         is_active=True
     )
     
-    # Фильтрация по датам, если они указаны
+    #Фильтрация по датам, если они указаны
     check_in = request.GET.get('check_in')
     check_out = request.GET.get('check_out')
     
@@ -436,14 +440,14 @@ def rooms_search(request, capacity, comfort_type):
             check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
             check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
             
-            # Получаем занятые номера на указанные даты (только активные бронирования)
+            #для занятых номеров на указанные даты (только активные в счет)
             booked_rooms = Booking.objects.filter(
                 Q(check_in_date__lte=check_out_date) & 
                 Q(check_out_date__gte=check_in_date),
                 status='active'
             ).values_list('room_id', flat=True)
             
-            # Исключаем занятые номера из списка
+            #занятые номера из списка не считаются
             rooms = rooms.exclude(id__in=booked_rooms)
         except ValueError:
             messages.error(request, 'Неверный формат даты')
@@ -457,3 +461,183 @@ def rooms_search(request, capacity, comfort_type):
         **get_common_context()
     }
     return render(request, 'main/rooms_search.html', context)
+
+def staff_required(view_func):
+    def wrapper(request, *args, **kwargs):
+        if not hasattr(request.user, 'client') or not request.user.client.is_staff:
+            raise PermissionDenied("У вас нет прав для доступа к этой странице")
+        return view_func(request, *args, **kwargs)
+    return wrapper
+
+@login_required
+@staff_required
+def staff_bookings(request):
+    """Представление для просмотра всех бронирований сотрудниками"""
+    bookings = Booking.objects.all().order_by('-created_at')
+    
+    #Фильтрация по статусу
+    status = request.GET.get('status')
+    if status:
+        bookings = bookings.filter(status=status)
+    
+    #Фильтрация по датам
+    date_from = request.GET.get('date_from')
+    date_to = request.GET.get('date_to')
+    if date_from:
+        bookings = bookings.filter(check_in_date__gte=date_from)
+    if date_to:
+        bookings = bookings.filter(check_out_date__lte=date_to)
+    
+    context = {
+        'bookings': bookings,
+        'status_choices': Booking.STATUS_CHOICES,
+        'selected_status': status,
+        'date_from': date_from,
+        'date_to': date_to,
+        **get_common_context()
+    }
+    return render(request, 'main/staff/bookings.html', context)
+
+@login_required
+@staff_required
+def staff_clients(request):
+    """Представление для просмотра всех клиентов сотрудниками"""
+    clients = Client.objects.filter(is_staff=False).order_by('user__last_name')
+    
+    #оиск по фио или телу
+    search_query = request.GET.get('search')
+    if search_query:
+        clients = clients.filter(
+            Q(user__first_name__icontains=search_query) |
+            Q(user__last_name__icontains=search_query) |
+            Q(middle_name__icontains=search_query) |
+            Q(phone_number__icontains=search_query)
+        )
+    
+    #фильтр есть ли дети
+    has_child = request.GET.get('has_child')
+    if has_child:
+        clients = clients.filter(has_child=has_child == 'true')
+    
+    context = {
+        'clients': clients,
+        'search_query': search_query,
+        'has_child': has_child,
+        **get_common_context()
+    }
+    return render(request, 'main/staff/clients.html', context)
+
+@login_required
+@staff_required
+def staff_booking_detail(request, booking_id):
+    """Детальная информация о бронировании для сотрудников"""
+    booking = get_object_or_404(Booking, id=booking_id)
+    
+    if request.method == 'POST':
+        action = request.POST.get('action')
+        if action == 'change_status':
+            new_status = request.POST.get('status')
+            if new_status in dict(Booking.STATUS_CHOICES):
+                booking.status = new_status
+                booking.save()
+                messages.success(request, 'Статус бронирования обновлен')
+                return redirect('staff_booking_detail', booking_id=booking.id)
+    
+    context = {
+        'booking': booking,
+        'status_choices': Booking.STATUS_CHOICES,
+        **get_common_context()
+    }
+    return render(request, 'main/staff/booking_detail.html', context)
+
+@login_required
+@staff_required
+def staff_client_detail(request, client_id):
+    """Детальная информация о клиенте для сотрудников"""
+    client = get_object_or_404(Client, id=client_id)
+    bookings = Booking.objects.filter(client=client).order_by('-created_at')
+    
+    context = {
+        'client': client,
+        'bookings': bookings,
+        **get_common_context()
+    }
+    return render(request, 'main/staff/client_detail.html', context)
+
+@login_required
+@staff_required
+def staff_analytics(request):
+    """Представление для аналитики"""
+    # Подсчет клиентов с детьми и без
+    total_clients = Client.objects.filter(is_staff=False)
+    clients_with_children = total_clients.filter(has_child=True).count()
+    clients_without_children = total_clients.filter(has_child=False).count()
+    
+    #СТАТИСТИКА бронирований по номерам
+    room_bookings = (
+        Booking.objects
+        .values('room__number', 'room__category__name')
+        .annotate(booking_count=Count('id'))
+        .order_by('-booking_count')
+    )
+    
+    # данные для диаграммы номеров
+    room_numbers = [f"№{booking['room__number']} ({booking['room__category__name']})" for booking in room_bookings]
+    booking_counts = [booking['booking_count'] for booking in room_bookings]
+
+    # Статистика по возрасту клиентов
+    today = date.today()
+    clients_with_age = []
+    for client in total_clients:
+        if client.birth_date:
+            age = today.year - client.birth_date.year - ((today.month, today.day) < (client.birth_date.month, client.birth_date.day))
+            clients_with_age.append(age)
+
+    avg_age = round(sum(clients_with_age) / len(clients_with_age), 1) if clients_with_age else 0
+    median_age = round(median(clients_with_age), 1) if clients_with_age else 0
+
+    # возрастные группы для диаграмм
+    age_groups = {
+        '18-25': 0, '26-35': 0, '36-45': 0,
+        '46-55': 0, '56-65': 0, '65+': 0
+    }
+    
+    for age in clients_with_age:
+        if age <= 25:
+            age_groups['18-25'] += 1
+        elif age <= 35:
+            age_groups['26-35'] += 1
+        elif age <= 45:
+            age_groups['36-45'] += 1
+        elif age <= 55:
+            age_groups['46-55'] += 1
+        elif age <= 65:
+            age_groups['56-65'] += 1
+        else:
+            age_groups['65+'] += 1
+
+    # Статистика прибыли по категориям номеров
+    category_revenue = (
+        Booking.objects
+        .values('room__category__name')
+        .annotate(total_revenue=Sum('total_price'))
+        .order_by('-total_revenue')
+    )
+
+    category_names = [item['room__category__name'] for item in category_revenue]
+    category_revenues = [float(item['total_revenue']) for item in category_revenue]
+    
+    context = {
+        'clients_with_children': clients_with_children,
+        'clients_without_children': clients_without_children,
+        'room_numbers': room_numbers,
+        'booking_counts': booking_counts,
+        'age_groups': list(age_groups.keys()),
+        'age_counts': list(age_groups.values()),
+        'avg_age': avg_age,
+        'median_age': median_age,
+        'category_names': category_names,
+        'category_revenues': category_revenues,
+        **get_common_context()
+    }
+    return render(request, 'main/staff/analytics.html', context)

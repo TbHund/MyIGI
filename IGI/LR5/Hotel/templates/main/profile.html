@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load phone_filters %}
 
 {% block title %}Личный кабинет - Отель{% endblock %}
 
@@ -20,7 +21,7 @@
                 </div>
                 <div class="info-item">
                     <span class="label">Телефон:</span>
-                    <span class="value">{{ user.client.phone_number }}</span>
+                    <span class="value">{{ user.client.phone_number|phone_format }}</span>
                 </div>
                 {% if user.client.comments %}
                 <div class="info-item full-width">
