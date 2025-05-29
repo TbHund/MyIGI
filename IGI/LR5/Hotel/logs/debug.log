@@ -1,0 +1,601 @@
+[2025-05-29 18:32:55] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 18:32:57] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:33:04] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8232
+[2025-05-29 18:33:05] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14588
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 304 0
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:06] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 304 0
+[2025-05-29 18:33:08] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9536
+[2025-05-29 18:33:10] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 9525
+[2025-05-29 18:33:10] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:10] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:10] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:10] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:10] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 304 0
+[2025-05-29 18:33:12] INFO basehttp.log_message - "GET /privacy/ HTTP/1.1" 200 4469
+[2025-05-29 18:33:13] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 8279
+[2025-05-29 18:33:15] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8232
+[2025-05-29 18:33:17] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 9908
+[2025-05-29 18:33:19] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 16103
+[2025-05-29 18:33:23] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:35:25] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 18:35:27] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:35:30] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 16103
+[2025-05-29 18:35:33] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:36:32] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-05-29&check_out=2025-05-30 HTTP/1.1" 200 15575
+[2025-05-29 18:36:43] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2026-02-20&check_out=2026-02-23 HTTP/1.1" 200 17914
+[2025-05-29 18:36:46] ERROR log.log_response - Internal Server Error: /book/1/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 18:36:46] ERROR basehttp.log_message - "GET /book/1/?check_in=2026-02-20&check_out=2026-02-23 HTTP/1.1" 500 95260
+[2025-05-29 18:36:56] ERROR log.log_response - Internal Server Error: /book/2/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 18:36:56] ERROR basehttp.log_message - "GET /book/2/?check_in=2026-02-20&check_out=2026-02-23 HTTP/1.1" 500 95251
+[2025-05-29 18:38:39] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9536
+[2025-05-29 18:38:41] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:40:17] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 18:40:19] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:40:34] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 17914
+[2025-05-29 18:40:35] INFO basehttp.log_message - "GET /book/1/?check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 8673
+[2025-05-29 18:43:31] INFO basehttp.log_message - "GET /book/1/?check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 14382
+[2025-05-29 18:43:31] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-29 18:43:31] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 18:43:31] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 18:43:32] INFO basehttp.log_message - "GET /book/1/?check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 14382
+[2025-05-29 18:43:32] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-29 18:43:32] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 18:43:32] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 18:45:10] INFO basehttp.log_message - "POST /book/1/?check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 14683
+[2025-05-29 18:52:10] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 18:52:48] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57494)
+[2025-05-29 18:52:48] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:52:48] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-05-29 18:52:48] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-29 18:52:48] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-05-29 18:52:48] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-05-29 18:52:48] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 18:52:48] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 18:54:15] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-06-20&check_out=2025-06-23 HTTP/1.1" 200 17914
+[2025-05-29 18:54:17] ERROR log.log_response - Internal Server Error: /book/1/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 18:54:17] ERROR basehttp.log_message - "GET /book/1/?check_in=2025-06-20&check_out=2025-06-23 HTTP/1.1" 500 95260
+[2025-05-29 18:54:57] WARNING log.log_response - Not Found: /book
+[2025-05-29 18:54:57] WARNING basehttp.log_message - "GET /book HTTP/1.1" 404 10002
+[2025-05-29 18:55:01] INFO basehttp.log_message - "GET /book/1 HTTP/1.1" 301 0
+[2025-05-29 18:55:01] ERROR log.log_response - Internal Server Error: /book/1/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 18:55:01] ERROR basehttp.log_message - "GET /book/1/ HTTP/1.1" 500 94170
+[2025-05-29 18:57:06] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 18:57:09] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 18:57:21] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 17914
+[2025-05-29 18:57:23] INFO basehttp.log_message - "GET /book/1/?check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 14382
+[2025-05-29 18:57:39] INFO basehttp.log_message - "POST /book/1/?check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 14697
+[2025-05-29 18:58:00] INFO basehttp.log_message - "POST /book/1/?check_in=2026-05-20&check_out=2026-05-23 HTTP/1.1" 200 14697
+[2025-05-29 19:08:02] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 19:08:05] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:08:08] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8247
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14588
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 304 0
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:09] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 304 0
+[2025-05-29 19:08:10] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9536
+[2025-05-29 19:08:11] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 9525
+[2025-05-29 19:08:11] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:11] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:11] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:11] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:11] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 304 0
+[2025-05-29 19:08:11] INFO basehttp.log_message - "GET /privacy/ HTTP/1.1" 200 4469
+[2025-05-29 19:08:13] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 8279
+[2025-05-29 19:08:13] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8232
+[2025-05-29 19:08:14] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 9908
+[2025-05-29 19:08:15] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 16103
+[2025-05-29 19:08:19] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8163
+[2025-05-29 19:08:21] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:08:24] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-29 19:08:24] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 19:08:37] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2027-07-20&check_out=2027-07-21 HTTP/1.1" 200 16456
+[2025-05-29 19:08:40] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5946
+[2025-05-29 19:08:50] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-05-29 19:08:50] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17923
+[2025-05-29 19:09:09] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2026-01-01&check_out=2026-01-03 HTTP/1.1" 200 16771
+[2025-05-29 19:09:14] INFO basehttp.log_message - "GET /book/4/?check_in=2026-01-01&check_out=2026-01-03 HTTP/1.1" 200 14414
+[2025-05-29 19:09:30] INFO basehttp.log_message - "POST /book/4/?check_in=2026-01-01&check_out=2026-01-03 HTTP/1.1" 200 14713
+[2025-05-29 19:12:00] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:13:29] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:13:29] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-05-29 19:13:29] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-05-29 19:13:29] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-29 19:13:29] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-05-29 19:13:29] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 19:13:29] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 19:14:18] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9536
+[2025-05-29 19:15:18] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:15:21] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 16103
+[2025-05-29 19:15:24] INFO basehttp.log_message - "GET /profile/edit/ HTTP/1.1" 200 8354
+[2025-05-29 19:15:43] INFO basehttp.log_message - "POST /profile/edit/ HTTP/1.1" 302 0
+[2025-05-29 19:15:43] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 16361
+[2025-05-29 19:15:46] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:16:25] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:16:25] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-29 19:16:25] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-05-29 19:16:25] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-05-29 19:16:25] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-05-29 19:16:25] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 19:16:25] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 19:16:34] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-06-20&check_out=2025-06-23 HTTP/1.1" 200 17914
+[2025-05-29 19:16:36] INFO basehttp.log_message - "GET /book/1/?check_in=2025-06-20&check_out=2025-06-23 HTTP/1.1" 200 14382
+[2025-05-29 19:17:02] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:17:03] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:17:03] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-29 19:17:03] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-05-29 19:17:03] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-05-29 19:17:03] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-05-29 19:17:03] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 19:17:03] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 19:17:18] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-06-20&check_out=2026-06-23 HTTP/1.1" 200 15596
+[2025-05-29 19:17:20] ERROR log.log_response - Internal Server Error: /book/2/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 19:17:20] ERROR basehttp.log_message - "GET /book/2/?check_in=2025-06-20&check_out=2026-06-23 HTTP/1.1" 500 93677
+[2025-05-29 19:18:08] WARNING log.log_response - Not Found: /booл
+[2025-05-29 19:18:08] WARNING basehttp.log_message - "GET /boo%D0%BB HTTP/1.1" 404 10009
+[2025-05-29 19:18:11] ERROR log.log_response - Internal Server Error: /book/3/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 19:18:11] ERROR basehttp.log_message - "GET /book/3/?check_in=2025-03-01&check_out=2025-03-03 HTTP/1.1" 500 93468
+[2025-05-29 19:18:16] WARNING log.log_response - Not Found: /book
+[2025-05-29 19:18:16] WARNING basehttp.log_message - "GET /book HTTP/1.1" 404 10002
+[2025-05-29 19:18:25] WARNING log.log_response - Not Found: /home
+[2025-05-29 19:18:25] WARNING basehttp.log_message - "GET /home HTTP/1.1" 404 10002
+[2025-05-29 19:18:31] WARNING log.log_response - Not Found: /home/
+[2025-05-29 19:18:31] WARNING basehttp.log_message - "GET /home/ HTTP/1.1" 404 10005
+[2025-05-29 19:18:35] WARNING log.log_response - Not Found: /name
+[2025-05-29 19:18:35] WARNING basehttp.log_message - "GET /name HTTP/1.1" 404 10002
+[2025-05-29 19:18:41] INFO basehttp.log_message - "GET /about HTTP/1.1" 301 0
+[2025-05-29 19:18:42] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8298
+[2025-05-29 19:18:51] INFO basehttp.log_message - "GET /news HTTP/1.1" 301 0
+[2025-05-29 19:18:51] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14588
+[2025-05-29 19:19:32] ERROR log.log_response - Internal Server Error: /book/1/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 19:19:32] ERROR basehttp.log_message - "GET /book/1/ HTTP/1.1" 500 92596
+[2025-05-29 19:23:00] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:23:11] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2026-01-23&check_out=2026-01-25 HTTP/1.1" 200 17914
+[2025-05-29 19:23:12] ERROR log.log_response - Internal Server Error: /book/1/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 19:23:12] ERROR basehttp.log_message - "GET /book/1/?check_in=2026-01-23&check_out=2026-01-25 HTTP/1.1" 500 93686
+[2025-05-29 19:23:35] ERROR log.log_response - Internal Server Error: /book/1/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 19:23:35] ERROR basehttp.log_message - "GET /book/1/?check_in=2026-01-23&check_out=2026-01-25 HTTP/1.1" 500 93951
+[2025-05-29 19:23:35] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 19:23:35] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 19:23:39] ERROR log.log_response - Internal Server Error: /book/1/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 318, in book_room
+    return render(request, 'main/booking_form.html', {'form': form, 'room': room})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main/booking_form.html
+[2025-05-29 19:23:39] ERROR basehttp.log_message - "GET /book/1/?check_in=2026-01-23&check_out=2026-01-25 HTTP/1.1" 500 93951
+[2025-05-29 19:23:39] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 19:23:39] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 19:23:54] INFO basehttp.log_message - "GET /book/1/?check_in=2026-01-23&check_out=2026-01-25 HTTP/1.1" 200 8052
+[2025-05-29 19:23:54] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 19:23:54] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 19:24:14] INFO basehttp.log_message - "POST /book/1/?check_in=2026-01-23&check_out=2026-01-25 HTTP/1.1" 200 8262
+[2025-05-29 19:24:20] INFO basehttp.log_message - "POST /book/1/?check_in=2026-01-23&check_out=2026-01-25 HTTP/1.1" 200 8373
+[2025-05-29 19:26:43] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 19:26:45] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:26:56] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2026-02-23&check_out=2026-02-25 HTTP/1.1" 200 17914
+[2025-05-29 19:26:57] INFO basehttp.log_message - "GET /book/1/?check_in=2026-02-23&check_out=2026-02-25 HTTP/1.1" 200 14382
+[2025-05-29 19:27:07] INFO basehttp.log_message - "POST /book/1/?check_in=2026-02-23&check_out=2026-02-25 HTTP/1.1" 200 14681
+[2025-05-29 19:27:15] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3959
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-05-29 19:27:20] INFO basehttp.log_message - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-05-29 19:27:22] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-05-29 19:27:22] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17589
+[2025-05-29 19:27:22] INFO basehttp.log_message - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-05-29 19:27:22] INFO basehttp.log_message - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-05-29 19:27:22] INFO basehttp.log_message - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 24221
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-05-29 19:27:27] INFO basehttp.log_message - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[2025-05-29 19:32:51] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 19:32:56] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:33:08] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 17914
+[2025-05-29 19:33:12] INFO basehttp.log_message - "GET /book/2/?check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 14432
+[2025-05-29 19:35:23] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-29 19:35:23] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-29 19:35:24] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 19:35:24] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 19:35:26] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:35:28] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:35:29] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-05-29 19:35:29] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-05-29 19:35:29] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-29 19:35:29] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-05-29 19:35:29] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-29 19:35:29] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 10023
+[2025-05-29 19:35:37] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 17914
+[2025-05-29 19:35:38] INFO basehttp.log_message - "GET /book/1/?check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 8052
+[2025-05-29 19:35:49] INFO basehttp.log_message - "POST /book/1/?check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 8373
+[2025-05-29 19:35:52] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 208, in profile
+    user_bookings = request.user.client.booking_set.all().order_by('-created_at')
+                    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+[2025-05-29 19:35:52] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 83821
+[2025-05-29 19:35:55] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-29 19:35:55] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 19:35:55] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5946
+[2025-05-29 19:36:06] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-05-29 19:36:06] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17923
+[2025-05-29 19:36:20] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 17914
+[2025-05-29 19:36:21] INFO basehttp.log_message - "GET /book/1/?check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 8052
+[2025-05-29 19:36:31] INFO basehttp.log_message - "POST /book/1/?check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 8373
+[2025-05-29 19:47:46] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-29 19:47:47] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 19:47:54] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 19:47:57] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:48:06] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 17914
+[2025-05-29 19:48:07] INFO basehttp.log_message - "GET /book/1/?check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 200 8052
+[2025-05-29 19:48:17] INFO basehttp.log_message - "POST /book/1/?check_in=2025-08-01&check_out=2025-08-03 HTTP/1.1" 302 0
+[2025-05-29 19:48:17] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 18390
+[2025-05-29 19:52:16] INFO basehttp.log_message - "GET /booking/8/cancel/ HTTP/1.1" 302 0
+[2025-05-29 19:52:16] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 17903
+[2025-05-29 19:52:19] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:52:31] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-08-01&check_out=2025-08-04 HTTP/1.1" 200 17914
+[2025-05-29 19:52:32] INFO basehttp.log_message - "GET /book/2/?check_in=2025-08-01&check_out=2025-08-04 HTTP/1.1" 200 8041
+[2025-05-29 19:52:49] INFO basehttp.log_message - "POST /book/2/?check_in=2025-08-01&check_out=2025-08-04 HTTP/1.1" 302 0
+[2025-05-29 19:52:49] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 19942
+[2025-05-29 19:53:28] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 19:54:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8178
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14588
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 304 0
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 304 0
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:22] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:33] INFO basehttp.log_message - "GET /news/8/ HTTP/1.1" 200 5613
+[2025-05-29 19:54:38] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9536
+[2025-05-29 19:54:49] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 9525
+[2025-05-29 19:54:49] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:49] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:49] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:49] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:49] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-29 19:54:57] INFO basehttp.log_message - "GET /privacy/ HTTP/1.1" 200 4469
+[2025-05-29 19:54:59] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 8279
+[2025-05-29 19:55:05] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8232
+[2025-05-29 19:55:13] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 9908
+[2025-05-29 19:55:23] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 19639
+[2025-05-29 19:55:33] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-29 19:55:34] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 19:55:35] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5946
+[2025-05-29 19:55:54] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-05-29 19:55:54] INFO basehttp.log_message - "GET / HTTP/1.1" 200 18110
+[2025-05-29 19:56:00] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11211
+[2025-05-29 19:56:05] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17869
+[2025-05-29 19:56:12] INFO basehttp.log_message - "GET /staff/bookings/ HTTP/1.1" 200 14677
+[2025-05-29 19:56:28] INFO basehttp.log_message - "GET /staff/bookings/?status=&date_from=2025-08-01&date_to= HTTP/1.1" 200 11872
+[2025-05-29 19:56:41] INFO basehttp.log_message - "GET /staff/bookings/?status=&date_from=&date_to= HTTP/1.1" 200 14669
+[2025-05-29 19:56:47] INFO basehttp.log_message - "GET /staff/clients/ HTTP/1.1" 200 10050
+[2025-05-29 19:57:03] INFO basehttp.log_message - "GET /staff/analytics/ HTTP/1.1" 200 13533
+[2025-05-29 19:57:23] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-29 19:57:23] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440
+[2025-05-29 19:57:31] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-05-29 19:57:31] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4378
+[2025-05-29 19:57:35] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-05-29 19:57:35] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17589
+[2025-05-29 19:57:42] INFO basehttp.log_message - "GET /admin/main/faq/ HTTP/1.1" 200 19047
+[2025-05-29 19:57:42] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 19:57:44] INFO basehttp.log_message - "GET /admin/main/faq/8/change/ HTTP/1.1" 200 15093
+[2025-05-29 19:57:44] INFO basehttp.log_message - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2025-05-29 19:57:44] INFO basehttp.log_message - "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2025-05-29 19:57:44] INFO basehttp.log_message - "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2025-05-29 19:57:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 19:57:44] INFO basehttp.log_message - "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2025-05-29 19:57:48] INFO basehttp.log_message - "GET /admin/main/faq/ HTTP/1.1" 200 19047
+[2025-05-29 19:57:50] INFO basehttp.log_message - "GET /admin/main/faq/add/ HTTP/1.1" 200 14592
+[2025-05-29 19:57:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 19:58:05] INFO basehttp.log_message - "GET /admin/main/room/add/ HTTP/1.1" 200 19555
+[2025-05-29 19:58:05] INFO basehttp.log_message - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[2025-05-29 19:58:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-29 20:00:17] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 20:02:10] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-29 20:02:13] INFO basehttp.log_message - "GET / HTTP/1.1" 200 17674
+[2025-05-29 20:02:32] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-06-02&check_out=2025-06-04 HTTP/1.1" 200 16739
+[2025-05-29 20:02:33] INFO basehttp.log_message - "GET /book/2/?check_in=2025-06-02&check_out=2025-06-04 HTTP/1.1" 200 8041
+[2025-05-29 20:02:45] ERROR log.log_response - Internal Server Error: /book/2/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 292, in book_room
+    booking.client = request.user.client
+                     ^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+[2025-05-29 20:02:45] ERROR basehttp.log_message - "POST /book/2/?check_in=2025-06-02&check_out=2025-06-04 HTTP/1.1" 500 86834
+[2025-05-29 20:02:52] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 208, in profile
+    user_bookings = request.user.client.booking_set.all().order_by('-created_at')
+                    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+[2025-05-29 20:02:52] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 83842
+[2025-05-29 20:02:55] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-29 20:02:55] INFO basehttp.log_message - "GET / HTTP/1.1" 200 16440

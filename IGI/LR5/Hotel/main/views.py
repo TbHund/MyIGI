@@ -17,6 +17,9 @@ from .forms import UserRegistrationForm, LoginForm, BookingForm, ReviewForm, Pro
 from django.core.exceptions import PermissionDenied
 from django.db.models.functions import ExtractYear, Now
 from statistics import median
+import logging
+
+logger = logging.getLogger('main.booking')
 
 def get_common_context():
     """Get common context data for all pages"""
@@ -283,57 +286,53 @@ def book_room(request, room_id):
     room = get_object_or_404(Room, id=room_id, is_active=True)
     
     if request.method == 'POST':
-        form = BookingForm(request.POST)
-        if form.is_valid():
-            booking = form.save(commit=False)
-            booking.client = request.user.client
-            booking.room = room
-            
-            # Расчет стоимости
-            days = (booking.check_out_date - booking.check_in_date).days
-            total_price = room.price_per_night * Decimal(days)
-            
-            # Применяем скидку, если есть действующий промокод
-            promotion = form.cleaned_data.get('promotion')
-            if promotion:
-                discount = total_price * (promotion.discount_percent / Decimal('100'))
-                total_price -= discount
-                messages.success(
-                    request,
-                    f'Промокод применен! Скидка: {promotion.discount_percent}%'
-                )
-            
-            booking.total_price = total_price
-            
-            # Проверяем, не занят ли номер на эти даты
-            conflicting_bookings = Booking.objects.filter(
-                room=room,
-                status='active',
-                check_in_date__lte=booking.check_out_date,
-                check_out_date__gte=booking.check_in_date
-            )
-            
-            if conflicting_bookings.exists():
-                form.add_error(None, 'Этот номер уже забронирован на выбранные даты')
-            else:
-                try:
-                    booking.save()
+            form = BookingForm(request.POST)
+            if form.is_valid():
+                booking = form.save(commit=False)
+                booking.client = request.user.client
+                booking.room = room
+                
+                # Расчет стоимости
+                days = (booking.check_out_date - booking.check_in_date).days
+                total_price = room.price_per_night * Decimal(days)
+                
+                # Применяем скидку, если есть действующий промокод
+                promotion = form.cleaned_data.get('promotion')
+                if promotion:
+                    discount = total_price * (promotion.discount_percent / Decimal('100'))
+                    total_price -= discount
                     messages.success(
                         request,
-                        f'Номер успешно забронирован! Итоговая стоимость: {total_price} BYN'
+                        f'Промокод применен! Скидка: {promotion.discount_percent}%'
                     )
-                    return redirect('profile')
-                except Exception as e:
-                    form.add_error(None, f'Ошибка при сохранении бронирования: {str(e)}')
+                
+                booking.total_price = total_price
+                
+                # Проверяем, не занят ли номер на эти даты
+                conflicting_bookings = Booking.objects.filter(
+                    room=room,
+                    status='active',
+                    check_in_date__lte=booking.check_out_date,
+                    check_out_date__gte=booking.check_in_date
+                )
+                
+                if conflicting_bookings.exists():
+                    form.add_error(None, 'Этот номер уже забронирован на выбранные даты')
+                else:
+                    try:
+                        booking.save()
+                        messages.success(
+                            request,
+                            f'Номер успешно забронирован! Итоговая стоимость: {total_price} BYN'
+                        )
+                        return redirect('profile')
+                    except Exception as e:
+                        form.add_error(None, f'Ошибка при сохранении бронирования: {str(e)}')
+
     else:
         form = BookingForm()
     
-    context = {
-        'form': form,
-        'room': room,
-        **get_common_context()
-    }
-    return render(request, 'main/book_room.html', context)
+    return render(request, 'main/book_room.html', {'form': form, 'room': room})
 
 def news_archive(request, year, month):
     news = News.objects.filter(
