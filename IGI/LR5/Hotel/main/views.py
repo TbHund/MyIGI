@@ -78,7 +78,7 @@ def home(request):
             booked_rooms = Booking.objects.filter(
                 Q(check_in_date__lte=check_out_date) & 
                 Q(check_out_date__gte=check_in_date),
-                status='active'  #только активные бронирования
+                status='active'
             ).values_list('room_id', flat=True)
             
             #занятые номера из списка выписываем
