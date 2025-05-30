@@ -975,3 +975,312 @@ django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no cl
 [2025-05-30 00:49:18] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 6100
 [2025-05-30 00:51:18] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
 [2025-05-30 00:51:19] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 01:58:37] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 01:58:40] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 01:58:40] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 304 0
+[2025-05-30 01:58:56] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 01:58:57] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8361
+[2025-05-30 01:58:58] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14783
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 304 0
+[2025-05-30 01:58:59] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9731
+[2025-05-30 01:59:00] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 9720
+[2025-05-30 01:59:01] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 304 0
+[2025-05-30 01:59:01] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 304 0
+[2025-05-30 01:59:01] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 304 0
+[2025-05-30 01:59:01] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 304 0
+[2025-05-30 01:59:01] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-30 01:59:02] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9731
+[2025-05-30 01:59:03] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 9720
+[2025-05-30 01:59:04] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9731
+[2025-05-30 01:59:06] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 9720
+[2025-05-30 01:59:08] INFO basehttp.log_message - "GET /privacy/ HTTP/1.1" 200 4664
+[2025-05-30 01:59:10] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 8474
+[2025-05-30 01:59:13] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8427
+[2025-05-30 01:59:14] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 10103
+[2025-05-30 01:59:16] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11194
+[2025-05-30 01:59:28] INFO basehttp.log_message - "GET /staff/bookings/ HTTP/1.1" 200 14677
+[2025-05-30 01:59:31] INFO basehttp.log_message - "GET /staff/clients/ HTTP/1.1" 200 10350
+[2025-05-30 01:59:32] INFO basehttp.log_message - "GET /staff/analytics/ HTTP/1.1" 200 13535
+[2025-05-30 01:59:36] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:37:26] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9731
+[2025-05-30 02:37:27] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11194
+[2025-05-30 02:37:30] INFO basehttp.log_message - "GET /profile/edit/ HTTP/1.1" 200 8506
+[2025-05-30 02:37:31] INFO basehttp.log_message - "POST /profile/edit/ HTTP/1.1" 302 0
+[2025-05-30 02:37:32] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11444
+[2025-05-30 02:37:34] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:37:34] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 304 0
+[2025-05-30 02:40:51] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:41:15] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\urls.py changed, reloading.
+[2025-05-30 02:41:16] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:41:30] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:43:17] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 02:43:19] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:43:22] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:43:25] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11194
+[2025-05-30 02:43:26] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 10103
+[2025-05-30 02:43:28] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8427
+[2025-05-30 02:43:29] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 8474
+[2025-05-30 02:44:30] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 02:44:31] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:44:35] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:44:37] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 10103
+[2025-05-30 02:44:37] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8427
+[2025-05-30 02:44:38] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 8474
+[2025-05-30 02:45:50] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 02:45:51] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:45:53] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:46:39] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 02:46:40] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:46:56] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\urls.py changed, reloading.
+[2025-05-30 02:46:57] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:46:59] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:47:01] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11194
+[2025-05-30 02:47:08] INFO basehttp.log_message - "GET /profile/edit/ HTTP/1.1" 200 8506
+[2025-05-30 02:47:57] INFO basehttp.log_message - "GET /staff/bookings/ HTTP/1.1" 200 14677
+[2025-05-30 02:48:01] INFO basehttp.log_message - "GET /staff/bookings/?status=active&date_from=&date_to= HTTP/1.1" 200 12978
+[2025-05-30 02:48:04] INFO basehttp.log_message - "GET /staff/bookings/?status=completed&date_from=&date_to= HTTP/1.1" 200 9846
+[2025-05-30 02:48:06] INFO basehttp.log_message - "GET /staff/bookings/?status=cancelled&date_from=&date_to= HTTP/1.1" 200 11377
+[2025-05-30 02:49:02] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 02:49:03] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:53:26] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 02:53:28] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:53:31] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:53:31] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 304 0
+[2025-05-30 02:53:35] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 212, in profile
+    return render(request, 'main/profile.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cancel_booking' not found. 'cancel_booking' is not a valid view function or pattern name.
+[2025-05-30 02:53:35] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 247744
+[2025-05-30 02:56:31] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\urls.py changed, reloading.
+[2025-05-30 02:56:32] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:56:46] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\urls.py changed, reloading.
+[2025-05-30 02:56:47] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:57:42] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\urls.py changed, reloading.
+[2025-05-30 02:57:43] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 02:57:45] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 02:57:51] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 212, in profile
+    return render(request, 'main/profile.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 243, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'cancel_booking' with no arguments not found. 1 pattern(s) tried: ['booking/(?P<booking_id>[0-9]+)/cancel/\\Z']
+[2025-05-30 02:57:51] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 251297
+[2025-05-30 03:01:31] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 03:01:33] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 03:01:35] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11211
+[2025-05-30 03:01:39] INFO basehttp.log_message - "GET /booking/7/cancel/ HTTP/1.1" 302 0
+[2025-05-30 03:01:40] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11026
+[2025-05-30 03:01:46] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 03:01:48] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 10767
+[2025-05-30 03:01:50] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 03:02:04] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-08-06&check_out=2025-08-10 HTTP/1.1" 200 19308
+[2025-05-30 03:02:07] INFO basehttp.log_message - "GET /book/5/?check_in=2025-08-06&check_out=2025-08-10 HTTP/1.1" 200 8253
+[2025-05-30 03:02:33] INFO basehttp.log_message - "POST /book/5/?check_in=2025-08-06&check_out=2025-08-10 HTTP/1.1" 302 0
+[2025-05-30 03:02:33] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 13098
+[2025-05-30 03:03:35] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 03:03:36] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader

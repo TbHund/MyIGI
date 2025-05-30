@@ -292,11 +292,11 @@ def book_room(request, room_id):
                 booking.client = request.user.client
                 booking.room = room
                 
-                # Расчет стоимости
+                #стоимость
                 days = (booking.check_out_date - booking.check_in_date).days
                 total_price = room.price_per_night * Decimal(days)
                 
-                # Применяем скидку, если есть действующий промокод
+                #скидка по промо
                 promotion = form.cleaned_data.get('promotion')
                 if promotion:
                     discount = total_price * (promotion.discount_percent / Decimal('100'))
@@ -308,7 +308,7 @@ def book_room(request, room_id):
                 
                 booking.total_price = total_price
                 
-                # Проверяем, не занят ли номер на эти даты
+                #свободен ли номер
                 conflicting_bookings = Booking.objects.filter(
                     room=room,
                     status='active',
@@ -334,34 +334,6 @@ def book_room(request, room_id):
     
     return render(request, 'main/book_room.html', {'form': form, 'room': room})
 
-def news_archive(request, year, month):
-    news = News.objects.filter(
-        created_at__year=int(year),
-        created_at__month=int(month),
-        is_published=True
-    ).order_by('-created_at')
-    
-    context = {
-        'news': news,
-        'year': year,
-        'month': month,
-        **get_common_context()
-    }
-    return render(request, 'main/news_archive.html', context)
-
-def vacancies_by_category(request, category):
-    vacancies = Vacancy.objects.filter(
-        category=category,
-        is_active=True
-    ).order_by('-created_at')
-    
-    context = {
-        'vacancies': vacancies,
-        'category': category,
-        **get_common_context()
-    }
-    return render(request, 'main/vacancies.html', context)
-
 def reviews_by_rating(request, rating):
     reviews = Review.objects.filter(
         rating=rating
@@ -373,109 +345,6 @@ def reviews_by_rating(request, rating):
         **get_common_context()
     }
     return render(request, 'main/reviews.html', context)
-
-def promotion_detail(request, code):
-    promotion = get_object_or_404(
-        Promotion,
-        code=code,
-        is_active=True,
-        valid_from__lte=timezone.now(),
-        valid_until__gte=timezone.now()
-    )
-    
-    context = {
-        'promotion': promotion,
-        **get_common_context()
-    }
-    return render(request, 'main/promotion_detail.html', context)
-
-@login_required
-def profile_bookings(request, status):
-    bookings = request.user.client.booking_set.filter(
-        status=status
-    ).order_by('-created_at')
-    
-    context = {
-        'bookings': bookings,
-        'current_status': status,
-        **get_common_context()
-    }
-    return render(request, 'main/profile_bookings.html', context)
-
-def rooms_by_category(request, category_slug):
-    category = get_object_or_404(RoomCategory, slug=category_slug)
-    rooms = Room.objects.filter(
-        category=category,
-        is_active=True
-    )
-    
-    # Фильтрация по датам, если они указаны
-    check_in = request.GET.get('check_in')
-    check_out = request.GET.get('check_out')
-    
-    if check_in and check_out:
-        try:
-            check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
-            check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
-            
-            #Получаем занятые номера на указанные даты (только активные
-            booked_rooms = Booking.objects.filter(
-                Q(check_in_date__lte=check_out_date) & 
-                Q(check_out_date__gte=check_in_date),
-                status='active'
-            ).values_list('room_id', flat=True)
-            
-            #Искл занятые номера из списка
-            rooms = rooms.exclude(id__in=booked_rooms)
-        except ValueError:
-            messages.error(request, 'Неверный формат даты')
-    
-    context = {
-        'category': category,
-        'rooms': rooms,
-        'check_in': check_in,
-        'check_out': check_out,
-        **get_common_context()
-    }
-    return render(request, 'main/rooms_by_category.html', context)
-
-def rooms_search(request, capacity, comfort_type):
-    rooms = Room.objects.filter(
-        capacity__gte=capacity,
-        category__comfort_type=comfort_type,
-        is_active=True
-    )
-    
-    #Фильтрация по датам, если они указаны
-    check_in = request.GET.get('check_in')
-    check_out = request.GET.get('check_out')
-    
-    if check_in and check_out:
-        try:
-            check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
-            check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
-            
-            #для занятых номеров на указанные даты (только активные в счет)
-            booked_rooms = Booking.objects.filter(
-                Q(check_in_date__lte=check_out_date) & 
-                Q(check_out_date__gte=check_in_date),
-                status='active'
-            ).values_list('room_id', flat=True)
-            
-            #занятые номера из списка не считаются
-            rooms = rooms.exclude(id__in=booked_rooms)
-        except ValueError:
-            messages.error(request, 'Неверный формат даты')
-    
-    context = {
-        'rooms': rooms,
-        'capacity': capacity,
-        'comfort_type': comfort_type,
-        'check_in': check_in,
-        'check_out': check_out,
-        **get_common_context()
-    }
-    return render(request, 'main/rooms_search.html', context)
 
 def staff_required(view_func):
     def wrapper(request, *args, **kwargs):
@@ -490,12 +359,12 @@ def staff_bookings(request):
     """Представление для просмотра всех бронирований сотрудниками"""
     bookings = Booking.objects.all().order_by('-created_at')
     
-    #Фильтрация по статусу
+    #фильтр по статусу
     status = request.GET.get('status')
     if status:
         bookings = bookings.filter(status=status)
     
-    #Фильтрация по датам
+    #фильтр по датам
     date_from = request.GET.get('date_from')
     date_to = request.GET.get('date_to')
     if date_from:
@@ -519,7 +388,7 @@ def staff_clients(request):
     """Представление для просмотра всех клиентов сотрудниками"""
     clients = Client.objects.filter(is_staff=False).order_by('user__last_name')
     
-    #оиск по фио или телу
+    #поиск по фио или телу
     search_query = request.GET.get('search')
     if search_query:
         clients = clients.filter(
@@ -544,46 +413,9 @@ def staff_clients(request):
 
 @login_required
 @staff_required
-def staff_booking_detail(request, booking_id):
-    """Детальная информация о бронировании для сотрудников"""
-    booking = get_object_or_404(Booking, id=booking_id)
-    
-    if request.method == 'POST':
-        action = request.POST.get('action')
-        if action == 'change_status':
-            new_status = request.POST.get('status')
-            if new_status in dict(Booking.STATUS_CHOICES):
-                booking.status = new_status
-                booking.save()
-                messages.success(request, 'Статус бронирования обновлен')
-                return redirect('staff_booking_detail', booking_id=booking.id)
-    
-    context = {
-        'booking': booking,
-        'status_choices': Booking.STATUS_CHOICES,
-        **get_common_context()
-    }
-    return render(request, 'main/staff/booking_detail.html', context)
-
-@login_required
-@staff_required
-def staff_client_detail(request, client_id):
-    """Детальная информация о клиенте для сотрудников"""
-    client = get_object_or_404(Client, id=client_id)
-    bookings = Booking.objects.filter(client=client).order_by('-created_at')
-    
-    context = {
-        'client': client,
-        'bookings': bookings,
-        **get_common_context()
-    }
-    return render(request, 'main/staff/client_detail.html', context)
-
-@login_required
-@staff_required
 def staff_analytics(request):
     """Представление для аналитики"""
-    # Подсчет клиентов с детьми и без
+    #подсчет клиентов с детьми и без
     total_clients = Client.objects.filter(is_staff=False)
     clients_with_children = total_clients.filter(has_child=True).count()
     clients_without_children = total_clients.filter(has_child=False).count()
@@ -596,11 +428,11 @@ def staff_analytics(request):
         .order_by('-booking_count')
     )
     
-    # данные для диаграммы номеров
+    # данные для диаграммы номеров отеля
     room_numbers = [f"№{booking['room__number']} ({booking['room__category__name']})" for booking in room_bookings]
     booking_counts = [booking['booking_count'] for booking in room_bookings]
 
-    # Статистика по возрасту клиентов
+    #сттатистика по возрасту клиентов
     today = date.today()
     clients_with_age = []
     for client in total_clients:
@@ -611,7 +443,7 @@ def staff_analytics(request):
     avg_age = round(sum(clients_with_age) / len(clients_with_age), 1) if clients_with_age else 0
     median_age = round(median(clients_with_age), 1) if clients_with_age else 0
 
-    # возрастные группы для диаграмм
+    #возрастные группы для диаграмм
     age_groups = {
         '18-25': 0, '26-35': 0, '36-45': 0,
         '46-55': 0, '56-65': 0, '65+': 0
@@ -631,7 +463,7 @@ def staff_analytics(request):
         else:
             age_groups['65+'] += 1
 
-    # Статистика прибыли по категориям номеров
+    #статистика прибыли по категориям номеров люкс.полулюкс.обычный
     category_revenue = (
         Booking.objects
         .values('room__category__name')
@@ -678,12 +510,12 @@ def edit_profile(request):
 def cancel_booking(request, booking_id):
     booking = get_object_or_404(Booking, id=booking_id, client=request.user.client)
     
-    # Проверяем, можно ли отменить бронирование
+    #проверка можно ли отменить бронирование
     if booking.status != 'active':
         messages.error(request, 'Можно отменить только активные бронирования')
         return redirect('profile')
     
-    # Проверяем, не слишком ли поздно для отмены (например, за 24 часа до заезда)
+    #проверка, не поздно ли для отмены (24 часа до заезда)
     if booking.check_in_date <= timezone.now().date() + timedelta(days=1):
         messages.error(request, 'Бронирование можно отменить не позднее чем за 24 часа до заезда')
         return redirect('profile')
