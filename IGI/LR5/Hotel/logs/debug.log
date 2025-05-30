@@ -1288,3 +1288,576 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'cancel_booking' with no argu
 [2025-05-30 03:08:22] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
 [2025-05-30 03:08:22] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 304 0
 [2025-05-30 03:08:24] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14778
+[2025-05-30 03:11:23] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14778
+[2025-05-30 03:11:23] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 200 509249
+[2025-05-30 03:11:23] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 200 37608
+[2025-05-30 03:11:23] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 200 3648720
+[2025-05-30 03:11:23] INFO basehttp.log_message - "GET /media/news/2b85f6579ec5ea02aa17d4fdb62e509d.jpg HTTP/1.1" 200 79623
+[2025-05-30 03:11:23] INFO basehttp.log_message - "GET /media/news/91520-and-repair-human-operations-joint-caterpillar-maintenance.png HTTP/1.1" 200 735930
+[2025-05-30 03:11:24] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 200 49657
+[2025-05-30 03:11:24] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 200 39240
+[2025-05-30 03:11:24] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-05-30 03:11:24] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 200 261231
+[2025-05-30 03:11:24] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 200 153120
+[2025-05-30 03:11:24] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-30 03:11:24] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-05-30 03:11:24] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14778
+[2025-05-30 03:11:26] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8349
+[2025-05-30 03:11:29] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8369
+[2025-05-30 03:11:30] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9731
+[2025-05-30 03:11:33] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 9720
+[2025-05-30 03:11:33] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 304 0
+[2025-05-30 03:11:33] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-30 03:11:33] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 304 0
+[2025-05-30 03:11:33] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 304 0
+[2025-05-30 03:11:33] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 304 0
+[2025-05-30 03:11:36] INFO basehttp.log_message - "GET /privacy/ HTTP/1.1" 200 4664
+[2025-05-30 03:11:37] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 8474
+[2025-05-30 03:11:40] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 8427
+[2025-05-30 03:11:43] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 10040
+[2025-05-30 03:12:00] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 12795
+[2025-05-30 03:12:05] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 09:01:23] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 09:01:31] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 09:01:31] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:01:31] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 304 0
+[2025-05-30 09:01:31] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 304 0
+[2025-05-30 09:01:31] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 304 0
+[2025-05-30 09:01:31] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 304 0
+[2025-05-30 09:01:31] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-30 09:01:31] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-05-30 09:11:49] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 09:12:06] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 4908
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-05-30 09:12:17] INFO basehttp.log_message - "GET / HTTP/1.1" 200 19010
+[2025-05-30 09:12:19] INFO basehttp.log_message - "POST /admin/logout/ HTTP/1.1" 200 3836
+[2025-05-30 09:12:20] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-05-30 09:12:21] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4378
+[2025-05-30 09:12:21] INFO basehttp.log_message - "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2025-05-30 09:12:23] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-05-30 09:12:23] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17756
+[2025-05-30 09:12:23] INFO basehttp.log_message - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-05-30 09:12:23] INFO basehttp.log_message - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 19543
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-05-30 09:12:38] INFO basehttp.log_message - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+[2025-05-30 09:12:40] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17756
+[2025-05-30 09:12:42] INFO basehttp.log_message - "GET /admin/main/room/add/ HTTP/1.1" 200 19555
+[2025-05-30 09:12:42] INFO basehttp.log_message - "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2025-05-30 09:12:42] INFO basehttp.log_message - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2025-05-30 09:12:42] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:12:42] INFO basehttp.log_message - "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2025-05-30 09:12:42] INFO basehttp.log_message - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[2025-05-30 09:12:42] INFO basehttp.log_message - "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2025-05-30 09:13:12] INFO basehttp.log_message - "POST /admin/main/room/add/ HTTP/1.1" 302 0
+[2025-05-30 09:13:12] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 20312
+[2025-05-30 09:13:12] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:13:15] INFO basehttp.log_message - "GET /admin/main/room/add/ HTTP/1.1" 200 19555
+[2025-05-30 09:13:15] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:13:30] INFO basehttp.log_message - "POST /admin/main/room/add/ HTTP/1.1" 302 0
+[2025-05-30 09:13:30] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 20848
+[2025-05-30 09:13:30] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:13:37] INFO basehttp.log_message - "GET /admin/main/room/add/ HTTP/1.1" 200 19555
+[2025-05-30 09:13:37] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:13:54] INFO basehttp.log_message - "POST /admin/main/room/add/ HTTP/1.1" 302 0
+[2025-05-30 09:13:55] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 21396
+[2025-05-30 09:13:55] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:13:58] INFO basehttp.log_message - "GET /admin/main/room/add/ HTTP/1.1" 200 19555
+[2025-05-30 09:13:58] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:14:12] INFO basehttp.log_message - "POST /admin/main/room/add/ HTTP/1.1" 302 0
+[2025-05-30 09:14:13] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 21941
+[2025-05-30 09:14:13] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:14:19] INFO basehttp.log_message - "GET /admin/main/room/add/ HTTP/1.1" 200 19555
+[2025-05-30 09:14:19] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:14:37] INFO basehttp.log_message - "POST /admin/main/room/add/ HTTP/1.1" 302 0
+[2025-05-30 09:14:37] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 22483
+[2025-05-30 09:14:37] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:14:49] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24179
+[2025-05-30 09:14:50] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:14:50] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:14:50] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:14:50] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:14:50] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:16:33] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 17484
+[2025-05-30 09:16:33] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:16:34] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 18389
+[2025-05-30 09:16:34] INFO basehttp.log_message - "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[2025-05-30 09:16:34] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:16:36] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 17484
+[2025-05-30 09:16:36] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:16:37] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16705
+[2025-05-30 09:16:37] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:16:41] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 17484
+[2025-05-30 09:16:42] INFO basehttp.log_message - "GET /admin/main/client/add/ HTTP/1.1" 200 19236
+[2025-05-30 09:16:42] INFO basehttp.log_message - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+[2025-05-30 09:16:42] INFO basehttp.log_message - "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+[2025-05-30 09:16:42] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:16:42] INFO basehttp.log_message - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+[2025-05-30 09:16:44] INFO basehttp.log_message - "GET /admin/main/client/ HTTP/1.1" 200 21017
+[2025-05-30 09:16:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:16:46] INFO basehttp.log_message - "GET /admin/main/client/add/ HTTP/1.1" 200 19236
+[2025-05-30 09:16:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:16:52] INFO basehttp.log_message - "GET /admin/auth/user/add/ HTTP/1.1" 200 18484
+[2025-05-30 09:16:52] INFO basehttp.log_message - "GET /static/admin/css/unusable_password_field.css HTTP/1.1" 304 0
+[2025-05-30 09:16:52] INFO basehttp.log_message - "GET /static/admin/js/unusable_password_field.js HTTP/1.1" 304 0
+[2025-05-30 09:16:52] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:17:00] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-30 09:17:07] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22945
+[2025-05-30 09:17:07] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:07] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:07] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:07] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:07] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:10] INFO basehttp.log_message - "GET /register/ HTTP/1.1" 200 8238
+[2025-05-30 09:17:41] INFO basehttp.log_message - "POST /register/ HTTP/1.1" 302 0
+[2025-05-30 09:17:48] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24439
+[2025-05-30 09:17:48] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:48] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:48] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:48] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:48] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 304 0
+[2025-05-30 09:17:52] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-30 09:17:58] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22945
+[2025-05-30 09:18:02] INFO basehttp.log_message - "GET /register/ HTTP/1.1" 200 8238
+[2025-05-30 09:21:00] INFO basehttp.log_message - "POST /register/ HTTP/1.1" 302 0
+[2025-05-30 09:21:07] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24439
+[2025-05-30 09:21:07] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:07] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:07] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:07] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:07] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:10] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-30 09:21:16] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22945
+[2025-05-30 09:21:18] INFO basehttp.log_message - "GET /register/ HTTP/1.1" 200 8238
+[2025-05-30 09:21:46] INFO basehttp.log_message - "POST /register/ HTTP/1.1" 302 0
+[2025-05-30 09:21:52] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24439
+[2025-05-30 09:21:52] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:52] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:52] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:52] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:21:55] INFO basehttp.log_message - "GET /admin/auth/user/add/ HTTP/1.1" 302 0
+[2025-05-30 09:21:55] INFO basehttp.log_message - "GET /admin/login/?next=/admin/auth/user/add/ HTTP/1.1" 200 3982
+[2025-05-30 09:21:57] INFO basehttp.log_message - "POST /admin/login/?next=/admin/auth/user/add/ HTTP/1.1" 302 0
+[2025-05-30 09:21:57] INFO basehttp.log_message - "GET /admin/auth/user/add/ HTTP/1.1" 200 18484
+[2025-05-30 09:21:57] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:22:01] INFO basehttp.log_message - "GET /admin/auth/user/ HTTP/1.1" 200 22056
+[2025-05-30 09:22:01] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:22:01] INFO basehttp.log_message - "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[2025-05-30 09:22:07] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-30 09:22:13] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22945
+[2025-05-30 09:22:13] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 304 0
+[2025-05-30 09:22:14] INFO basehttp.log_message - "GET /register/ HTTP/1.1" 200 8238
+[2025-05-30 09:22:38] INFO basehttp.log_message - "POST /register/ HTTP/1.1" 302 0
+[2025-05-30 09:22:46] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24439
+[2025-05-30 09:22:46] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:22:46] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:22:46] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:22:46] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:22:49] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-05-30 09:22:52] INFO basehttp.log_message - "GET /admin/auth/user/ HTTP/1.1" 302 0
+[2025-05-30 09:22:52] INFO basehttp.log_message - "GET /admin/login/?next=/admin/auth/user/ HTTP/1.1" 200 4398
+[2025-05-30 09:22:54] INFO basehttp.log_message - "POST /admin/login/?next=/admin/auth/user/ HTTP/1.1" 302 0
+[2025-05-30 09:22:54] INFO basehttp.log_message - "GET /admin/auth/user/ HTTP/1.1" 200 22587
+[2025-05-30 09:22:54] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:22:55] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22945
+[2025-05-30 09:22:58] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 26816
+[2025-05-30 09:22:58] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:02] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 18483
+[2025-05-30 09:23:02] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:02] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 17484
+[2025-05-30 09:23:02] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:05] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:12] INFO basehttp.log_message - "POST /admin/main/review/add/ HTTP/1.1" 302 0
+[2025-05-30 09:23:12] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 18277
+[2025-05-30 09:23:12] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:14] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:14] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:19] INFO basehttp.log_message - "POST /admin/main/review/add/ HTTP/1.1" 302 0
+[2025-05-30 09:23:19] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 18748
+[2025-05-30 09:23:19] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:20] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:20] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:24] INFO basehttp.log_message - "POST /admin/main/review/add/ HTTP/1.1" 302 0
+[2025-05-30 09:23:24] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 19187
+[2025-05-30 09:23:24] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:26] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:26] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:30] INFO basehttp.log_message - "POST /admin/main/review/add/ HTTP/1.1" 302 0
+[2025-05-30 09:23:30] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 19629
+[2025-05-30 09:23:30] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:33] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:33] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:39] INFO basehttp.log_message - "POST /admin/main/review/add/ HTTP/1.1" 302 0
+[2025-05-30 09:23:39] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 20092
+[2025-05-30 09:23:39] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:40] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:40] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:44] INFO basehttp.log_message - "POST /admin/main/review/add/ HTTP/1.1" 302 0
+[2025-05-30 09:23:44] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 20527
+[2025-05-30 09:23:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:47] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:48] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:52] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 20304
+[2025-05-30 09:23:52] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:23:58] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:23:58] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:06] INFO basehttp.log_message - "GET /admin/main/review/add/ HTTP/1.1" 200 16856
+[2025-05-30 09:24:06] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:09] INFO basehttp.log_message - "GET /admin/auth/user/ HTTP/1.1" 200 22587
+[2025-05-30 09:24:09] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:13] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 18483
+[2025-05-30 09:24:13] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:14] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 20304
+[2025-05-30 09:24:14] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:15] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 18389
+[2025-05-30 09:24:15] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:17] INFO basehttp.log_message - "GET /admin/main/news/ HTTP/1.1" 200 22140
+[2025-05-30 09:24:17] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:18] INFO basehttp.log_message - "GET /admin/main/faq/ HTTP/1.1" 200 19047
+[2025-05-30 09:24:18] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:20] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 18014
+[2025-05-30 09:24:20] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:21] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 15650
+[2025-05-30 09:24:21] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:27] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 18014
+[2025-05-30 09:24:27] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:31] INFO basehttp.log_message - "GET /admin/main/contact/add/ HTTP/1.1" 200 17183
+[2025-05-30 09:24:31] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:44] INFO basehttp.log_message - "POST /admin/main/contact/add/ HTTP/1.1" 200 17521
+[2025-05-30 09:24:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:24:50] INFO basehttp.log_message - "POST /admin/main/contact/add/ HTTP/1.1" 302 0
+[2025-05-30 09:24:50] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 18664
+[2025-05-30 09:24:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:25:56] INFO basehttp.log_message - "GET /admin/main/contact/add/ HTTP/1.1" 200 17183
+[2025-05-30 09:25:56] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:08] INFO basehttp.log_message - "POST /admin/main/contact/add/ HTTP/1.1" 302 0
+[2025-05-30 09:26:08] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 19108
+[2025-05-30 09:26:08] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:12] INFO basehttp.log_message - "GET /admin/main/contact/add/ HTTP/1.1" 200 17183
+[2025-05-30 09:26:12] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:19] INFO basehttp.log_message - "POST /admin/main/contact/add/ HTTP/1.1" 302 0
+[2025-05-30 09:26:19] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 19552
+[2025-05-30 09:26:19] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:23] INFO basehttp.log_message - "GET /admin/main/contact/add/ HTTP/1.1" 200 17183
+[2025-05-30 09:26:23] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:32] INFO basehttp.log_message - "POST /admin/main/contact/add/ HTTP/1.1" 302 0
+[2025-05-30 09:26:32] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 19996
+[2025-05-30 09:26:32] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:38] INFO basehttp.log_message - "GET /admin/main/contact/add/ HTTP/1.1" 200 17183
+[2025-05-30 09:26:38] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:46] INFO basehttp.log_message - "POST /admin/main/contact/add/ HTTP/1.1" 302 0
+[2025-05-30 09:26:46] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 20446
+[2025-05-30 09:26:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:50] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 18389
+[2025-05-30 09:26:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:52] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:26:52] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:26:52] INFO basehttp.log_message - "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[2025-05-30 09:27:00] ERROR log.log_response - Internal Server Error: /admin/main/promotion/add/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\admin\options.py", line 719, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\admin\sites.py", line 246, in inner
+    return view(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\admin\options.py", line 1984, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\decorators.py", line 192, in _view_wrapper
+    result = _process_exception(request, e)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\decorators.py", line 190, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\admin\options.py", line 1843, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\admin\options.py", line 1888, in _changeform_view
+    form_validated = form.is_valid()
+                     ^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\forms\forms.py", line 206, in is_valid
+    return self.is_bound and not self.errors
+                                 ^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\forms\forms.py", line 201, in errors
+    self.full_clean()
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\forms\forms.py", line 339, in full_clean
+    self._post_clean()
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\forms\models.py", line 498, in _post_clean
+    self.instance.full_clean(exclude=exclude, validate_unique=False)
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\base.py", line 1654, in full_clean
+    self.clean()
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\models.py", line 205, in clean
+    if self.valid_until <= self.valid_from:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<=' not supported between instances of 'NoneType' and 'NoneType'
+[2025-05-30 09:27:00] ERROR basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 500 151465
+[2025-05-30 09:27:02] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:27:03] INFO basehttp.log_message - "GET /static/admin/img/calendar-icons.svg HTTP/1.1" 304 0
+[2025-05-30 09:27:09] INFO basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 302 0
+[2025-05-30 09:27:09] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 19334
+[2025-05-30 09:27:10] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:27:12] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:27:12] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:27:28] INFO basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 302 0
+[2025-05-30 09:27:28] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 19915
+[2025-05-30 09:27:28] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:27:29] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:27:29] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:27:44] INFO basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 302 0
+[2025-05-30 09:27:44] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 20642
+[2025-05-30 09:27:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:27:46] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:27:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:00] INFO basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 302 0
+[2025-05-30 09:28:00] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 21380
+[2025-05-30 09:28:00] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:03] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:28:03] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:13] INFO basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 302 0
+[2025-05-30 09:28:13] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 22021
+[2025-05-30 09:28:13] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:18] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:28:18] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:28] INFO basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 302 0
+[2025-05-30 09:28:28] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 22697
+[2025-05-30 09:28:28] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:29] INFO basehttp.log_message - "GET /admin/main/promotion/add/ HTTP/1.1" 200 17540
+[2025-05-30 09:28:29] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:42] INFO basehttp.log_message - "POST /admin/main/promotion/add/ HTTP/1.1" 302 0
+[2025-05-30 09:28:42] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 23378
+[2025-05-30 09:28:42] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:45] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 22261
+[2025-05-30 09:28:45] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:46] INFO basehttp.log_message - "GET /admin/main/client/ HTTP/1.1" 200 24020
+[2025-05-30 09:28:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:47] INFO basehttp.log_message - "GET /admin/main/roomcategory/ HTTP/1.1" 200 15790
+[2025-05-30 09:28:47] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:49] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 26816
+[2025-05-30 09:28:49] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:50] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 18483
+[2025-05-30 09:28:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:53] INFO basehttp.log_message - "GET /admin/main/vacancy/add/ HTTP/1.1" 200 17033
+[2025-05-30 09:28:53] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:57] INFO basehttp.log_message - "POST /admin/main/vacancy/add/ HTTP/1.1" 302 0
+[2025-05-30 09:28:57] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 19222
+[2025-05-30 09:28:57] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:28:59] INFO basehttp.log_message - "GET /admin/main/vacancy/add/ HTTP/1.1" 200 17033
+[2025-05-30 09:28:59] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:03] INFO basehttp.log_message - "POST /admin/main/vacancy/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:03] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 19760
+[2025-05-30 09:29:03] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:03] INFO basehttp.log_message - "GET /admin/main/vacancy/add/ HTTP/1.1" 200 17033
+[2025-05-30 09:29:03] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:07] INFO basehttp.log_message - "POST /admin/main/vacancy/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:07] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 20298
+[2025-05-30 09:29:07] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:08] INFO basehttp.log_message - "GET /admin/main/vacancy/add/ HTTP/1.1" 200 17033
+[2025-05-30 09:29:08] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:12] INFO basehttp.log_message - "POST /admin/main/vacancy/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:12] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 20836
+[2025-05-30 09:29:12] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:13] INFO basehttp.log_message - "GET /admin/main/vacancy/add/ HTTP/1.1" 200 17033
+[2025-05-30 09:29:13] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:17] INFO basehttp.log_message - "POST /admin/main/vacancy/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:17] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 21374
+[2025-05-30 09:29:17] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:18] INFO basehttp.log_message - "GET /admin/main/vacancy/add/ HTTP/1.1" 200 17033
+[2025-05-30 09:29:18] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:22] INFO basehttp.log_message - "POST /admin/main/vacancy/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:22] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 21912
+[2025-05-30 09:29:22] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:23] INFO basehttp.log_message - "GET /admin/main/vacancy/add/ HTTP/1.1" 200 17033
+[2025-05-30 09:29:23] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:26] INFO basehttp.log_message - "POST /admin/main/vacancy/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:27] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22456
+[2025-05-30 09:29:27] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:31] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 26816
+[2025-05-30 09:29:31] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:32] INFO basehttp.log_message - "GET /admin/main/review/ HTTP/1.1" 200 20304
+[2025-05-30 09:29:32] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:34] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 23162
+[2025-05-30 09:29:34] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:35] INFO basehttp.log_message - "GET /admin/main/news/ HTTP/1.1" 200 22140
+[2025-05-30 09:29:35] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:36] INFO basehttp.log_message - "GET /admin/main/faq/ HTTP/1.1" 200 19047
+[2025-05-30 09:29:36] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:37] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 20240
+[2025-05-30 09:29:37] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:38] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 15650
+[2025-05-30 09:29:38] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:41] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:41] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:44] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:44] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 16240
+[2025-05-30 09:29:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:44] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:46] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:46] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 16620
+[2025-05-30 09:29:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:46] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:48] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:48] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 17000
+[2025-05-30 09:29:49] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:51] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:51] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:52] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:52] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 17380
+[2025-05-30 09:29:52] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:53] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:53] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:54] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:54] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 17760
+[2025-05-30 09:29:54] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:55] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:55] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:56] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:56] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 18140
+[2025-05-30 09:29:56] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:56] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:56] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:58] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:29:58] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 18520
+[2025-05-30 09:29:58] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:29:58] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:29:58] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:30:00] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:30:00] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 18906
+[2025-05-30 09:30:00] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:30:00] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-05-30 09:30:00] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:30:02] INFO basehttp.log_message - "POST /admin/main/companyinfo/add/ HTTP/1.1" 302 0
+[2025-05-30 09:30:02] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19288
+[2025-05-30 09:30:02] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:30:06] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 16070
+[2025-05-30 09:30:06] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-05-30 09:30:07] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19077
+[2025-05-30 09:30:16] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24179
+[2025-05-30 09:30:16] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:16] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:16] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:16] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:16] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14583
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/91520-and-repair-human-operations-joint-caterpillar-maintenance.png HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 304 0
+[2025-05-30 09:30:35] INFO basehttp.log_message - "GET /media/news/2b85f6579ec5ea02aa17d4fdb62e509d.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:46] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9536
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 12849
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/cool.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/cool_qDKAcX5.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/cool_3AcX3EA.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/cool_tO8x6R5.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:30:54] INFO basehttp.log_message - "GET /media/contacts/cool_EXvOIDv.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:31:11] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 14761
+[2025-05-30 09:31:23] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 16249
+[2025-05-30 09:32:01] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 207, in profile
+    user_bookings = request.user.client.booking_set.all().order_by('-created_at')
+                    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+[2025-05-30 09:32:01] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 85694
+[2025-05-30 09:32:11] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 15956
+[2025-05-30 09:32:41] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8209
+[2025-05-30 09:32:52] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24179
+[2025-05-30 09:32:52] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 304 0
+[2025-05-30 09:32:52] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:32:52] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:32:52] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:32:52] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:33:14] INFO basehttp.log_message - "GET /?category=&capacity=4&check_in=2026-10-10&check_out=2026-10-11 HTTP/1.1" 200 14425
+[2025-05-30 09:33:33] INFO basehttp.log_message - "GET /?category=&capacity=4&check_in=2026-10-10&check_out=2026-10-11 HTTP/1.1" 200 14425
+[2025-05-30 09:33:41] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24179
+[2025-05-30 09:42:38] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 09:42:39] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 09:43:48] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 09:43:49] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-05-30 09:43:59] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24179
+[2025-05-30 09:43:59] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 304 0
+[2025-05-30 09:43:59] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 304 0
+[2025-05-30 09:43:59] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 304 0
+[2025-05-30 09:43:59] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 304 0
+[2025-05-30 09:43:59] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 304 0
+[2025-05-30 09:44:39] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24179
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-05-30 09:44:40] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-05-30 09:44:40] WARNING log.log_response - Not Found: /favicon.ico
+[2025-05-30 09:44:40] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-05-30 09:48:00] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py changed, reloading.
+[2025-05-30 09:48:01] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader

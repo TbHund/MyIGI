@@ -246,11 +246,11 @@ def logout_view(request):
     return redirect('home')
 
 def room_list(request):
-    # Получаем все категории номеров
+    #все категории номеров
     categories = RoomCategory.objects.all()
     rooms = Room.objects.filter(is_active=True)
     
-    # Фильтрация по датам, если они указаны
+    #фильтр по датам еслиуказаны
     check_in = request.GET.get('check_in')
     check_out = request.GET.get('check_out')
     
@@ -259,14 +259,14 @@ def room_list(request):
             check_in_date = datetime.strptime(check_in, '%Y-%m-%d').date()
             check_out_date = datetime.strptime(check_out, '%Y-%m-%d').date()
             
-            # Получаем занятые номера на указанные даты (только активные бронирования)
+            #занятые номера на указанные даты
             booked_rooms = Booking.objects.filter(
                 Q(check_in_date__lte=check_out_date) & 
                 Q(check_out_date__gte=check_in_date),
-                status='active'  # Учитываем только активные бронирования
+                status='active' 
             ).values_list('room_id', flat=True)
             
-            # Исключаем занятые номера из списка
+            #занятые номера не считаем
             rooms = rooms.exclude(id__in=booked_rooms)
         except ValueError:
             messages.error(request, 'Неверный формат даты')
@@ -334,18 +334,6 @@ def book_room(request, room_id):
     
     return render(request, 'main/book_room.html', {'form': form, 'room': room})
 
-def reviews_by_rating(request, rating):
-    reviews = Review.objects.filter(
-        rating=rating
-    ).order_by('-created_at')
-    
-    context = {
-        'reviews': reviews,
-        'current_rating': rating,
-        **get_common_context()
-    }
-    return render(request, 'main/reviews.html', context)
-
 def staff_required(view_func):
     def wrapper(request, *args, **kwargs):
         if not hasattr(request.user, 'client') or not request.user.client.is_staff:
@@ -357,6 +345,16 @@ def staff_required(view_func):
 @staff_required
 def staff_bookings(request):
     """Представление для просмотра всех бронирований сотрудниками"""
+    if request.method == 'POST' and 'delete_booking' in request.POST:
+        booking_id = request.POST.get('delete_booking')
+        try:
+            booking = Booking.objects.get(id=booking_id)
+            booking.delete()
+            messages.success(request, 'Бронирование успешно удалено')
+        except Booking.DoesNotExist:
+            messages.error(request, 'Бронирование не найдено')
+        return redirect('staff_bookings')
+    
     bookings = Booking.objects.all().order_by('-created_at')
     
     #фильтр по статусу
