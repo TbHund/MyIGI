@@ -24,7 +24,9 @@ class UserRegistrationForm(UserCreationForm):
     middle_name = forms.CharField(max_length=30, required=False, label='Отчество')
     email = forms.EmailField(required=True, label='Email')
     birth_date = forms.DateField(
-        widget=forms.DateInput(attrs={'type': 'date'}),
+        widget=forms.DateInput(attrs={'type': 'date',
+                                      'required' :'required'
+                                     }),
         required=True,
         label='Дата рождения',
         validators=[validate_age],
