@@ -9,10 +9,8 @@
         <h1 class="title">О нашем отеле</h1>
         
         {% if company_info %}
-        <div class="info-block">
-            <h2 class="info-title">{{ company_info.title }}</h2>
+            <!--<h2 class="info-title">{{ company_info.title }}</h2>-->
             <div class="info-content">{{ company_info.content }}</div>
-        </div>
         {% endif %}
 
         <div class="pets">
@@ -39,37 +37,16 @@
 </div>
 
 <style>
+
+.title{
+    margin: 0
+}
+
 .wrapper {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-.title {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.info-block {
-    background: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 40px;
-}
-
-.info-title {
-    color: #2c5282;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.info-content {
-    line-height: 1.6;
-    color: #444;
 }
 
 .pets {
@@ -140,35 +117,5 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
-    .wrapper {
-        width: 95%;
-        padding: 10px;
-    }
-
-    .pets-container {
-        grid-template-columns: 1fr;
-    }
-
-    .info-block {
-        padding: 20px;
-    }
-
-    .pet-box {
-        padding: 20px;
-    }
-
-    .title {
-        font-size: 28px;
-    }
-
-    .info-title {
-        font-size: 22px;
-    }
-
-    .cat-fact {
-        font-size: 16px;
-    }
-}
 </style>
 {% endblock %} 
