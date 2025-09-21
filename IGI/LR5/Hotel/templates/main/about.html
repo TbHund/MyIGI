@@ -5,21 +5,22 @@
 
 {% block content %}
 <div class="wrapper">
-    <div class="about-content">
-        <h1>О нашем отеле</h1>
+    <div class="about-content" itemscope itemtype="https://schema.org/Hotel">
+        <h1 itemprop="name">О нашем отеле</h1>
         
         {% if company_info %}
             <!--<h2 class="info-title">{{ company_info.title }}</h2>-->
-            <div class="info-content">{{ company_info.content }}</div>
+            <div class="info-content" itemprop="description">{{ company_info.content }}</div>
         {% endif %}
 
         <h1>Видео</h1>
-        <div class="video-container">
+        <div class="video-container" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
             {% if company_info.video_file %}
                 <video controls width="100%" poster="{{ company_info.logo.url }}" style="max-width: 800px; border-radius: 8px;">
                     <source src="{{ company_info.video_file.url }}" type="video/mp4">
                     Ваш браузер не поддерживает видео
                 </video>
+                <meta itemprop="name" content="Видео о отеле {{ company_info.title }}">
             {% else %}
                 <div class="no-video">
                     <p>🎬 Видео о компании пока не добавлено</p>

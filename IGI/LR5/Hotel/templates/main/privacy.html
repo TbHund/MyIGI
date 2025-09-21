@@ -7,8 +7,9 @@
     <h1>Политика конфиденциальности</h1>
     
     <div class="privacy-content">
-        <p>Страница находится в разработке.</p>
+        <pre style="white-space: pre-wrap; font-family: inherit;">{{ privacy.content|safe }}</pre>
     </div>
+ 
 </div>
 
 <style>
@@ -21,18 +22,6 @@
     .privacy-page h1 {
         text-align: center;
         margin-bottom: 2rem;
-    }
-
-    .privacy-content {
-        background-color: #fff;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        line-height: 1.8;
-    }
-
-    .privacy-content p {
-        text-align: center;
     }
 </style>
 {% endblock %} 

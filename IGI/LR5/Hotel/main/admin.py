@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     RoomCategory, Room, Client, Booking, Review,
-    Promotion, CompanyInfo, News, FAQ, Contact, Vacancy
+    Promotion, CompanyInfo, News, FAQ, Contact, Vacancy, PrivacyPolicy
 )
 from datetime import date
 
@@ -80,6 +80,28 @@ class PromotionAdmin(admin.ModelAdmin):
 class CompanyInfoAdmin(admin.ModelAdmin):
     list_display = ('title', 'updated_at')
     search_fields = ('title', 'content')
+
+@admin.register(PrivacyPolicy)
+class PrivacyPolicyAdmin(admin.ModelAdmin):
+    list_display = ('version', 'title', 'is_active', 'effective_date', 'created_at')
+    list_editable = ('is_active',)  # Можно редактировать прямо в списке
+    list_filter = ('is_active', 'effective_date')
+    search_fields = ('title', 'content')
+    readonly_fields = ('created_at', 'updated_at')
+    
+    # Убрать content из list_display, так как TextField плохо показывается в списке
+    fieldsets = (
+        ('Основная информация', {
+            'fields': ('version', 'title', 'effective_date', 'is_active')
+        }),
+        ('Содержание', {
+            'fields': ('content',)
+        }),
+        ('Даты', {
+            'fields': ('created_at', 'updated_at'),
+            'classes': ('collapse',)
+        }),
+    )
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):

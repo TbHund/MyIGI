@@ -316,3 +316,39 @@ class Vacancy(models.Model):
 
     class Meta:
         verbose_name_plural = 'Vacancies'
+
+class PrivacyPolicy(models.Model):
+    version = models.DecimalField(
+        max_digits=3, 
+        decimal_places=1,
+        verbose_name='Policy version',
+        help_text='Format: 1.0, 1.1, 2.0'
+    )
+    title = models.CharField(
+        max_length=200,
+        verbose_name='Title',
+        default='Privacy policy'
+    )
+    content = models.TextField(verbose_name='Text')
+    is_active = models.BooleanField(
+        default=True,
+        verbose_name='Active version'
+    )
+    effective_date = models.DateField(
+        verbose_name='Date of charge'
+    )
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        verbose_name = 'Privacy Policy'
+        verbose_name_plural = 'Privacy Policy'
+        ordering = ['-version']
+
+    def __str__(self):
+        return f'v{self.version} - {self.title} ({self.effective_date})'
+
+    def save(self, *args, **kwargs):
+        if self.is_active:
+            PrivacyPolicy.objects.exclude(pk=self.pk).update(is_active=False)
+        super().save(*args, **kwargs)

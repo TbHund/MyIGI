@@ -10,7 +10,7 @@ import calendar
 import pytz
 from .models import (
     News, FAQ, Contact, Vacancy, Review, 
-    Promotion, CompanyInfo, Room, RoomCategory, Booking, Client
+    Promotion, CompanyInfo, Room, RoomCategory, Booking, Client, PrivacyPolicy
 )
 from .api_utils import get_random_dog, get_random_cat_fact
 from .forms import UserRegistrationForm, LoginForm, BookingForm, ReviewForm, ProfileEditForm
@@ -141,7 +141,12 @@ def contacts(request):
     return render(request, 'main/contacts.html', context)
 
 def privacy(request):
-    return render(request, 'main/privacy.html', get_common_context())
+    privacy = PrivacyPolicy.objects.first()
+    context = {
+        'privacy': privacy,
+        **get_common_context()
+    }
+    return render(request, 'main/privacy.html', context)
 
 def vacancies(request):
     active_vacancies = Vacancy.objects.filter(is_active=True).order_by('-created_at')
@@ -150,6 +155,7 @@ def vacancies(request):
         **get_common_context()
     }
     return render(request, 'main/vacancies.html', context)
+
 
 def reviews(request):
     all_reviews = Review.objects.order_by('-created_at')
