@@ -211,12 +211,60 @@ class Promotion(models.Model):
 class CompanyInfo(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
+    logo = models.ImageField(
+        upload_to='company/logo/',
+        verbose_name='Logo',
+        blank=True,
+        null=True
+    )
+    video_file = models.FileField(
+        upload_to='company/videos/',
+        verbose_name='VideoFile',
+        blank=True,
+        null=True,
+        help_text='MP4, WebM, OGG'
+    )
+    #реквизиты
+    inn = models.CharField(max_length=12, verbose_name='INN', blank=True)
+    legal_address = models.TextField(verbose_name='Address', blank=True)
+    phone = models.CharField(max_length=20, verbose_name='Phone', blank=True)
+    email = models.EmailField(verbose_name='Email', blank=True)
+    
+    history = models.TextField(
+            verbose_name='Company History',
+            blank=True,
+            help_text='New line - new event. FORMAT[year: description]'
+        )
     updated_at = models.DateTimeField(auto_now=True)
 
+    def get_history_items(self):
+        if not self.history:
+            return []
+        
+        items = []
+        for line in self.history.strip().split('\n'):
+            line = line.strip()
+            if not line:
+                continue
+                
+            if ':' in line:
+                year, event = line.split(':', 1)
+                items.append({
+                    'year': year.strip(),
+                    'event': event.strip()
+                })
+            else:
+                items.append({
+                    'year': '',
+                    'event': line.strip()
+                })
+        return items
+    
     def __str__(self):
         return self.title
 
     class Meta:
+        verbose_name = 'Company info'
         verbose_name_plural = 'Company info'
 
 class News(models.Model):

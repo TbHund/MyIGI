@@ -10,13 +10,15 @@
         {% if faqs %}
             {% for faq in faqs %}
             <div class="faq-item">
-                <h2 class="question">{{ faq.question }}</h2>
-                <div class="answer">
-                    {{ faq.answer|linebreaks }}
-                </div>
-                <div class="faq-meta">
-                    <span class="date">Добавлено: {{ faq.created_at|date:"d.m.Y" }}</span>
-                </div>
+                <details>
+                    <summary>{{ faq.question }}</summary>
+                    <div class="answer">
+                        {{ faq.answer|linebreaks }}
+                    </div>
+                    <div class="faq-meta">
+                        <span class="date">Добавлено: {{ faq.created_at|date:"d.m.Y" }}</span>
+                    </div>
+                </details>
             </div>
             {% endfor %}
         {% else %}

@@ -6,18 +6,74 @@
 {% block content %}
 <div class="wrapper">
     <div class="about-content">
-        <h1 class="title">О нашем отеле</h1>
+        <h1>О нашем отеле</h1>
         
         {% if company_info %}
             <!--<h2 class="info-title">{{ company_info.title }}</h2>-->
             <div class="info-content">{{ company_info.content }}</div>
         {% endif %}
 
+        <h1>Видео</h1>
+        <div class="video-container">
+            {% if company_info.video_file %}
+                <video controls width="100%" poster="{{ company_info.logo.url }}" style="max-width: 800px; border-radius: 8px;">
+                    <source src="{{ company_info.video_file.url }}" type="video/mp4">
+                    Ваш браузер не поддерживает видео
+                </video>
+            {% else %}
+                <div class="no-video">
+                    <p>🎬 Видео о компании пока не добавлено</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <h1>История по годам</h1>
+        <ul class="timeline-list" type="disc">
+            {% for item in company_info.get_history_items %}
+            <li class="timeline-item">
+                {% if item.year %}
+                <span class="timeline-year">{{ item.year }}</span> — 
+                {% endif %}
+                <span class="timeline-event">{{ item.event }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+
+        <h1>Реквизиты</h1>
+        <ol class="company-info-list" type="1">
+            <li class="company-info-item">
+                {% if company_info.email %}
+                <span>Почта компании</span> — 
+                {% endif %}
+                <span>{{ company_info.email }}</span>
+            </li>
+            <li class="company-info-item">
+                {% if company_info.phone %}
+                <span>Телефон для справок</span> — 
+                {% endif %}
+                <span>{{ company_info.phone }}</span>
+            </li>
+            <li class="company-info-item">
+                {% if company_info.legal_address %}
+                <span>Адресс организации</span> — 
+                {% endif %}
+                <span>{{ company_info.legal_address }}</span>
+            </li>
+            <li class="company-info-item">
+                {% if company_info.inn %}
+                <span>ИНН</span> — 
+                {% endif %}
+                <span>{{ company_info.inn }}</span>
+            </li>
+        </ol>
+
+        <h1><b>СЕРТИФИКАТ</b></h1>
+
         <div class="pets">
             <div class="pets-container">
                 {% if random_dog %}
                 <div class="pet-box">
-                    <h3 class="pet-heading">Наш питомец дня</h3>
+                    <h3 class="pet-heading"><b><strong>Наш</strong></b> <mark>питомец дня</mark></h3>
                     <div class="image-wrapper">
                         <img src="{{ random_dog.image_url }}" alt="Собака породы {{ random_dog.breed }}" class="pet-photo">
                     </div>
@@ -38,10 +94,6 @@
 
 <style>
 
-.title{
-    margin: 0
-}
-
 .wrapper {
     width: 90%;
     max-width: 1200px;
@@ -60,21 +112,8 @@
     margin-top: 20px;
 }
 
-.pet-box {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
-}
-
-.pet-box:hover {
-    transform: translateY(-5px);
-}
-
 .pet-heading {
     font-size: 20px;
-    color: #2c5282;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -92,10 +131,6 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
-
-.pet-photo:hover {
-    transform: scale(1.05);
 }
 
 .breed-info {

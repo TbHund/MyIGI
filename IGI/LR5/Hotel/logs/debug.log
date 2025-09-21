@@ -3201,3 +3201,1235 @@ django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no cl
 [2025-09-21 21:29:31] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
 [2025-09-21 21:30:58] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
 [2025-09-21 21:31:00] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 21:31:01] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24172
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 4106
+[2025-09-21 21:31:02] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 21:31:02] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:31:02] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:31:02] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:31:02] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 4106
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:24] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:31:24] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:31:24] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 4106
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:33] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:34] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:31:34] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:31:34] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24174
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /static/main/images/trivagoFin.png HTTP/1.1" 200 18812
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:34:20] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:34:20] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:34:20] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24174
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /static/main/images/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:35:43] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:35:43] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:35:43] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:35:47] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24174
+[2025-09-21 21:35:47] INFO basehttp.log_message - "GET /static/main/images/trivagoAAA.png HTTP/1.1" 304 0
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:36:21] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:36:21] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:36:21] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:36:27] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7363
+[2025-09-21 21:36:27] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-09-21 21:36:59] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7398
+[2025-09-21 21:36:59] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:36:59] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:36:59] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:47:45] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7403
+[2025-09-21 21:47:45] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:47:45] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:47:45] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:47:57] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7492
+[2025-09-21 21:47:58] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:47:58] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:47:58] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:48:59] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:49:52] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7347
+[2025-09-21 21:49:52] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-09-21 21:49:53] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14584
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14584
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 200 39240
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 200 49657
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 200 153120
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 200 509249
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 200 37608
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 200 261231
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/2b85f6579ec5ea02aa17d4fdb62e509d.jpg HTTP/1.1" 200 79623
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/91520-and-repair-human-operations-joint-caterpillar-maintenance.png HTTP/1.1" 200 735930
+[2025-09-21 21:50:54] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 200 3648720
+[2025-09-21 21:50:54] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:50:54] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:50:58] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7356
+[2025-09-21 21:51:00] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:51:00] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9537
+[2025-09-21 21:51:01] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 12850
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 12850
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 200 72451
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 200 97883
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 200 54058
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 200 205027
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/cool_qDKAcX5.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/cool_3AcX3EA.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/cool_tO8x6R5.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:51:16] INFO basehttp.log_message - "GET /media/contacts/cool_EXvOIDv.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:51:16] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:51:16] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:51:21] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:51:33] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:51:44] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7463
+[2025-09-21 21:51:45] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14584
+[2025-09-21 21:51:53] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7332
+[2025-09-21 21:52:22] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:52:24] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7407
+[2025-09-21 21:52:32] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7254
+[2025-09-21 21:52:32] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:52:32] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:52:32] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:52:35] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 21:52:44] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24171
+[2025-09-21 21:52:44] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:52:44] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:52:44] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:52:44] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:45] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:52:45] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:45] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:45] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:45] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:45] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:52:45] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:52:45] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:52:45] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:52:57] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:52:57] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:52:57] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:53:02] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7246
+[2025-09-21 21:53:10] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7490
+[2025-09-21 21:53:10] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:53:10] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:53:10] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:55:45] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7208
+[2025-09-21 21:55:45] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:55:46] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:55:46] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:55:48] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24034
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24080
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:56:00] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:56:00] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:56:00] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET / HTTP/1.1" 200 23922
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:01] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:01] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:57:01] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24080
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:57:12] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:57:13] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:57:13] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24080
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:57:22] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:22] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:57:22] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:31] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:57:31] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:57:31] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:57:38] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 21:57:38] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:57:38] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:57:38] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:57:38] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:57:38] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:57:39] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:57:39] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:39] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:39] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:39] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:39] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:39] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:57:39] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:48] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:48] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:57:48] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-21 21:57:58] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-21 21:57:58] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 21:57:58] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 21:58:05] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7284
+[2025-09-21 22:00:29] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7329
+[2025-09-21 22:00:29] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 22:00:29] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 22:00:29] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 22:15:38] INFO basehttp.log_message - "GET /admin/main/client/ HTTP/1.1" 200 25570
+[2025-09-21 22:15:38] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:15:40] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 20240
+[2025-09-21 22:15:40] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:17:34] INFO basehttp.log_message - "GET /admin/main/companyinfo/add/ HTTP/1.1" 200 14649
+[2025-09-21 22:17:34] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:17:43] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 20240
+[2025-09-21 22:17:46] INFO basehttp.log_message - "GET /admin/main/booking/add/ HTTP/1.1" 200 26140
+[2025-09-21 22:17:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:17:46] INFO basehttp.log_message - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[2025-09-21 22:17:50] INFO basehttp.log_message - "GET /admin/main/contact/ HTTP/1.1" 200 20240
+[2025-09-21 22:41:00] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 22:41:02] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 22:41:02] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-09-21 22:41:04] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7698
+[2025-09-21 22:41:16] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17373
+[2025-09-21 22:41:18] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19077
+[2025-09-21 22:41:18] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:41:22] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20588
+[2025-09-21 22:41:22] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:46:43] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 22:46:43] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 22:46:43] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:46:46] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 22:47:04] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6852
+[2025-09-21 22:48:34] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17384
+[2025-09-21 22:48:35] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 22:48:35] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:48:37] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20706
+[2025-09-21 22:48:37] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:49:39] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20849
+[2025-09-21 22:49:39] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:49:56] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 22:49:56] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 22:49:56] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:50:09] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 22:50:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-09-21 22:50:11] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6942
+[2025-09-21 22:53:05] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6961
+[2025-09-21 22:53:05] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 22:53:05] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 22:53:05] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 22:55:56] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17395
+[2025-09-21 22:55:57] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 22:55:57] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:55:59] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20745
+[2025-09-21 22:55:59] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:56:05] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 22:56:05] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 22:56:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:56:09] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 22:56:11] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6892
+[2025-09-21 22:58:19] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17406
+[2025-09-21 22:58:21] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 22:58:21] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:58:25] INFO basehttp.log_message - "GET /admin/main/companyinfo/2/change/ HTTP/1.1" 200 20196
+[2025-09-21 22:58:25] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:58:27] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 22:58:28] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20745
+[2025-09-21 22:58:28] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:58:34] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 22:58:34] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 22:58:34] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:58:38] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 22:58:40] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6865
+[2025-09-21 22:59:42] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17417
+[2025-09-21 22:59:43] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 22:59:43] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:59:44] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20745
+[2025-09-21 22:59:45] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:59:50] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 22:59:50] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 22:59:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 22:59:54] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 22:59:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7083
+[2025-09-21 23:01:17] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17428
+[2025-09-21 23:01:18] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:01:18] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:01:20] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20685
+[2025-09-21 23:01:20] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:01:24] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 23:01:24] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 23:01:24] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:01:27] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:01:27] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-09-21 23:01:28] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6958
+[2025-09-21 23:01:47] INFO basehttp.log_message - "GET /admin/main/client/ HTTP/1.1" 200 25570
+[2025-09-21 23:01:47] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:01:49] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:01:49] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:01:50] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20745
+[2025-09-21 23:01:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:01:57] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 23:01:58] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 23:01:58] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:02:00] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:02:02] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6822
+[2025-09-21 23:02:25] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17449
+[2025-09-21 23:02:28] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:02:28] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:02:29] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20685
+[2025-09-21 23:02:29] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:02:33] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 23:02:33] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 23:02:33] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:02:36] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:02:38] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6873
+[2025-09-21 23:04:43] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
+[2025-09-21 23:04:46] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:05:01] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
+[2025-09-21 23:05:02] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:05:10] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
+[2025-09-21 23:05:11] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:05:14] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:05:16] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6877
+[2025-09-21 23:06:04] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
+[2025-09-21 23:06:05] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:06:08] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:06:10] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6879
+[2025-09-21 23:06:24] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
+[2025-09-21 23:06:25] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:07:42] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\models.py changed, reloading.
+[2025-09-21 23:07:43] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:09:33] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:09:36] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:09:37] ERROR log.log_response - Internal Server Error: /about/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 890, in _resolve_lookup
+    raise TypeError
+TypeError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 108, in about
+    return render(request, 'main/about.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 1075, in render
+    output = self.filter_expression.resolve(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 722, in resolve
+    obj = self.var.resolve(context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 854, in resolve
+    value = self._resolve_lookup(context)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 901, in _resolve_lookup
+    current = getattr(current, bit)
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\files.py", line 69, in url
+    self._require_file()
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\files.py", line 44, in _require_file
+    raise ValueError(
+ValueError: The 'video_file' attribute has no file associated with it.
+[2025-09-21 23:09:37] ERROR basehttp.log_message - "GET /about/ HTTP/1.1" 500 203394
+[2025-09-21 23:09:47] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17459
+[2025-09-21 23:09:48] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:09:48] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:09:50] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20669
+[2025-09-21 23:09:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:12:04] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 23:12:04] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 23:12:04] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:12:08] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:12:08] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-09-21 23:12:09] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6971
+[2025-09-21 23:12:09] INFO basehttp.log_message - "GET /media/company/videos/video_2025-09-21_23-11-38.mp4 HTTP/1.1" 200 214547
+[2025-09-21 23:12:09] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:12:12] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:12:12] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:13:41] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7030
+[2025-09-21 23:13:41] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:13:41] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:13:41] INFO basehttp.log_message - "GET /media/company/videos/video_2025-09-21_23-11-38.mp4 HTTP/1.1" 200 214547
+[2025-09-21 23:13:41] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:13:41] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:13:45] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:13:45] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:13:53] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17419
+[2025-09-21 23:13:55] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:13:55] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:13:56] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 21035
+[2025-09-21 23:13:56] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:14:06] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 23:14:06] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 23:14:06] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:14:10] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:14:12] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7091
+[2025-09-21 23:14:58] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6909
+[2025-09-21 23:14:58] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:14:58] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:14:58] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:16:45] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17412
+[2025-09-21 23:16:46] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:16:46] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:16:48] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20669
+[2025-09-21 23:16:48] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:16:59] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-21 23:16:59] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19305
+[2025-09-21 23:16:59] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:17:01] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24082
+[2025-09-21 23:17:03] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6940
+[2025-09-21 23:17:03] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 304 0
+[2025-09-21 23:17:08] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:17:08] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:17:08] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:17:40] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6908
+[2025-09-21 23:17:40] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 304 0
+[2025-09-21 23:19:05] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:19:05] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:19:05] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 304 0
+[2025-09-21 23:19:36] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7005
+[2025-09-21 23:19:36] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 304 0
+[2025-09-21 23:20:43] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7007
+[2025-09-21 23:20:43] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:20:43] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53960)
+[2025-09-21 23:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53925)
+[2025-09-21 23:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54038)
+[2025-09-21 23:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54039)
+[2025-09-21 23:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54040)
+[2025-09-21 23:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54041)
+[2025-09-21 23:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54042)
+[2025-09-21 23:20:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54043)
+[2025-09-21 23:20:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54044)
+[2025-09-21 23:20:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54045)
+[2025-09-21 23:20:44] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:20:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54046)
+[2025-09-21 23:20:44] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:20:44] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:20:49] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:20:49] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54047)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54049)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54050)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54051)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54052)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54053)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54054)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54055)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54056)
+[2025-09-21 23:20:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54057)
+[2025-09-21 23:21:35] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7187
+[2025-09-21 23:21:35] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:21:35] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:21:35] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:21:35] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:21:39] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:21:39] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:21:53] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6993
+[2025-09-21 23:21:53] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:21:53] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:21:53] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54077)
+[2025-09-21 23:21:53] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54076)
+[2025-09-21 23:21:53] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:22:11] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:22:11] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:24:16] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6997
+[2025-09-21 23:24:16] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:24:16] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:24:16] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:16] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54090)
+[2025-09-21 23:24:16] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54170)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54166)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54171)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54172)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54173)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54174)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54175)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54176)
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54177)
+[2025-09-21 23:24:17] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54178)
+[2025-09-21 23:24:17] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:24:17] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:24:41] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9448
+[2025-09-21 23:24:41] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:41] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:45] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 12761
+[2025-09-21 23:24:45] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:45] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:45] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-09-21 23:24:48] INFO basehttp.log_message - "GET /privacy/ HTTP/1.1" 200 4381
+[2025-09-21 23:24:48] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:48] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:49] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 14673
+[2025-09-21 23:24:49] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:49] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:51] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 17507
+[2025-09-21 23:24:51] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:51] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:52] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 15768
+[2025-09-21 23:24:52] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:52] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:54] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 207, in profile
+    user_bookings = request.user.client.booking_set.all().order_by('-created_at')
+                    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+[2025-09-21 23:24:54] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 86397
+[2025-09-21 23:24:54] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:54] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:24:57] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:24:57] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:00] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-09-21 23:25:00] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:25:00] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:25:00] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:02] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5838
+[2025-09-21 23:25:02] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:25:02] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:04] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14321
+[2025-09-21 23:25:05] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:25:05] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:05] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-09-21 23:25:05] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 200 3648720
+[2025-09-21 23:25:07] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6789
+[2025-09-21 23:25:07] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:25:07] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:10] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:25:10] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54179)
+[2025-09-21 23:25:10] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:25:10] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:14] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:25:14] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:25:14] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:23] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:25:23] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:25:23] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:25:36] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:26:13] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:26:18] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:26:18] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:26:24] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14321
+[2025-09-21 23:26:24] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:26:24] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:26:26] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6885
+[2025-09-21 23:26:26] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:26:26] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:26:27] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:26:27] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54247)
+[2025-09-21 23:26:27] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:26:27] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:26:30] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:26:30] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:26:30] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:26:32] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6829
+[2025-09-21 23:26:32] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:26:32] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:26:33] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:26:33] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:26:33] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:27:04] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6889
+[2025-09-21 23:27:04] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:27:04] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:27:04] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:27:04] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:27:04] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:27:04] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:27:08] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6818
+[2025-09-21 23:27:08] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54288)
+[2025-09-21 23:27:08] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:27:08] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:27:08] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:27:08] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:27:08] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:27:08] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:27:10] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 12587
+[2025-09-21 23:27:10] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54294)
+[2025-09-21 23:27:10] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:27:10] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:27:12] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7019
+[2025-09-21 23:27:12] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:27:12] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:27:14] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:27:14] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:27:14] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:28:33] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:28:36] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:28:40] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:28:40] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:28:46] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:28:46] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:28:46] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:28:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6830
+[2025-09-21 23:28:50] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 304 0
+[2025-09-21 23:28:50] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:28:50] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:28:58] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:28:58] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:33:59] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:34:01] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22828
+[2025-09-21 23:34:07] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:34:07] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:34:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6760
+[2025-09-21 23:34:13] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 304 0
+[2025-09-21 23:34:13] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 304 0
+[2025-09-21 23:34:13] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:34:13] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:34:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54564)
+[2025-09-21 23:34:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54565)
+[2025-09-21 23:34:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54578)
+[2025-09-21 23:34:13] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:35:00] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6906
+[2025-09-21 23:35:00] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:35:00] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:35:00] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:35:00] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:35:00] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54579)
+[2025-09-21 23:35:00] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54604)
+[2025-09-21 23:35:01] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54607)
+[2025-09-21 23:35:01] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54608)
+[2025-09-21 23:35:01] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54609)
+[2025-09-21 23:35:01] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54610)
+[2025-09-21 23:35:01] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54611)
+[2025-09-21 23:35:01] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:35:01] WARNING basehttp.log_message - "GET /static/favicon.ico HTTP/1.1" 404 1847
+[2025-09-21 23:36:07] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7049
+[2025-09-21 23:36:07] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:36:07] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:36:07] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:36:07] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:36:08] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:36:49] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:36:51] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22909
+[2025-09-21 23:36:52] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 304 0
+[2025-09-21 23:36:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6876
+[2025-09-21 23:36:56] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-21 23:45:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7000
+[2025-09-21 23:45:55] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:45:55] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:46:02] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54767)
+[2025-09-21 23:46:15] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-21 23:46:24] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22909
+[2025-09-21 23:46:24] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 304 0
+[2025-09-21 23:46:27] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6976
+[2025-09-21 23:46:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54771)
+[2025-09-21 23:47:04] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:47:04] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:47:08] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6917
+[2025-09-21 23:47:08] WARNING log.log_response - Not Found: /.well-known/appspecific/com.chrome.devtools.json
+[2025-09-21 23:47:08] WARNING basehttp.log_message - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 8014
+[2025-09-21 23:47:24] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54772)
+[2025-09-21 23:48:37] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 6919
+[2025-09-21 23:48:37] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 304 0
+[2025-09-21 23:48:39] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7063
+[2025-09-21 23:48:39] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54788)
+[2025-09-21 23:48:58] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54833)
+[2025-09-21 23:50:25] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8444
+[2025-09-21 23:50:25] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:50:25] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:50:25] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:50:40] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54847)
+[2025-09-21 23:52:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 7946
+[2025-09-21 23:52:50] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:52:50] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:52:50] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:53:09] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54843)
+[2025-09-21 23:54:07] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8252
+[2025-09-21 23:54:07] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:54:07] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:54:07] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:54:26] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54864)
+[2025-09-21 23:54:40] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8328
+[2025-09-21 23:54:40] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:54:40] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:54:41] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:54:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8408
+[2025-09-21 23:54:55] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54845)
+[2025-09-21 23:54:55] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:54:55] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:54:55] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:55:11] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54868)
+[2025-09-21 23:55:53] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8280
+[2025-09-21 23:55:53] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:55:53] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:55:54] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:56:12] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54873)
+[2025-09-21 23:56:49] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8414
+[2025-09-21 23:56:49] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-21 23:56:49] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-21 23:56:49] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-21 23:57:09] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54875)
+[2025-09-21 23:57:29] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 302 0
+[2025-09-21 23:57:29] INFO basehttp.log_message - "GET /admin/login/?next=/admin/main/companyinfo/ HTTP/1.1" 200 4412
+[2025-09-21 23:57:29] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-21 23:57:29] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-21 23:57:32] INFO basehttp.log_message - "POST /admin/login/?next=/admin/main/companyinfo/ HTTP/1.1" 302 0
+[2025-09-21 23:57:32] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:57:32] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:57:33] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-21 23:57:33] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-21 23:57:37] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 21009
+[2025-09-21 23:57:37] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:02:40] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24163
+[2025-09-22 00:02:41] ERROR log.log_response - Internal Server Error: /about/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endfor'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 108, in about
+    return render(request, 'main/about.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\backends\django.py", line 79, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 299, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\template\base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 50: 'endfor', expected 'endblock'. Did you forget to register or load this tag?
+[2025-09-22 00:02:42] ERROR basehttp.log_message - "GET /about/ HTTP/1.1" 500 202700
+[2025-09-22 00:02:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8800
+[2025-09-22 00:02:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:02:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:02:54] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:03:10] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54906)
+[2025-09-22 00:04:26] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17412
+[2025-09-22 00:04:26] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-22 00:04:26] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-22 00:04:27] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-22 00:04:28] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:04:29] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 21009
+[2025-09-22 00:04:29] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:05:38] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24163
+[2025-09-22 00:05:40] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9107
+[2025-09-22 00:06:00] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54905)
+[2025-09-22 00:06:21] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9308
+[2025-09-22 00:06:21] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:06:21] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:06:22] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:06:37] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54927)
+[2025-09-22 00:06:43] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17412
+[2025-09-22 00:06:43] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-22 00:06:43] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-22 00:06:45] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19087
+[2025-09-22 00:06:45] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:06:47] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 21009
+[2025-09-22 00:06:47] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:06:50] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-22 00:06:50] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19304
+[2025-09-22 00:06:50] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:06:53] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24163
+[2025-09-22 00:06:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9299
+[2025-09-22 00:07:10] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17412
+[2025-09-22 00:07:10] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54936)
+[2025-09-22 00:07:11] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19086
+[2025-09-22 00:07:11] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:07:13] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 20994
+[2025-09-22 00:07:13] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:07:20] INFO basehttp.log_message - "POST /admin/main/companyinfo/1/change/ HTTP/1.1" 302 0
+[2025-09-22 00:07:20] INFO basehttp.log_message - "GET /admin/main/companyinfo/ HTTP/1.1" 200 19304
+[2025-09-22 00:07:20] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:07:23] INFO basehttp.log_message - "GET /admin/main/companyinfo/1/change/ HTTP/1.1" 200 21009
+[2025-09-22 00:07:23] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:07:29] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24163
+[2025-09-22 00:07:31] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9287
+[2025-09-22 00:07:38] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-22 00:09:13] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\main\views.py", line 207, in profile
+    user_bookings = request.user.client.booking_set.all().order_by('-created_at')
+                    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+[2025-09-22 00:09:13] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 86392
+[2025-09-22 00:09:16] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-09-22 00:09:17] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22909
+[2025-09-22 00:09:18] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5919
+[2025-09-22 00:09:20] INFO basehttp.log_message - "GET /register/ HTTP/1.1" 200 8211
+[2025-09-22 00:09:31] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22909
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22909
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:10:56] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:10:57] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9185
+[2025-09-22 00:11:43] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9099
+[2025-09-22 00:11:43] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:11:43] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:11:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54939)
+[2025-09-22 00:11:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54980)
+[2025-09-22 00:11:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54979)
+[2025-09-22 00:11:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54981)
+[2025-09-22 00:11:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54982)
+[2025-09-22 00:11:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54976)
+[2025-09-22 00:11:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54992)
+[2025-09-22 00:11:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54993)
+[2025-09-22 00:11:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54994)
+[2025-09-22 00:11:44] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-09-22 00:11:44] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:11:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9390
+[2025-09-22 00:11:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:11:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:11:58] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:12:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9193
+[2025-09-22 00:12:13] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:12:13] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:12:14] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:12:26] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8965
+[2025-09-22 00:12:26] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54996)
+[2025-09-22 00:12:26] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:12:26] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:12:27] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:12:42] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8996
+[2025-09-22 00:12:42] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54995)
+[2025-09-22 00:12:42] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:12:42] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:12:42] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:12:59] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55006)
+[2025-09-22 00:14:43] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9101
+[2025-09-22 00:14:43] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:14:43] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:14:43] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:15:00] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55016)
+[2025-09-22 00:15:03] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9006
+[2025-09-22 00:15:03] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:15:03] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:15:03] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:15:11] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8770
+[2025-09-22 00:15:11] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55007)
+[2025-09-22 00:15:11] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:15:11] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:15:11] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:15:24] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 9030
+[2025-09-22 00:15:24] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55024)
+[2025-09-22 00:15:24] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:15:24] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:15:24] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:15:40] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55027)
+[2025-09-22 00:16:39] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8940
+[2025-09-22 00:16:39] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:16:39] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:16:39] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:16:59] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55019)
+[2025-09-22 00:17:12] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8948
+[2025-09-22 00:17:12] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:17:12] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:17:12] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:17:25] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8882
+[2025-09-22 00:17:25] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55031)
+[2025-09-22 00:17:25] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:17:25] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:17:27] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:17:42] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55042)
+[2025-09-22 00:18:16] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8943
+[2025-09-22 00:18:16] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:18:16] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:18:16] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:18:31] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55033)
+[2025-09-22 00:18:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8940
+[2025-09-22 00:18:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:18:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:18:54] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:19:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55041)
+[2025-09-22 00:19:29] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 8902
+[2025-09-22 00:19:29] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:19:29] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-09-22 00:19:29] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:19:47] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55051)
+[2025-09-22 00:20:36] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14402
+[2025-09-22 00:21:28] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14273
+[2025-09-22 00:21:28] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 200 49657
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 200 509249
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 200 261231
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 200 153120
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/2b85f6579ec5ea02aa17d4fdb62e509d.jpg HTTP/1.1" 200 79623
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/91520-and-repair-human-operations-joint-caterpillar-maintenance.png HTTP/1.1" 200 735930
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 200 39240
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 200 37608
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 200 3648720
+[2025-09-22 00:21:29] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:21:54] INFO basehttp.log_message - "GET /news/10/ HTTP/1.1" 200 5588
+[2025-09-22 00:22:01] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14273
+[2025-09-22 00:22:33] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14246
+[2025-09-22 00:22:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 200 39240
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 200 153120
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 200 49657
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 200 509249
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 200 261231
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/2b85f6579ec5ea02aa17d4fdb62e509d.jpg HTTP/1.1" 200 79623
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/91520-and-repair-human-operations-joint-caterpillar-maintenance.png HTTP/1.1" 200 735930
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 200 37608
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 200 3648720
+[2025-09-22 00:22:34] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:23:01] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9355
+[2025-09-22 00:24:38] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-09-22 00:24:38] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4378
+[2025-09-22 00:24:38] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-22 00:24:38] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-22 00:24:41] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-22 00:24:41] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17412
+[2025-09-22 00:24:43] INFO basehttp.log_message - "GET /admin/main/faq/ HTTP/1.1" 200 19047
+[2025-09-22 00:24:43] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:24:44] INFO basehttp.log_message - "GET /admin/main/faq/1/change/ HTTP/1.1" 200 15035
+[2025-09-22 00:24:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:24:48] INFO basehttp.log_message - "GET /admin/main/faq/ HTTP/1.1" 200 19047
+[2025-09-22 00:24:53] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24163
+[2025-09-22 00:24:55] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-09-22 00:24:55] INFO basehttp.log_message - "GET / HTTP/1.1" 200 22909
+[2025-09-22 00:24:59] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 9355
+[2025-09-22 00:27:43] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10255
+[2025-09-22 00:27:43] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:27:43] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:28:09] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10021
+[2025-09-22 00:28:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:28:09] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:29:09] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 12668
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 12748
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 200 806171
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 200 72451
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/cool.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/cool_tO8x6R5.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 200 54058
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 200 97883
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/cool_qDKAcX5.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/cool_EXvOIDv.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/cool_3AcX3EA.jpg HTTP/1.1" 200 108523
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 200 205027
+[2025-09-22 00:31:13] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-09-22 00:31:58] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 14580
+[2025-09-22 00:32:22] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-09-22 00:32:22] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4378
+[2025-09-22 00:32:22] WARNING log.log_response - Not Found: /favicon.ico
+[2025-09-22 00:32:22] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-09-22 00:32:25] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-09-22 00:32:25] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 17412
+[2025-09-22 00:32:28] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22254
+[2025-09-22 00:32:28] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:32:47] INFO basehttp.log_message - "GET /admin/main/vacancy/10/change/ HTTP/1.1" 200 17255
+[2025-09-22 00:32:47] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:32:50] INFO basehttp.log_message - "GET /admin/main/vacancy/10/delete/ HTTP/1.1" 200 13145
+[2025-09-22 00:32:50] INFO basehttp.log_message - "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+[2025-09-22 00:32:54] INFO basehttp.log_message - "GET /admin/main/vacancy/10/change/ HTTP/1.1" 200 17255
+[2025-09-22 00:35:05] INFO basehttp.log_message - "POST /admin/main/vacancy/10/change/ HTTP/1.1" 302 0
+[2025-09-22 00:35:05] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22596
+[2025-09-22 00:35:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:35:06] INFO basehttp.log_message - "GET /admin/main/vacancy/1/change/ HTTP/1.1" 200 17471
+[2025-09-22 00:35:06] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:35:09] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22348
+[2025-09-22 00:35:10] INFO basehttp.log_message - "GET /admin/main/vacancy/9/change/ HTTP/1.1" 200 17253
+[2025-09-22 00:35:10] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:35:17] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22348
+[2025-09-22 00:35:20] INFO basehttp.log_message - "GET /admin/main/vacancy/9/change/ HTTP/1.1" 200 17253
+[2025-09-22 00:35:20] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:35:40] INFO basehttp.log_message - "POST /admin/main/vacancy/9/change/ HTTP/1.1" 302 0
+[2025-09-22 00:35:40] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22608
+[2025-09-22 00:35:40] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:35:41] INFO basehttp.log_message - "GET /admin/main/vacancy/8/change/ HTTP/1.1" 200 17253
+[2025-09-22 00:35:41] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:36:09] INFO basehttp.log_message - "POST /admin/main/vacancy/8/change/ HTTP/1.1" 302 0
+[2025-09-22 00:36:09] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22717
+[2025-09-22 00:36:09] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:36:10] INFO basehttp.log_message - "GET /admin/main/vacancy/7/change/ HTTP/1.1" 200 17253
+[2025-09-22 00:36:10] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:36:41] INFO basehttp.log_message - "POST /admin/main/vacancy/7/change/ HTTP/1.1" 302 0
+[2025-09-22 00:36:41] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22728
+[2025-09-22 00:36:41] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:36:48] INFO basehttp.log_message - "GET /admin/main/vacancy/6/change/ HTTP/1.1" 200 17253
+[2025-09-22 00:36:48] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:37:10] INFO basehttp.log_message - "POST /admin/main/vacancy/6/change/ HTTP/1.1" 302 0
+[2025-09-22 00:37:10] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22854
+[2025-09-22 00:37:10] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:37:11] INFO basehttp.log_message - "GET /admin/main/vacancy/5/change/ HTTP/1.1" 200 17253
+[2025-09-22 00:37:11] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:37:36] INFO basehttp.log_message - "POST /admin/main/vacancy/5/change/ HTTP/1.1" 302 0
+[2025-09-22 00:37:36] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 22911
+[2025-09-22 00:37:36] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:37:44] INFO basehttp.log_message - "GET /admin/main/vacancy/4/change/ HTTP/1.1" 200 17253
+[2025-09-22 00:37:44] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:38:05] INFO basehttp.log_message - "POST /admin/main/vacancy/4/change/ HTTP/1.1" 302 0
+[2025-09-22 00:38:05] INFO basehttp.log_message - "GET /admin/main/vacancy/ HTTP/1.1" 200 23053
+[2025-09-22 00:38:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-09-22 00:38:40] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
