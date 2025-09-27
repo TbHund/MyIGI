@@ -267,6 +267,28 @@ class CompanyInfo(models.Model):
         verbose_name = 'Company info'
         verbose_name_plural = 'Company info'
 
+class CompanyPartners(models.Model):
+    title = models.CharField(max_length=200)
+    logo = models.ImageField(
+        upload_to='company/logo/',
+        verbose_name='Logo',
+        blank=True,
+        null=True
+    )
+    url = models.URLField(
+        max_length=500,
+        blank=True,
+        verbose_name="Company link"
+    )
+    is_active = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = 'Company partners'
+        verbose_name_plural = 'Company partners'
+
 class News(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()

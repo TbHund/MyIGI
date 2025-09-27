@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     RoomCategory, Room, Client, Booking, Review,
-    Promotion, CompanyInfo, News, FAQ, Contact, Vacancy, PrivacyPolicy
+    Promotion, CompanyInfo, News, FAQ, Contact, Vacancy, PrivacyPolicy, CompanyPartners
 )
 from datetime import date
 
@@ -102,6 +102,11 @@ class PrivacyPolicyAdmin(admin.ModelAdmin):
             'classes': ('collapse',)
         }),
     )
+
+######################
+@admin.register(CompanyPartners)
+class CompanyPartnersAdmin(admin.ModelAdmin):
+    list_display = ('title', 'logo', 'url')
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):

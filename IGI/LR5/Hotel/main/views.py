@@ -10,7 +10,7 @@ import calendar
 import pytz
 from .models import (
     News, FAQ, Contact, Vacancy, Review, 
-    Promotion, CompanyInfo, Room, RoomCategory, Booking, Client, PrivacyPolicy
+    Promotion, CompanyInfo, Room, RoomCategory, Booking, Client, PrivacyPolicy, CompanyPartners
 )
 from .api_utils import get_random_dog, get_random_cat_fact
 from .forms import UserRegistrationForm, LoginForm, BookingForm, ReviewForm, ProfileEditForm
@@ -49,6 +49,7 @@ def home(request):
     latest_news = News.objects.filter(is_published=True).order_by('-created_at').first()
     rooms = Room.objects.filter(is_active=True)
     categories = RoomCategory.objects.all()
+    partners = CompanyPartners.objects.all()
     
     latest_changes = {
         'bookings': Booking.objects.order_by('-updated_at').first(),
@@ -95,6 +96,7 @@ def home(request):
         'check_in': check_in,
         'check_out': check_out,
         'latest_changes': latest_changes,
+        'partners' : partners,
         **get_common_context()
     }
     return render(request, 'main/home.html', context)

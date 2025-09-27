@@ -4,7 +4,7 @@
 {% block title %}Главная - Отель{% endblock %}
 
 {% block content %}
-<div class="block-widget">
+<div class="block-widget" id ="pageTop">
     <div class="time-info">
         <h3>Информация о времени</h3>
         <div class="time-details">
@@ -33,11 +33,12 @@
     </div>
 </div>
 
-<div class="banner" style="max-width: 900px; margin: 0 auto; text-align: center; padding: 20px 0; background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #ADD8E6 100%); color: white;">
+<div class="banner" style="max-width: 500px; text-align: center; padding: 20px 0; background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #ADD8E6 100%); color: white;">
     <img src="{% static 'main/images/amogus.jpg' %}" 
          alt="Premier Hotel" 
-         style="height: 350px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+         style="height: 200px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
 </div>
+<a href="#n1">См. список наших партнеров</a>
 
 <div class="main-container">
     {% if latest_news %}
@@ -132,11 +133,33 @@
     </div>
 </div>
 
+<!--Якорь-->
+<h1><a id ="n1"></a>Наши партнеры</h1>
+<div class="block-widget">
+    {% for partner in partners %}
+        {% if partner.is_active %}
+            <a href={{ partner.url }} class="partner-link">
+                <figure class="partner-figure">
+                    <img src= {{ partner.logo.url}} class="partner-logo">
+                    <figcaption class="partner-caption">{{ partner.title}}</figcaption>
+                </figure>
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>
+
 <style>
+.partner-logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    max-width: 100%;
+}
+
 .main-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1250px;
     padding: 20px;
+    padding-left: 0;
 }
 
 .news-alert {
@@ -284,40 +307,25 @@
     font-size: 1.5em;
 }
 
-@media (max-width: 768px) {
-    .content-wrapper {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-
-    .rooms-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .block-widget {
     background-color: #f8f9fa;
-    padding: 20px;
+    padding: 0px;
     border-radius: 8px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(290px, 5fr));
     gap: 20px;
 }
 
 .time-info, .calendar-widget, .latest-changes {
     background-color: white;
-    padding: 15px;
+    padding: 8px;
     border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .time-info h3, .calendar-widget h3, .latest-changes h3 {
     color: #2c5282;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-size: 1.2rem;
 }
 

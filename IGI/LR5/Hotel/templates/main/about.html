@@ -68,6 +68,138 @@
             </li>
         </ol>
 
+        <hr color="red" size="2">
+        <h1>Примеры html тегов, атрибутов и т.д.</h1>
+        <hr color="red" size="2">
+
+        <h2><i>Листинг</i></h2>
+        <p><code>
+            var fruits = ["apples", "oranges", "mangoes", "cherries"];<br>
+            document.writeln("I like " + fruits.length + " fruits");
+        </code></p>
+        <p>The variable in this example is <var>fruits</var></p>
+        <p>The output from the code is: <samp>I like 4 fruits</samp></p>
+        <p>When prompted for my favorite fruit, I typed: <kbd>cherries</kbd>
+        <hr color="black" size="2">
+
+        <h2><i>Аббревиатура и определение</i></h2>
+        <abbr title="Florida Department of Citrus">FDOC</abbr>
+        <p> The <dfn title="apple">apple</dfn> is the pomaceous fruit of the apple tree. </p>
+        <hr color="black" size="2">
+
+        <h2><i>Цитата</i></h2>
+        <q cite="http://en.wikipedia.org/wiki/Apple">The apple is
+        the pomaceous fruit of the apple tree.</q>
+        My favorite book on fruit is <cite>Fruit: Edible, Inedible, Incredible</cite>.
+        <hr color="black" size="2">
+
+        <h2><i>Четверостишье с фиксированным и потенциальным переводом</i></h2>
+            I WANDERED lonely as a cloud<br>
+            That floats on high o'er vales and hills,<br>
+            When all at once I saw a crowd,<br>
+            A host, of golden daffodils;
+
+            <p></p>
+            I WANDERED lonely as a cloud<wbr>
+            That floats on high o'er vales and hills,<wbr>
+            When all at once I saw a crowd,<wbr>
+            A host, of golden daffodils;
+        <hr color="black" size="2">
+
+        <h2><i>Правильная таблица</i></h2>
+        <table>
+        <caption>Статистика сотрудничества с партнерами</caption>
+        <thead>
+            <tr>
+                <th id="partner">Партнер</th>
+                <th id="years" colspan="2">Годы сотрудничества</th>
+                <th id="projects">Реализованные проекты</th>
+            </tr>
+            <tr>
+                <th></th>  <!--ПУСТАЯ ЯЧЕЙКА-->
+                <th id="start">Начало</th>
+                <th id="end">Окончание</th>
+                <th></th>  <!--ПУСТАЯ ЯЧЕЙКА-->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td headers="partner">Company ABC</td>
+                <td headers="start">2020</td>
+                <td headers="end">2023</td>
+                <td headers="projects">15</td>
+            </tr>
+            <tr>
+                <td headers="partner">Amogus Limited</td>
+                <td headers="start">2022</td>
+                <td headers="end">н.в.</td>
+                <td headers="projects">7</td>
+            </tr>
+        </tbody>
+        </table>
+        <hr color="black" size="2">
+
+        <h2><i>Iframe</i></h2>
+        <ul>
+            <li>
+                <a href="https://dino-chrome.com/ru" target="fr">Dinozavrik</a>
+            </li>
+        </ul>
+        <iframe name="fr" width="700" height="250">Old browser</iframe>
+        <hr color="black" size="2">
+
+        <h2><i>Адаптивное изображение</i></h2>
+        <picture>
+            <source media="(max-width: 768px)" srcset="{% static 'main/images/advert1.jpg' %}">
+            <source media="(max-width: 1024px)" srcset="{% static 'main/images/advert2.jpg' %}">
+            <img src="{% static 'main/images/trivago.png' %}"  alt="Описание">
+        </picture>
+        <hr color="black" size="2">
+
+        <h2><i>Скачать файл + аудио</i></h2>
+        <a href="{% static 'main/files/СТРВЕБ2025.txt' %}" download="Pass_Login_strweb">Скачать файл с логином и паролем для сайта</a> 
+        <p></p>
+        <audio controls>
+            <source src="{% static 'main/audios/BelarusHimn.mp3' %}" type="audio/mpeg">
+        </audio>
+        <hr color="black" size="2">
+
+        <h2><i>Элементы управления</i></h2>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+
+        <p></p><label for="country">Страна:</label>
+        <select id="country" name="country" required>
+            <option value="">Выберите страну</option>
+            <option value="ru">Россия</option>
+            <option value="us">США</option>
+            <option value="de">Германия</option>
+        </select>
+
+        <p></p><fieldset>
+            <legend>Выберите пол:</legend>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Мужской</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женский</label>
+        </fieldset>
+
+        <p></p><fieldset>
+            <legend>Выберите интересы:</legend>   
+            <input type="checkbox" id="sports" name="interests" value="sports">
+            <label for="sports">Спорт</label> 
+            <input type="checkbox" id="music" name="interests" value="music">
+            <label for="music">Музыка</label>
+            <input type="checkbox" id="books" name="interests" value="books">
+            <label for="books">Книги</label>
+        </fieldset>
+
+        <p></p><label for="birthdate">Дата рождения:</label>
+        <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2024-12-31">
+
+        <p></p><button type="submit">Отправить форму</button>
+        <hr color="black" size="2">
+
         <h1><b>СЕРТИФИКАТ</b></h1>
 
         <div class="pets">
@@ -94,12 +226,17 @@
 </div>
 
 <style>
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
 
 .wrapper {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1400px;
     padding: 20px;
+    padding-left: 0;
 }
 
 .pets {
