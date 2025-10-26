@@ -7162,3 +7162,1316 @@ django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no cl
 [2025-09-27 23:11:12] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 304 0
 [2025-09-27 23:11:12] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 304 0
 [2025-09-27 23:11:12] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 304 0
+[2025-09-29 13:46:16] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-09-29 13:46:31] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26180
+[2025-09-29 13:46:31] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 304 0
+[2025-09-29 13:46:31] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-09-29 13:46:31] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 304 0
+[2025-09-29 13:46:31] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 304 0
+[2025-09-29 13:46:31] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 304 0
+[2025-09-29 13:46:31] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 304 0
+[2025-09-29 13:46:45] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15531
+[2025-09-29 13:46:45] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 304 0
+[2025-09-29 13:46:45] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-09-29 13:47:01] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58199)
+[2025-09-29 14:17:09] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14631
+[2025-09-29 14:17:19] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 15818
+[2025-09-29 14:17:32] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15627
+[2025-09-29 14:17:48] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53799)
+[2025-10-02 17:46:06] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26188
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 304 0
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 304 0
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 304 0
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 304 0
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 304 0
+[2025-10-02 17:47:21] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 304 0
+[2025-10-02 17:47:23] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 14655
+[2025-10-02 17:47:23] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 304 0
+[2025-10-02 17:47:23] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 304 0
+[2025-10-02 17:47:38] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51889)
+[2025-10-02 17:49:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51842)
+[2025-10-06 10:00:53] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-06 10:01:42] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26188
+[2025-10-06 10:01:42] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 304 0
+[2025-10-06 10:01:42] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-10-06 10:01:42] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 304 0
+[2025-10-06 10:01:42] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 304 0
+[2025-10-06 10:01:42] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 304 0
+[2025-10-06 10:01:42] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 304 0
+[2025-10-06 10:01:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15506
+[2025-10-06 10:01:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 304 0
+[2025-10-06 10:01:54] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 304 0
+[2025-10-06 10:02:10] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52163)
+[2025-10-06 10:14:27] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-10-06 10:14:33] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24723
+[2025-10-06 10:14:35] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5919
+[2025-10-06 10:14:39] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-10-06 10:14:45] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26463
+[2025-10-06 10:14:54] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 15818
+[2025-10-06 10:19:04] INFO basehttp.log_message - "GET /booking/14/cancel/ HTTP/1.1" 302 0
+[2025-10-06 10:19:11] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 15664
+[2025-10-06 10:19:38] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26188
+[2025-10-06 10:56:29] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-06 10:56:44] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26196
+[2025-10-06 10:57:19] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26204
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-06 10:57:20] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26220
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-06 10:57:58] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26236
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-06 10:59:11] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26244
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-06 11:02:28] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26244
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-06 11:03:42] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:03:51] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15452
+[2025-10-06 11:06:09] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58679)
+[2025-10-06 11:06:16] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15518
+[2025-10-06 11:06:16] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:06:16] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:06:20] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:06:31] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54982)
+[2025-10-06 11:12:48] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15498
+[2025-10-06 11:12:48] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:12:48] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:12:48] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:12:52] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:13:04] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 65205)
+[2025-10-06 11:13:27] INFO basehttp.log_message - "GET /static/main/images/advert2.jpg HTTP/1.1" 304 0
+[2025-10-06 11:13:34] INFO basehttp.log_message - "GET /static/main/images/advert1.jpg HTTP/1.1" 304 0
+[2025-10-06 11:20:49] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15687
+[2025-10-06 11:20:49] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:20:49] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:20:50] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:20:53] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:21:06] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59205)
+[2025-10-06 11:21:22] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15745
+[2025-10-06 11:21:22] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:21:22] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:21:22] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:21:22] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:21:39] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49734)
+[2025-10-06 11:23:33] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15886
+[2025-10-06 11:23:33] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:23:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:23:33] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:23:33] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:23:50] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53522)
+[2025-10-06 11:23:58] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15846
+[2025-10-06 11:23:58] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:23:58] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:23:58] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:23:59] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:24:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53932)
+[2025-10-06 11:25:24] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15986
+[2025-10-06 11:25:24] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:25:24] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:25:24] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:25:40] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:25:40] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51206)
+[2025-10-06 11:26:03] INFO basehttp.log_message - "GET /about/?name=amogus&country=ru&gender=male&interests=sports&fileinput=&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 15960
+[2025-10-06 11:26:18] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52957)
+[2025-10-06 11:32:06] INFO basehttp.log_message - "GET /about/?name=amogus&country=ru&gender=male&interests=sports&fileinput=&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 15914
+[2025-10-06 11:32:06] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:32:06] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:32:09] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:34:31] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 62478)
+[2025-10-06 11:34:38] INFO basehttp.log_message - "GET /about/?name=amogus&country=ru&gender=male&interests=sports&fileinput=&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 15888
+[2025-10-06 11:34:38] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:34:38] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:34:38] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:34:53] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64638)
+[2025-10-06 11:35:26] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16004
+[2025-10-06 11:35:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60875)
+[2025-10-06 11:36:24] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15918
+[2025-10-06 11:36:24] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:36:24] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:36:25] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:36:25] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:36:41] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55870)
+[2025-10-06 11:37:33] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15828
+[2025-10-06 11:37:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:37:33] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:37:33] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:37:33] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:37:48] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56175)
+[2025-10-06 11:38:41] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15843
+[2025-10-06 11:38:41] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:38:41] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:38:44] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:44:49] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:44:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49744)
+[2025-10-06 11:45:39] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16041
+[2025-10-06 11:45:39] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:45:39] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:45:39] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:45:46] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:45:55] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53716)
+[2025-10-06 11:46:44] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15994
+[2025-10-06 11:46:45] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:47:03] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57313)
+[2025-10-06 11:48:45] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-06 11:48:54] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26244
+[2025-10-06 11:49:02] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16091
+[2025-10-06 11:49:03] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:49:22] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58581)
+[2025-10-06 11:49:44] INFO basehttp.log_message - "GET /about/?name=%D0%B0%D0%B2&country=ru&gender=male&interests=music&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 16141
+[2025-10-06 11:49:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15948
+[2025-10-06 11:49:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53105)
+[2025-10-06 11:50:07] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 15987
+[2025-10-06 11:50:07] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61832)
+[2025-10-06 11:50:07] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:50:07] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:50:07] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:50:15] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16158
+[2025-10-06 11:50:15] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53507)
+[2025-10-06 11:50:34] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49800)
+[2025-10-06 11:53:36] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16178
+[2025-10-06 11:53:36] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:53:36] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:53:36] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:53:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 63789)
+[2025-10-06 11:53:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52156)
+[2025-10-06 11:54:48] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16402
+[2025-10-06 11:54:48] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:54:48] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:54:48] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:54:48] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:55:05] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52269)
+[2025-10-06 11:55:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16407
+[2025-10-06 11:55:13] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:55:13] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:55:13] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:55:13] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:55:28] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 50450)
+[2025-10-06 11:56:59] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16445
+[2025-10-06 11:56:59] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:56:59] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:57:00] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:57:00] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:57:17] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56116)
+[2025-10-06 11:57:25] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16468
+[2025-10-06 11:57:25] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 11:57:25] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 11:57:25] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 11:57:25] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 11:57:40] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61565)
+[2025-10-06 12:17:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16480
+[2025-10-06 12:17:55] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:17:55] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 12:17:55] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 12:17:58] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:18:12] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55173)
+[2025-10-06 12:20:21] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16182
+[2025-10-06 12:20:22] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 12:20:22] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:20:22] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 12:20:22] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:20:37] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64638)
+[2025-10-06 12:24:27] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16313
+[2025-10-06 12:24:27] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 12:24:27] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:24:28] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 12:24:28] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:24:45] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58743)
+[2025-10-06 12:25:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16691
+[2025-10-06 12:25:13] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 12:25:13] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:25:13] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 12:25:16] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:25:30] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 50084)
+[2025-10-06 12:25:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16774
+[2025-10-06 12:25:55] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 12:25:55] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:25:56] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 12:25:56] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:26:12] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51867)
+[2025-10-06 12:28:09] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16713
+[2025-10-06 12:28:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:28:09] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 12:28:09] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 12:28:10] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:28:25] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56648)
+[2025-10-06 12:41:11] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56454)
+[2025-10-06 12:41:12] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26332
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26332
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:47:25] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:47:26] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:47:26] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-06 12:47:26] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-06 12:47:26] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-06 12:47:26] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-06 12:47:26] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-06 12:47:26] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:47:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16783
+[2025-10-06 12:48:07] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 62618)
+[2025-10-06 12:48:15] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16803
+[2025-10-06 12:48:15] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 12:48:15] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:48:15] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 12:55:26] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56775)
+[2025-10-06 12:55:33] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26332
+[2025-10-06 12:59:31] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26412
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-06 12:59:32] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 13:04:56] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16771
+[2025-10-06 13:05:16] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54378)
+[2025-10-06 13:05:56] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16793
+[2025-10-06 13:05:56] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 13:05:56] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 13:05:56] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-06 13:05:56] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 13:06:15] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16665
+[2025-10-06 13:06:15] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55838)
+[2025-10-06 13:06:15] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-06 13:06:15] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-06 13:06:15] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-06 13:19:38] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54244)
+[2025-10-09 13:04:51] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 13:06:16] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 13:06:36] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 13:06:58] INFO autoreload.trigger_reload - D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\Hotel\Hotel\settings.py changed, reloading.
+[2025-10-09 13:06:59] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 13:07:10] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 13:07:20] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26412
+[2025-10-09 13:07:20] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 304 0
+[2025-10-09 13:07:20] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-10-09 13:07:21] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 304 0
+[2025-10-09 13:07:21] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 304 0
+[2025-10-09 13:07:21] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 304 0
+[2025-10-09 13:07:21] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 304 0
+[2025-10-09 13:07:59] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17024
+[2025-10-09 13:07:59] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 304 0
+[2025-10-09 13:07:59] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 304 0
+[2025-10-09 13:08:14] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56573)
+[2025-10-09 13:11:06] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17283
+[2025-10-09 13:11:07] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 304 0
+[2025-10-09 13:11:23] INFO basehttp.log_message - "GET /static/main/images/advert2.jpg HTTP/1.1" 304 0
+[2025-10-09 13:11:23] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57056)
+[2025-10-09 13:11:23] INFO basehttp.log_message - "GET /static/main/images/advert1.jpg HTTP/1.1" 304 0
+[2025-10-09 13:15:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17853
+[2025-10-09 13:15:13] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:15:13] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:15:13] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:15:13] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:15:28] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54546)
+[2025-10-09 13:15:46] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17891
+[2025-10-09 13:15:46] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:15:46] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:15:46] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:15:47] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:17:44] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 13:17:53] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26412
+[2025-10-09 13:17:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17865
+[2025-10-09 13:18:10] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58966)
+[2025-10-09 13:18:40] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17071
+[2025-10-09 13:18:40] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:18:40] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:18:40] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:18:55] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51342)
+[2025-10-09 13:19:21] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17914
+[2025-10-09 13:19:21] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:19:21] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:19:21] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:19:38] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 63553)
+[2025-10-09 13:19:41] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17339
+[2025-10-09 13:19:41] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:19:41] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:19:41] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:19:57] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 65450)
+[2025-10-09 13:20:02] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17280
+[2025-10-09 13:20:02] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:02] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:02] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:20:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17473
+[2025-10-09 13:20:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51126)
+[2025-10-09 13:20:13] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:13] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:17] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:20:24] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17479
+[2025-10-09 13:20:24] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49467)
+[2025-10-09 13:20:27] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17231
+[2025-10-09 13:20:27] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53146)
+[2025-10-09 13:20:31] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17395
+[2025-10-09 13:20:31] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56954)
+[2025-10-09 13:20:41] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17443
+[2025-10-09 13:20:41] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57878)
+[2025-10-09 13:20:41] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:41] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:41] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:20:42] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17220
+[2025-10-09 13:20:42] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 63750)
+[2025-10-09 13:20:42] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:42] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:20:42] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:20:43] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17238
+[2025-10-09 13:20:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58584)
+[2025-10-09 13:20:44] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17379
+[2025-10-09 13:20:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 50114)
+[2025-10-09 13:20:44] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17297
+[2025-10-09 13:20:44] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60079)
+[2025-10-09 13:20:45] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17371
+[2025-10-09 13:20:45] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 62023)
+[2025-10-09 13:20:46] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17315
+[2025-10-09 13:20:46] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52629)
+[2025-10-09 13:20:47] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17275
+[2025-10-09 13:20:47] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49811)
+[2025-10-09 13:20:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17209
+[2025-10-09 13:20:50] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 50164)
+[2025-10-09 13:20:51] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17278
+[2025-10-09 13:20:51] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58509)
+[2025-10-09 13:20:52] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17298
+[2025-10-09 13:20:52] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 63998)
+[2025-10-09 13:20:53] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17407
+[2025-10-09 13:20:53] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59964)
+[2025-10-09 13:20:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17415
+[2025-10-09 13:20:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60903)
+[2025-10-09 13:20:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17204
+[2025-10-09 13:20:55] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53352)
+[2025-10-09 13:21:10] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51681)
+[2025-10-09 13:21:11] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17958
+[2025-10-09 13:21:11] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:11] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:11] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:13] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17939
+[2025-10-09 13:21:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54637)
+[2025-10-09 13:21:13] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:13] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:13] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:14] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17887
+[2025-10-09 13:21:14] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58848)
+[2025-10-09 13:21:14] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:14] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:14] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:14] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17879
+[2025-10-09 13:21:14] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 65502)
+[2025-10-09 13:21:14] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:14] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:15] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:29] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57292)
+[2025-10-09 13:21:30] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17925
+[2025-10-09 13:21:30] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:30] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:30] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:37] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17447
+[2025-10-09 13:21:37] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57312)
+[2025-10-09 13:21:37] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:37] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:37] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:38] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17497
+[2025-10-09 13:21:38] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54084)
+[2025-10-09 13:21:38] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:38] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:38] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:47] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17488
+[2025-10-09 13:21:47] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53326)
+[2025-10-09 13:21:47] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:47] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:47] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:48] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17458
+[2025-10-09 13:21:48] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 63297)
+[2025-10-09 13:21:48] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:48] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:48] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:49] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17476
+[2025-10-09 13:21:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49779)
+[2025-10-09 13:21:49] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:49] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:49] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17439
+[2025-10-09 13:21:50] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56077)
+[2025-10-09 13:21:50] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:50] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:50] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17630
+[2025-10-09 13:21:50] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60035)
+[2025-10-09 13:21:50] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:50] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:51] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:51] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17481
+[2025-10-09 13:21:51] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59166)
+[2025-10-09 13:21:51] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:51] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:51] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:21:58] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17701
+[2025-10-09 13:21:58] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59406)
+[2025-10-09 13:21:58] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:58] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:21:58] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:22:16] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 56672)
+[2025-10-09 13:22:17] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17537
+[2025-10-09 13:22:17] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:22:17] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:22:17] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:22:17] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:22:20] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17552
+[2025-10-09 13:22:20] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 50892)
+[2025-10-09 13:22:20] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:22:20] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:22:20] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:22:20] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:22:36] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55963)
+[2025-10-09 13:23:37] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16857
+[2025-10-09 13:23:37] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:23:37] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:23:37] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:23:37] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:23:56] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 65277)
+[2025-10-09 13:26:08] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16934
+[2025-10-09 13:26:08] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:26:08] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:26:08] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:26:08] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:26:22] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16877
+[2025-10-09 13:26:22] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 62636)
+[2025-10-09 13:26:22] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:26:22] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:26:22] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:26:23] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:26:33] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 16939
+[2025-10-09 13:26:33] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58977)
+[2025-10-09 13:26:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:26:33] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:26:33] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:26:37] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:26:50] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51401)
+[2025-10-09 13:28:32] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17379
+[2025-10-09 13:28:32] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:28:32] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:28:32] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:28:32] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:28:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55418)
+[2025-10-09 13:34:09] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18434
+[2025-10-09 13:34:09] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:34:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:34:09] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:34:09] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:34:12] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-10-09 13:34:31] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:36:12] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18767
+[2025-10-09 13:36:12] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:36:12] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:36:13] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:36:31] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 65284)
+[2025-10-09 13:36:31] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:36:31] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 62859)
+[2025-10-09 13:37:24] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18758
+[2025-10-09 13:37:24] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:37:24] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:37:24] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:37:24] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:37:42] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49371)
+[2025-10-09 13:38:09] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18642
+[2025-10-09 13:38:09] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:09] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:38:09] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:38:19] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18805
+[2025-10-09 13:38:19] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55205)
+[2025-10-09 13:38:19] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:19] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:19] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:38:24] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:38:36] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55534)
+[2025-10-09 13:38:38] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18737
+[2025-10-09 13:38:38] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:38] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:38] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:38:38] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:38:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18800
+[2025-10-09 13:38:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60361)
+[2025-10-09 13:38:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:38:54] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:38:54] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:39:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64507)
+[2025-10-09 13:40:07] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17403
+[2025-10-09 13:40:07] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:40:07] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:40:07] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:40:07] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:40:26] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61124)
+[2025-10-09 13:40:57] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17545
+[2025-10-09 13:40:57] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:40:57] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:40:58] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:40:58] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:41:16] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54638)
+[2025-10-09 13:41:48] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17473
+[2025-10-09 13:41:48] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:41:48] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:41:48] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:41:48] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:42:07] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55934)
+[2025-10-09 13:46:52] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17441
+[2025-10-09 13:46:52] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:46:52] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:46:52] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:46:52] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:46:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17465
+[2025-10-09 13:46:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57320)
+[2025-10-09 13:46:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:46:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:46:54] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:47:07] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:47:13] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 50610)
+[2025-10-09 13:56:33] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17539
+[2025-10-09 13:56:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:56:33] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:56:33] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:56:48] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:56:52] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54796)
+[2025-10-09 13:57:06] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17532
+[2025-10-09 13:57:06] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:57:06] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:57:06] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:57:06] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:57:25] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52166)
+[2025-10-09 13:57:58] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17743
+[2025-10-09 13:57:58] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:57:58] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:57:58] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:57:58] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:58:15] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58191)
+[2025-10-09 13:59:03] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17498
+[2025-10-09 13:59:03] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 13:59:03] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 13:59:03] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 13:59:03] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 13:59:20] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61977)
+[2025-10-09 14:02:19] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17793
+[2025-10-09 14:02:19] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 14:02:19] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 14:02:19] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 14:02:19] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 14:02:33] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 14:03:56] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26412
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26427
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-09 14:04:27] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-09 14:04:28] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26442
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-09 14:05:54] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 14:06:01] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17598
+[2025-10-09 14:06:01] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 14:06:02] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10444
+[2025-10-09 14:06:02] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51781)
+[2025-10-09 14:06:07] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10444
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /contacts/ HTTP/1.1" 200 13171
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/obektovaya-ohrana-17.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/0404a7c629d57571cedabf0d81a9ea55.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/KMO_111307_36311_1_t218_114328.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/20445.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/cool.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/cool_qDKAcX5.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/cool_EXvOIDv.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/cool_tO8x6R5.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:09] INFO basehttp.log_message - "GET /media/contacts/cool_3AcX3EA.jpg HTTP/1.1" 304 0
+[2025-10-09 14:06:12] INFO basehttp.log_message - "GET /privacy/ HTTP/1.1" 200 7139
+[2025-10-09 14:06:18] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 17672
+[2025-10-09 14:06:23] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 16098
+[2025-10-09 14:35:46] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17524
+[2025-10-09 14:36:05] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49871)
+[2025-10-09 14:37:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17692
+[2025-10-09 14:37:50] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 14:37:50] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 14:37:50] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 14:38:05] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 14:38:07] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52685)
+[2025-10-09 14:38:30] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26455
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26397
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-09 14:39:35] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 14:39:54] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26455
+[2025-10-09 14:39:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 14:39:54] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-09 14:39:54] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-09 14:39:54] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-09 14:39:54] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-09 14:39:55] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26343
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-09 14:43:09] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 14:45:20] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17617
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /news/ HTTP/1.1" 200 14669
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/7b44c3ce8785d5acccbcc1cd1fe1bbe4f55f7055.jpeg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/Friends_Stock_Shutterstock_1847421289_RV.jpg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/ustanovka_sb.jpg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/scale_1200.jpg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/TheBoundary-01.jpg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/pic_0f222760470035e1b855ae8f2e0e5bbd.jpg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/7a208c22503873.56313bd2d4816.jpg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52022)
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/72f5d0ab3f034a1ee15faebe8cc23606.png HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/2b85f6579ec5ea02aa17d4fdb62e509d.jpg HTTP/1.1" 304 0
+[2025-10-09 14:45:26] INFO basehttp.log_message - "GET /media/news/91520-and-repair-human-operations-joint-caterpillar-maintenance.png HTTP/1.1" 304 0
+[2025-10-09 14:45:27] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10444
+[2025-10-09 14:45:29] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 15411
+[2025-10-09 14:45:29] INFO basehttp.log_message - "GET /promotions/ HTTP/1.1" 200 16098
+[2025-10-09 14:45:31] INFO basehttp.log_message - "GET /reviews/ HTTP/1.1" 200 18044
+[2025-10-09 14:45:32] INFO basehttp.log_message - "GET /vacancies/ HTTP/1.1" 200 17672
+[2025-10-09 14:45:34] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17591
+[2025-10-09 14:45:49] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 65067)
+[2025-10-09 14:46:25] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17678
+[2025-10-09 16:59:46] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 16:59:55] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26358
+[2025-10-09 17:01:08] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26334
+[2025-10-09 17:01:18] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17538
+[2025-10-09 17:01:33] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 63949)
+[2025-10-09 17:28:09] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17538
+[2025-10-09 17:28:09] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:28:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:28:09] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:28:17] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:28:24] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54345)
+[2025-10-09 17:28:47] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17563
+[2025-10-09 17:28:47] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:28:47] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:28:48] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:29:01] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:29:06] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49260)
+[2025-10-09 17:29:08] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17695
+[2025-10-09 17:29:08] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:29:08] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:29:08] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:29:08] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:29:27] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59959)
+[2025-10-09 17:29:45] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17675
+[2025-10-09 17:29:45] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:29:45] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:29:45] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:29:46] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:30:03] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61565)
+[2025-10-09 17:31:37] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17578
+[2025-10-09 17:31:37] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:31:37] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:31:37] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:31:37] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:31:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54811)
+[2025-10-09 17:35:04] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26338
+[2025-10-09 17:38:33] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10489
+[2025-10-09 17:39:00] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10561
+[2025-10-09 17:39:00] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:39:01] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:39:12] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10561
+[2025-10-09 17:39:30] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10489
+[2025-10-09 17:39:30] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:39:30] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:40:33] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17661
+[2025-10-09 17:40:42] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:40:48] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59270)
+[2025-10-09 17:42:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17658
+[2025-10-09 17:42:50] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:42:50] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:42:50] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:42:53] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:43:05] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51268)
+[2025-10-09 17:44:07] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17812
+[2025-10-09 17:44:07] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:44:07] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:44:07] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:44:07] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:44:24] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53806)
+[2025-10-09 17:44:47] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17950
+[2025-10-09 17:44:47] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:44:47] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:44:48] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:45:06] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60474)
+[2025-10-09 17:45:06] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61512)
+[2025-10-09 17:45:19] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17644
+[2025-10-09 17:45:19] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:45:19] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:45:19] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:45:19] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:45:34] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60657)
+[2025-10-09 17:46:05] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17678
+[2025-10-09 17:46:05] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:46:05] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:46:05] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:46:06] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:46:21] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58530)
+[2025-10-09 17:47:32] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17701
+[2025-10-09 17:47:33] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:47:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:47:33] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:47:33] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:47:48] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57997)
+[2025-10-09 17:48:21] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17972
+[2025-10-09 17:48:22] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:48:22] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:48:22] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:48:22] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:48:41] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53923)
+[2025-10-09 17:57:23] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17959
+[2025-10-09 17:57:23] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:57:23] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:57:24] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:57:30] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:57:43] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53856)
+[2025-10-09 17:58:09] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 17959
+[2025-10-09 17:58:09] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 17:58:09] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 17:58:09] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 17:58:09] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 17:58:27] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64395)
+[2025-10-09 18:00:40] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18032
+[2025-10-09 18:00:40] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:00:40] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:00:41] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:00:41] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:00:56] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61327)
+[2025-10-09 18:04:24] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18031
+[2025-10-09 18:04:39] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:04:39] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60388)
+[2025-10-09 18:04:47] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 17948
+[2025-10-09 18:04:47] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:04:47] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:04:47] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:04:48] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:05:06] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64793)
+[2025-10-09 18:07:40] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18033
+[2025-10-09 18:07:40] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:07:40] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:07:41] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:07:59] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 65475)
+[2025-10-09 18:07:59] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:07:59] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64632)
+[2025-10-09 18:08:23] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18039
+[2025-10-09 18:08:23] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:08:23] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:08:23] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:08:23] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:08:42] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49614)
+[2025-10-09 18:11:05] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18131
+[2025-10-09 18:11:05] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:11:05] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:11:05] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:11:05] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:11:22] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 52282)
+[2025-10-09 18:13:20] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18088
+[2025-10-09 18:13:20] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:13:20] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:13:20] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:13:38] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60744)
+[2025-10-09 18:13:38] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 60749)
+[2025-10-09 18:16:19] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18691
+[2025-10-09 18:16:19] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:16:19] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:16:19] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:16:19] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:16:38] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59444)
+[2025-10-09 18:19:06] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18399
+[2025-10-09 18:19:06] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:19:06] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:19:06] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:19:06] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:19:24] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64466)
+[2025-10-09 18:19:33] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18412
+[2025-10-09 18:19:33] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:19:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:19:34] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:20:45] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 58453)
+[2025-10-09 18:21:34] INFO basehttp.log_message - "GET /about/?name=222&surname=132&middlename=333&country=ru&gender=female&fileinput=&desc=++++++++++++&birthdate=&sendForm=SEND%21%21%21 HTTP/1.1" 200 18418
+[2025-10-09 18:21:34] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:21:34] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:21:34] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:21:35] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:21:51] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55298)
+[2025-10-09 18:24:03] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26366
+[2025-10-09 18:25:09] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26398
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-09 18:25:10] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:38:55] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 53014)
+[2025-10-09 18:38:55] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18514
+[2025-10-09 18:39:00] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-10-09 18:40:16] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18445
+[2025-10-09 18:40:16] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 18:40:16] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 18:40:16] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 18:40:16] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 18:40:19] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-10-09 18:47:54] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26398
+[2025-10-09 18:48:18] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-10-10&check_out=2025-10-11 HTTP/1.1" 200 26987
+[2025-10-09 18:48:23] INFO basehttp.log_message - "GET /book/2/?check_in=2025-10-10&check_out=2025-10-11 HTTP/1.1" 200 8283
+[2025-10-09 18:48:53] INFO basehttp.log_message - "POST /book/2/?check_in=2025-10-10&check_out=2025-10-11 HTTP/1.1" 302 0
+[2025-10-09 18:49:00] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 17763
+[2025-10-09 19:05:01] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26398
+[2025-10-09 19:05:30] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-10-09 19:05:37] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933
+[2025-10-09 19:05:39] INFO basehttp.log_message - "GET /register/ HTTP/1.1" 200 8249
+[2025-10-09 19:09:44] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5957
+[2025-10-09 19:09:48] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-10-09 19:09:54] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26673
+[2025-10-09 19:10:04] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 17429
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3956
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+[2025-10-09 19:10:24] INFO basehttp.log_message - "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[2025-10-09 19:10:24] WARNING log.log_response - Not Found: /favicon.ico
+[2025-10-09 19:10:24] WARNING basehttp.log_message - "GET /favicon.ico HTTP/1.1" 404 7903
+[2025-10-09 19:10:29] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4238
+[2025-10-09 19:10:41] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-10-09 19:10:41] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 18798
+[2025-10-09 19:10:41] INFO basehttp.log_message - "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[2025-10-09 19:10:41] INFO basehttp.log_message - "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+[2025-10-09 19:10:41] INFO basehttp.log_message - "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[2025-10-09 19:10:41] INFO basehttp.log_message - "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[2025-10-09 19:14:41] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26187
+[2025-10-09 19:14:44] ERROR log.log_response - Internal Server Error: /profile/
+Traceback (most recent call last):
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\hotel\main\views.py", line 215, in profile
+    user_bookings = request.user.client.booking_set.all().order_by('-created_at')
+                    ^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Git\Repo\353501_BOGUTSKI_2\MyIGI\IGI\LR5\venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.client.RelatedObjectDoesNotExist: User has no client.
+[2025-10-09 19:14:44] ERROR basehttp.log_message - "GET /profile/ HTTP/1.1" 500 86090
+[2025-10-09 19:14:48] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-10-09 19:14:55] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933
+[2025-10-09 19:14:59] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5957
+[2025-10-09 19:15:04] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-10-09 19:15:10] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26673
+[2025-10-09 19:15:20] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 17429
+[2025-10-09 19:15:44] INFO basehttp.log_message - "GET /booking/12/cancel/ HTTP/1.1" 302 0
+[2025-10-09 19:15:50] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 17776
+[2025-10-09 19:16:28] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 17429
+[2025-10-09 19:20:42] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-10-09 19:20:42] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3956
+[2025-10-09 19:20:51] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-10-09 19:20:51] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 18798
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 31143
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[2025-10-09 19:20:55] INFO basehttp.log_message - "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /admin/main/booking/12/change/ HTTP/1.1" 200 27548
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+[2025-10-09 19:21:07] INFO basehttp.log_message - "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[2025-10-09 19:21:15] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 31143
+[2025-10-09 19:21:42] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26187
+[2025-10-09 19:21:45] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-10-09 19:21:51] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933
+[2025-10-09 19:21:55] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5957
+[2025-10-09 19:22:00] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-10-09 19:22:07] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26673
+[2025-10-09 19:22:26] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-10-10&check_out=2025-10-11 HTTP/1.1" 200 25791
+[2025-10-09 19:30:46] WARNING log.log_response - Not Found: /admi
+[2025-10-09 19:30:46] WARNING basehttp.log_message - "GET /admi HTTP/1.1" 404 7882
+[2025-10-09 19:30:54] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-10-09 19:30:54] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3956
+[2025-10-09 19:31:01] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-10-09 19:31:01] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 18798
+[2025-10-09 19:31:09] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 23203
+[2025-10-09 19:31:09] INFO basehttp.log_message - "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+[2025-10-09 19:31:09] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:31:11] INFO basehttp.log_message - "GET /admin/auth/user/ HTTP/1.1" 200 24605
+[2025-10-09 19:31:11] INFO basehttp.log_message - "GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+[2025-10-09 19:31:11] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:31:11] INFO basehttp.log_message - "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+[2025-10-09 19:31:14] INFO basehttp.log_message - "GET /admin/auth/group/ HTTP/1.1" 200 14444
+[2025-10-09 19:31:14] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:31:15] INFO basehttp.log_message - "GET /admin/main/room/ HTTP/1.1" 200 23203
+[2025-10-09 19:31:15] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:31:17] INFO basehttp.log_message - "GET /admin/main/client/ HTTP/1.1" 200 26512
+[2025-10-09 19:31:17] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:31:18] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 31143
+[2025-10-09 19:31:18] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:31:41] INFO basehttp.log_message - "GET /admin/main/booking/12/change/ HTTP/1.1" 200 27548
+[2025-10-09 19:31:41] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:31:52] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 31143
+[2025-10-09 19:32:05] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 24104
+[2025-10-09 19:32:05] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:32:10] INFO basehttp.log_message - "GET /admin/main/promotion/10/change/ HTTP/1.1" 200 18791
+[2025-10-09 19:32:10] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:32:11] INFO basehttp.log_message - "GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+[2025-10-09 19:32:19] INFO basehttp.log_message - "GET /admin/main/promotion/ HTTP/1.1" 200 24104
+[2025-10-09 19:32:27] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 18798
+[2025-10-09 19:32:37] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26187
+[2025-10-09 19:32:39] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-10-09 19:32:46] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933
+[2025-10-09 19:32:51] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5957
+[2025-10-09 19:32:57] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-10-09 19:33:04] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26673
+[2025-10-09 19:45:13] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-09 19:45:22] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26398
+[2025-10-09 19:46:14] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 17429
+[2025-10-09 19:47:14] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-10-09 19:47:20] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933
+[2025-10-09 19:47:23] INFO basehttp.log_message - "GET /register/ HTTP/1.1" 200 8249
+[2025-10-09 19:48:50] INFO basehttp.log_message - "POST /register/ HTTP/1.1" 302 0
+[2025-10-09 19:48:56] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26479
+[2025-10-09 19:49:14] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 9170
+[2025-10-09 19:49:34] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26187
+[2025-10-09 19:49:52] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-10-09&check_out=2025-10-10 HTTP/1.1" 200 25580
+[2025-10-09 19:49:59] INFO basehttp.log_message - "GET /book/3/?check_in=2025-10-09&check_out=2025-10-10 HTTP/1.1" 200 8089
+[2025-10-09 19:50:14] INFO basehttp.log_message - "POST /book/3/?check_in=2025-10-09&check_out=2025-10-10 HTTP/1.1" 302 0
+[2025-10-09 19:50:20] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11416
+[2025-10-09 19:50:30] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11082
+[2025-10-09 19:50:46] INFO basehttp.log_message - "GET /booking/17/cancel/ HTTP/1.1" 302 0
+[2025-10-09 19:50:52] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11429
+[2025-10-09 19:51:14] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 302 0
+[2025-10-09 19:51:14] INFO basehttp.log_message - "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3961
+[2025-10-09 19:51:21] INFO basehttp.log_message - "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2025-10-09 19:51:21] INFO basehttp.log_message - "GET /admin/ HTTP/1.1" 200 18798
+[2025-10-09 19:51:23] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 31990
+[2025-10-09 19:51:23] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:51:30] INFO basehttp.log_message - "GET /admin/main/booking/17/change/ HTTP/1.1" 200 27632
+[2025-10-09 19:51:30] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:51:33] INFO basehttp.log_message - "GET /admin/main/booking/17/delete/ HTTP/1.1" 200 14355
+[2025-10-09 19:51:33] INFO basehttp.log_message - "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+[2025-10-09 19:51:35] INFO basehttp.log_message - "POST /admin/main/booking/17/delete/ HTTP/1.1" 302 0
+[2025-10-09 19:51:35] INFO basehttp.log_message - "GET /admin/main/booking/ HTTP/1.1" 200 31385
+[2025-10-09 19:51:35] INFO basehttp.log_message - "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+[2025-10-09 19:51:45] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26187
+[2025-10-09 19:51:53] INFO basehttp.log_message - "GET /logout/ HTTP/1.1" 302 0
+[2025-10-09 19:51:59] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933
+[2025-10-09 19:52:17] INFO basehttp.log_message - "GET /login/ HTTP/1.1" 200 5957
+[2025-10-09 19:52:37] INFO basehttp.log_message - "POST /login/ HTTP/1.1" 302 0
+[2025-10-09 19:52:43] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26468
+[2025-10-09 19:52:53] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 9170
+[2025-10-09 19:53:06] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26187
+[2025-10-09 19:54:04] INFO basehttp.log_message - "GET /?category=&capacity=&check_in=2025-10-15&check_out=2025-10-16 HTTP/1.1" 200 26776
+[2025-10-09 19:54:30] INFO basehttp.log_message - "GET /book/4/?check_in=2025-10-15&check_out=2025-10-16 HTTP/1.1" 200 8083
+[2025-10-09 19:54:50] INFO basehttp.log_message - "POST /book/4/?check_in=2025-10-15&check_out=2025-10-16 HTTP/1.1" 302 0
+[2025-10-09 19:54:57] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 11415
+[2025-10-09 20:08:27] INFO basehttp.log_message - "GET /booking/18/cancel/ HTTP/1.1" 302 0
+[2025-10-09 20:08:35] INFO basehttp.log_message - "GET /profile/ HTTP/1.1" 200 10927
+[2025-10-09 20:12:53] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18418
+[2025-10-09 20:13:03] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 20:14:22] INFO basehttp.log_message - "GET /faq/ HTTP/1.1" 200 10278
+[2025-10-09 20:14:32] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18398
+[2025-10-09 20:14:33] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 20:19:39] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18385
+[2025-10-09 20:19:39] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 20:19:39] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 20:19:39] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 20:19:39] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 20:19:56] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64514)
+[2025-10-09 20:20:16] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18346
+[2025-10-09 20:20:16] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-09 20:20:16] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-09 20:20:16] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-09 20:20:19] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-09 20:20:31] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 57338)
+[2025-10-11 13:08:55] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-21 16:04:31] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-21 16:04:42] INFO basehttp.log_message - "GET / HTTP/1.1" 200 26187
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/1643112744_31-bigfoto-name-p-svet-v-spalne-rezhim-56_vAU1ptz.jpg HTTP/1.1" 200 859530
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/1679361694_en-idei-c.jpg HTTP/1.1" 200 249983
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/cool.jpg HTTP/1.1" 200 108523
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/money2.jpg HTTP/1.1" 200 115840
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/cool_Ww0SJBj.jpg HTTP/1.1" 200 108523
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/cool_wc0SUN8.jpg HTTP/1.1" 200 108523
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/cool_9ZgHhg2.jpg HTTP/1.1" 200 108523
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/791b398e3fbf6f45b97ed68a2cdd4dc1.jpg HTTP/1.1" 200 217982
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/cool_rORlsOq.jpg HTTP/1.1" 200 108523
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 200 54164
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 200 127011
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 200 90637
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 200 20879
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /media/rooms/beafbef8870f5e14dfbd36f5bd01b1fb.jpg HTTP/1.1" 200 2492884
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 200 287262
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:04:43] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:04:49] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18488
+[2025-10-21 16:04:49] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:04:50] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:05:05] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55522)
+[2025-10-21 16:05:30] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18490
+[2025-10-21 16:05:48] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54971)
+[2025-10-21 16:06:40] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18525
+[2025-10-21 16:06:40] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:06:40] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:06:40] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:06:40] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:06:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18406
+[2025-10-21 16:06:54] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61711)
+[2025-10-21 16:06:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:06:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:06:54] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:06:54] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:07:08] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18419
+[2025-10-21 16:07:08] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 59184)
+[2025-10-21 16:07:08] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:07:23] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51813)
+[2025-10-21 16:08:10] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18430
+[2025-10-21 16:08:10] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:08:10] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:08:10] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:08:10] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:08:27] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 54071)
+[2025-10-21 16:08:29] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18348
+[2025-10-21 16:08:29] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:08:29] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:08:29] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:08:29] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:08:35] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18684
+[2025-10-21 16:08:35] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61283)
+[2025-10-21 16:08:35] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:08:53] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 49672)
+[2025-10-21 16:08:54] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18421
+[2025-10-21 16:08:54] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:08:54] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:08:54] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:08:54] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:09:03] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18361
+[2025-10-21 16:09:03] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 61034)
+[2025-10-21 16:09:03] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:09:03] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:09:03] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:09:03] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:09:19] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 51824)
+[2025-10-21 16:09:20] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18565
+[2025-10-21 16:09:20] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:09:20] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:09:20] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 200 3475562
+[2025-10-21 16:09:20] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:09:25] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18366
+[2025-10-21 16:09:25] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 55542)
+[2025-10-21 16:09:33] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18457
+[2025-10-21 16:09:33] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 50624)
+[2025-10-21 16:09:33] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 200 9650
+[2025-10-21 16:09:33] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 200 9650
+[2025-10-21 16:09:33] INFO basehttp.log_message - "GET /static/main/images/favicon.ico HTTP/1.1" 200 271
+[2025-10-21 16:09:37] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18732
+[2025-10-21 16:09:37] INFO basehttp.handle_error - - Broken pipe from ('127.0.0.1', 64559)
+[2025-10-21 16:09:37] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 200 5302227
+[2025-10-21 16:10:50] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18509
+[2025-10-26 13:02:02] INFO autoreload.run_with_reloader - Watching for file changes with StatReloader
+[2025-10-26 13:02:12] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933
+[2025-10-26 13:02:12] INFO basehttp.log_message - "GET /static/main/images/amogus.jpg HTTP/1.1" 304 0
+[2025-10-26 13:02:12] INFO basehttp.log_message - "GET /static/main/images/trivago.png HTTP/1.1" 304 0
+[2025-10-26 13:02:12] INFO basehttp.log_message - "GET /media/company/logo/Minsk.jpg HTTP/1.1" 304 0
+[2025-10-26 13:02:12] INFO basehttp.log_message - "GET /media/company/logo/Izmailovov.jpg HTTP/1.1" 304 0
+[2025-10-26 13:02:12] INFO basehttp.log_message - "GET /media/company/logo/Hilton.png HTTP/1.1" 304 0
+[2025-10-26 13:02:12] INFO basehttp.log_message - "GET /media/company/logo/Vitebsk.jpg HTTP/1.1" 304 0
+[2025-10-26 13:02:21] INFO basehttp.log_message - "GET /about/ HTTP/1.1" 200 18176
+[2025-10-26 13:02:21] INFO basehttp.log_message - "GET /media/company/logo/trivagoAAA.png HTTP/1.1" 304 0
+[2025-10-26 13:02:21] INFO basehttp.log_message - "GET /media/company/videos/trivagoVideo.mp4 HTTP/1.1" 304 0
+[2025-10-26 13:02:21] INFO basehttp.log_message - "GET /static/main/audios/BelarusHimn.mp3 HTTP/1.1" 304 0
+[2025-10-26 13:02:24] INFO basehttp.log_message - "GET / HTTP/1.1" 200 24933

@@ -10,7 +10,7 @@
         {% if faqs %}
             {% for faq in faqs %}
             <div class="faq-item">
-                <details>
+                <details open>
                     <summary>{{ faq.question }}</summary>
                     <div class="answer">
                         {{ faq.answer|linebreaks }}

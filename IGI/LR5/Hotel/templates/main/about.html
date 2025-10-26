@@ -4,30 +4,31 @@
 {% block title %}О нас - Отель{% endblock %}
 
 {% block content %}
-<div class="wrapper">
-    <div class="about-content" itemscope itemtype="https://schema.org/Hotel">
-        <h1 itemprop="name">О нашем отеле</h1>
-        
+<section class="company-info-main">
+    
+    <article itemscope itemtype="https://schema.org/Hotel">
+        <h1>О компании</h1>
         {% if company_info %}
-            <!--<h2 class="info-title">{{ company_info.title }}</h2>-->
-            <div class="info-content" itemprop="description">{{ company_info.content }}</div>
+            <h2 class="info-title" itemprop="name">{{ company_info.title }}</h2>
+            <p>Категория: <strong itemprop="hotelClass">LUXE</strong></p>
+            <p class="info-content" itemprop="description">{{ company_info.content }}</p>
         {% endif %}
+    </article>
 
-        <h1>Видео</h1>
-        <div class="video-container" itemprop="video" itemscope itemtype="https://schema.org/VideoObject">
-            {% if company_info.video_file %}
-                <video controls width="100%" poster="{{ company_info.logo.url }}" style="max-width: 800px; border-radius: 8px;">
-                    <source src="{{ company_info.video_file.url }}" type="video/mp4">
-                    Ваш браузер не поддерживает видео
-                </video>
-                <meta itemprop="name" content="Видео о отеле {{ company_info.title }}">
-            {% else %}
-                <div class="no-video">
-                    <p>🎬 Видео о компании пока не добавлено</p>
-                </div>
-            {% endif %}
-        </div>
+    <article class="video-container" itemscope itemtype="https://schema.org/VideoObject">
+        {% if company_info.video_file %}
+            <h1 itemprop="name">Видео об отеле {{ company_info.title }}</h1>
+            <video controls width="100%" preload="auto" muted itemprop="video" poster="{{ company_info.logo.url }}" style="max-width: 800px; border-radius: 8px;">
+                <source src="{{ company_info.video_file.url }}" type="video/mp4">
+                <!--<track kind="subtitles" src="video/jane.en.vtt" srclang="en" label="English" default">-->
+                Ваш браузер не поддерживает видео
+            </video>
+        {% else %}
+            <p>Видео не загружено</p>
+        {% endif %}
+    </article>
 
+    <article>
         <h1>История по годам</h1>
         <ul class="timeline-list" type="disc">
             {% for item in company_info.get_history_items %}
@@ -39,9 +40,11 @@
             </li>
             {% endfor %}
         </ul>
+    </article>
 
+    <article>
         <h1>Реквизиты</h1>
-        <ol class="company-info-list" type="1">
+        <ol class="company-info-list" type="1" start="5">
             <li class="company-info-item">
                 {% if company_info.email %}
                 <span>Почта компании</span> — 
@@ -67,11 +70,37 @@
                 <span>{{ company_info.inn }}</span>
             </li>
         </ol>
+    </article>
 
-        <hr color="red" size="2">
-        <h1>Примеры html тегов, атрибутов и т.д.</h1>
-        <hr color="red" size="2">
+    <article class="legal-definitions">
+        <h1>Правовые понятия</h1>
+        
+        <dl class="legal-list">
+            <dt><strong>Публичная оферта</strong></dt>
+            <dd>
+                Предложение отеля заключить договор на оказание услуг, 
+                адресованное неопределенному кругу лиц через сайт отеля. 
+                Бронирование номера считается акцептом данной оферты.
+            </dd>
+            
+            <dt><strong>Акцепт оферты</strong></dt>
+            <dd>
+                Совершение конклюдентных действий гостем - заполнение формы 
+                бронирования и подтверждение заказа. Момент акцепта считается 
+                моментом заключения договора.
+            </dd>
+        </dl>
+    </article>
 
+</section>
+
+<section class="html-info">
+
+    <hr color="red" size="2" align="left" width="75%">
+    <h1>Примеры html тегов, атрибутов и т.д.</h1>
+    <hr color="red" size="2" align="left" width="75%">
+
+    <article>
         <h2><i>Листинг</i></h2>
         <p><code>
             var fruits = ["apples", "oranges", "mangoes", "cherries"];<br>
@@ -80,19 +109,31 @@
         <p>The variable in this example is <var>fruits</var></p>
         <p>The output from the code is: <samp>I like 4 fruits</samp></p>
         <p>When prompted for my favorite fruit, I typed: <kbd>cherries</kbd>
-        <hr color="black" size="2">
+    </article>
+    <hr color="black" size="2">
 
+    <article>
         <h2><i>Аббревиатура и определение</i></h2>
         <abbr title="Florida Department of Citrus">FDOC</abbr>
         <p> The <dfn title="apple">apple</dfn> is the pomaceous fruit of the apple tree. </p>
-        <hr color="black" size="2">
+    </article>
+    <hr color="black" size="2">
 
-        <h2><i>Цитата</i></h2>
+    <article>
+        <h2><i>Цитаты</i></h2>
         <q cite="http://en.wikipedia.org/wiki/Apple">The apple is
         the pomaceous fruit of the apple tree.</q>
         My favorite book on fruit is <cite>Fruit: Edible, Inedible, Incredible</cite>.
-        <hr color="black" size="2">
 
+        <blockquote cite="http://en.wikipedia.org/wiki/Apple">
+        The apple forms a tree that is small and deciduous, 
+        reaching 3 to 12 meters (9.8 to 39 ft) tall, with a 
+        broad, often densely twiggy crown.
+        </blockquote>
+    </article>
+    <hr color="black" size="2">
+
+    <article>
         <h2><i>Четверостишье с фиксированным и потенциальным переводом</i></h2>
             I WANDERED lonely as a cloud<br>
             That floats on high o'er vales and hills,<br>
@@ -104,10 +145,12 @@
             That floats on high o'er vales and hills,<wbr>
             When all at once I saw a crowd,<wbr>
             A host, of golden daffodils;
-        <hr color="black" size="2">
+    </article>
+    <hr color="black" size="2">
 
+    <article>
         <h2><i>Правильная таблица</i></h2>
-        <table>
+        <table align="center" border="1" bgcolor="#87CEEB" bordercolor="black" Summary="Test table">
         <caption>Статистика сотрудничества с партнерами</caption>
         <thead>
             <tr>
@@ -137,8 +180,10 @@
             </tr>
         </tbody>
         </table>
-        <hr color="black" size="2">
+    </article>
+    <hr color="black" size="2">
 
+    <article>
         <h2><i>Iframe</i></h2>
         <ul>
             <li>
@@ -146,101 +191,137 @@
             </li>
         </ul>
         <iframe name="fr" width="700" height="250">Old browser</iframe>
-        <hr color="black" size="2">
+    </article>
+    <hr color="black" size="2">
 
+    <article>
         <h2><i>Адаптивное изображение</i></h2>
         <picture>
             <source media="(max-width: 768px)" srcset="{% static 'main/images/advert1.jpg' %}">
             <source media="(max-width: 1024px)" srcset="{% static 'main/images/advert2.jpg' %}">
             <img src="{% static 'main/images/trivago.png' %}"  alt="Описание">
         </picture>
-        <hr color="black" size="2">
+    </article>
+    <hr color="black" size="2">
 
+    <article>
         <h2><i>Скачать файл + аудио</i></h2>
         <a href="{% static 'main/files/СТРВЕБ2025.txt' %}" download="Pass_Login_strweb">Скачать файл с логином и паролем для сайта</a> 
         <p></p>
+        
         <audio controls>
             <source src="{% static 'main/audios/BelarusHimn.mp3' %}" type="audio/mpeg">
         </audio>
         <hr color="black" size="2">
+    </article>
 
+    <article>
         <h2><i>Элементы управления</i></h2>
-        <label for="name">Имя:</label>
-        <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+        <form>
+            <fieldset>
+                <legend>ФИО:</legend>
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="50" placeholder="STARTER TEXT">
+                <br>
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" required minlength="2" maxlength="50">
+                <br>
+                <label for="middlename">Отчество:</label>
+                <input type="text" id="middlename" name="middlename" required minlength="2" maxlength="50">
+            </fieldset>
 
-        <p></p><label for="country">Страна:</label>
-        <select id="country" name="country" required>
-            <option value="">Выберите страну</option>
-            <option value="ru">Россия</option>
-            <option value="us">США</option>
-            <option value="de">Германия</option>
-        </select>
+            <p></p>
+            <label for="country">Страна:</label>
+            <select id="country" name="country" required size="1">
+                <option value="" disabled>Выберите страну</option>
+                <option value="ru" selected>Беларусь</option>
+                <optgroup label="Западные страны">
+                    <option value="us">США</option>
+                    <option value="de">Германия</option>
+                </optgroup>
+            </select>
 
-        <p></p><fieldset>
-            <legend>Выберите пол:</legend>
-            <input type="radio" id="male" name="gender" value="male" required>
-            <label for="male">Мужской</label>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Женский</label>
-        </fieldset>
+            <p>
+                Fruit: <input list="fruitlist" id="fave" name="fave" />
+            </p>
 
-        <p></p><fieldset>
-            <legend>Выберите интересы:</legend>   
-            <input type="checkbox" id="sports" name="interests" value="sports">
-            <label for="sports">Спорт</label> 
-            <input type="checkbox" id="music" name="interests" value="music">
-            <label for="music">Музыка</label>
-            <input type="checkbox" id="books" name="interests" value="books">
-            <label for="books">Книги</label>
-        </fieldset>
+            <p></p>
+            <fieldset>
+                <legend>Выберите пол:</legend>
+                <input type="radio" id="male" name="gender" value="male" required checked>
+                <label for="male">Мужской</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Женский</label>
+            </fieldset>
 
-        <p></p><label for="birthdate">Дата рождения:</label>
-        <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2024-12-31">
+            <p></p>
+            <fieldset>
+                <legend>Выберите интересы:</legend>   
+                <input type="checkbox" id="sports" name="interests" value="sports" checked>
+                <label for="sports">Спорт</label> 
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Музыка</label>
+                <input type="checkbox" id="books" name="interests" value="books">
+                <label for="books">Книги</label>
+            </fieldset>
 
-        <p></p><button type="submit">Отправить форму</button>
-        <hr color="black" size="2">
+            <p></p>
+            <label for="fileinput">Выберите файл:</label>
+            <input id="fileinput" type="file" name="fileinput">
 
-        <h1><b>СЕРТИФИКАТ</b></h1>
+            <p></p>
+            <textarea name="desc" cols="45" rows="10" maxlength="450" readonly style="color:red;">Amogus</textarea>
 
-        <div class="pets">
-            <div class="pets-container">
-                {% if random_dog %}
-                <div class="pet-box">
-                    <h3 class="pet-heading"><b><strong>Наш</strong></b> <mark>питомец дня</mark></h3>
-                    <div class="image-wrapper">
-                        <img src="{{ random_dog.image_url }}" alt="Собака породы {{ random_dog.breed }}" class="pet-photo">
-                    </div>
-                    <p class="breed-info">Порода: {{ random_dog.breed }}</p>
-                </div>
-                {% endif %}
+            <p></p>
+            <label for="birthdate">Дата рождения:</label>
+            <input type="date" id="birthdate" name="birthdate" min="1900-01-01" max="2024-12-31">
 
-                {% if cat_fact %}
-                <div class="pet-box">
-                    <h3 class="pet-heading">Интересный факт о котах</h3>
-                    <p class="cat-fact">{{ cat_fact }}</p>
-                </div>
-                {% endif %}
-            </div>
+            <p></p>
+            <label for="sendForm">Отправить форму:</label>
+            <input type="submit" id="sendForm" name="sendForm" value="SEND!!!"></input>
+            <label for="resetForm">Очистить форму:</label>
+            <input type="reset" id="resetForm" name="resetForm" value="RESET!!!">
+            <br>
+            <input type="button" value="Я бесполезная кнопка" disabled>
+        </form>
+        <datalist id="fruitlist">
+            <option value="Apples" label="Lovely Apples" />
+            <option value="Oranges">Refreshing Oranges</option>
+            <option value="Cherries" />
+        </datalist>
+    </article>
+    <hr color="black" size="2">
+
+</section>
+
+<section class="certificate">
+    <h1><b>СЕРТИФИКАТ</b></h1>
+</section>
+
+<section class="pets-container">
+    {% if random_dog %}
+    <div class="pet-box">
+        <h3 class="pet-heading"><b><strong>Наш</strong></b> <mark>питомец дня</mark></h3>
+        <div class="image-wrapper">
+            <img src="{{ random_dog.image_url }}" alt="Собака породы {{ random_dog.breed }}" class="pet-photo">
         </div>
+        <p class="breed-info">Порода: {{ random_dog.breed }}</p>
     </div>
-</div>
+    {% endif %}
+
+    {% if cat_fact %}
+    <div class="pet-box">
+        <h3 class="pet-heading">Интересный факт о котах</h3>
+        <p class="cat-fact">{{ cat_fact }}</p>
+    </div>
+    {% endif %}
+</section>
 
 <style>
 th, td {
   border: 1px solid #ddd;
   padding: 12px;
   text-align: left;
-}
-
-.wrapper {
-    width: 100%;
-    max-width: 1400px;
-    padding: 20px;
-    padding-left: 0;
-}
-
-.pets {
-    margin-top: 40px;
 }
 
 .pets-container {
@@ -269,25 +350,6 @@ th, td {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
-
-.breed-info {
-    font-weight: bold;
-    color: #4a5568;
-    margin: 15px 0 0 0;
-    text-align: center;
-}
-
-.cat-fact {
-    font-style: italic;
-    color: #4a5568;
-    line-height: 1.6;
-    font-size: 18px;
-    text-align: center;
-    padding: 20px;
-    background: #f7fafc;
-    border-radius: 8px;
-    margin: 0;
 }
 
 </style>

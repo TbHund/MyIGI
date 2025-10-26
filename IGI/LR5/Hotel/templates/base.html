@@ -70,7 +70,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <section class="container">
             <div class="logo">
                 <a href="{% url 'home' %}">
                     <img src="{% static 'main/images/trivago.png' %}" 
@@ -108,7 +108,7 @@
                     {% endif %}
                 </ul>
             </nav>
-        </div>
+        </section>
     </header>
 
     <main>
@@ -124,6 +124,7 @@
             {% endif %}
 
             {% block content %}
+
             {% endblock %}
         </div>
     </main>
@@ -131,8 +132,8 @@
     <footer class="footer">
         <div class="container">
             <div class="text-center">
-                <p>© {% now "Y" %} TRIVAGO. Все права защищены.</p>
-                <a href="{% url 'privacy' %}">Политика конфиденциальности</a>
+                <p><small>© {% now "Y" %} TRIVAGO. Все права защищены.</small></p>
+                <a href="{% url 'privacy' %}"><small>Политика конфиденциальности</small></a>
             </div>
         </div>
     </footer>

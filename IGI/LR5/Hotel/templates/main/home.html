@@ -4,22 +4,22 @@
 {% block title %}Главная - Отель{% endblock %}
 
 {% block content %}
-<div class="block-widget" id ="pageTop">
-    <div class="time-info">
+<section class="block-widget" id ="pageTop">
+    <article class="time-info">
         <h3>Информация о времени</h3>
         <div class="time-details">
             <p><strong>Ваша временная зона:</strong> {{ user_timezone }}</p>
             <p><strong>Текущее время:</strong> {{ current_time }}</p>
             <p><strong>UTC время:</strong> {{ utc_time }}</p>
         </div>
-    </div>
+    </article>
     
-    <div class="calendar-widget">
+    <article class="calendar-widget">
         <h3>Календарь</h3>
         <pre>{{ calendar }}</pre>
-    </div>
+    </article>
 
-    <div class="latest-changes">
+    <article class="latest-changes">
         <h3>Последние изменения</h3>
         {% if latest_changes.bookings %}
         <p><strong>Последнее бронирование:</strong> {{ latest_changes.bookings.updated_at|date:"d/m/Y H:i" }}</p>
@@ -30,14 +30,17 @@
         {% if latest_changes.news %}
         <p><strong>Последняя новость:</strong> {{ latest_changes.news.created_at|date:"d/m/Y H:i" }}</p>
         {% endif %}
-    </div>
-</div>
+    </article>
+</section>
 
-<div class="banner" style="max-width: 500px; text-align: center; padding: 20px 0; background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #ADD8E6 100%); color: white;">
+<section class="banner" style="max-width: 500px; text-align: center; padding: 20px 0; background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #ADD8E6 100%); color: white;">
     <img src="{% static 'main/images/amogus.jpg' %}" 
-         alt="Premier Hotel" 
-         style="height: 200px; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
-</div>
+         alt="Trivago Hotel" 
+         height="200"
+         width="300"
+         title="Реклама"
+         style="border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+</section>
 <a href="#n1">См. список наших партнеров</a>
 
 <div class="main-container">
@@ -50,7 +53,7 @@
     {% endif %}
 
     <div class="content-wrapper">
-        <div class="sidebar">
+        <aside class="sidebar">
             <div class="filter-card">
                 <h5 class="filter-title">Фильтры поиска</h5>
                 <form method="get" class="filter-form">
@@ -65,29 +68,25 @@
                             {% endfor %}
                         </select>
                     </div>
-
                     <div class="form-group">
                         <label for="capacity">Минимальная вместимость:</label>
                         <input type="number" name="capacity" id="capacity" 
                                value="{{ selected_capacity }}" min="1" max="10">
                     </div>
-
                     <div class="form-group">
                         <label for="check_in">Дата заезда:</label>
                         <input type="date" name="check_in" id="check_in" 
                                value="{{ check_in }}" required>
                     </div>
-
                     <div class="form-group">
                         <label for="check_out">Дата выезда:</label>
                         <input type="date" name="check_out" id="check_out" 
                                value="{{ check_out }}" required>
                     </div>
-
                     <button type="submit" class="button button-primary">Найти номера</button>
                 </form>
             </div>
-        </div>
+        </aside>
 
         <div class="main-content">
             <h2 class="content-title">Наши номера</h2>
@@ -135,10 +134,10 @@
 
 <!--Якорь-->
 <h1><a id ="n1"></a>Наши партнеры</h1>
-<div class="block-widget">
+<section class="block-widget">
     {% for partner in partners %}
         {% if partner.is_active %}
-            <a href={{ partner.url }} class="partner-link">
+            <a href={{ partner.url }} class="partner-link" target="_blank">
                 <figure class="partner-figure">
                     <img src= {{ partner.logo.url}} class="partner-logo">
                     <figcaption class="partner-caption">{{ partner.title}}</figcaption>
@@ -146,7 +145,7 @@
             </a>
         {% endif %}
     {% endfor %}
-</div>
+</section>
 
 <style>
 .partner-logo {
