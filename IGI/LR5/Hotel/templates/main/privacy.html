@@ -1,27 +1,17 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'main/css/pages/privacy.css' %}">
+{% endblock %}
 
 {% block title %}Политика конфиденциальности - Отель{% endblock %}
 
 {% block content %}
 <div class="privacy-page">
     <h1>Политика конфиденциальности</h1>
-    
     <div class="privacy-content">
         <pre style="white-space: pre-wrap; font-family: inherit;">{{ privacy.content|safe }}</pre>
     </div>
- 
 </div>
-
-<style>
-    .privacy-page {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem 0;
-    }
-
-    .privacy-page h1 {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-</style>
 {% endblock %} 

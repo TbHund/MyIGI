@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'main/css/pages/contacts.css' %}">
+{% endblock %}
 
 {% block title %}Контакты - Отель{% endblock %}
 
 {% block content %}
 <div class="contacts-page">
     <h1>Наши контакты</h1>
-
     <div class="contacts-grid">
         {% if contacts %}
             {% for contact in contacts %}
@@ -31,75 +35,4 @@
         {% endif %}
     </div>
 </div>
-
-<style>
-    .contacts-page {
-        padding: 2rem 0;
-    }
-
-    .contacts-page h1 {
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .contacts-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    .contact-card {
-        background-color: #fff;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .contact-photo {
-        height: 250px;
-        overflow: hidden;
-    }
-
-    .contact-photo img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .contact-info {
-        padding: 1.5rem;
-    }
-
-    .contact-info h2 {
-        color: #2c5282;
-        margin-bottom: 0.5rem;
-    }
-
-    .position {
-        color: #4a5568;
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-    }
-
-    .description {
-        color: #2d3748;
-        margin-bottom: 1.5rem;
-        line-height: 1.6;
-    }
-
-    .contact-details {
-        border-top: 1px solid #edf2f7;
-        padding-top: 1rem;
-    }
-
-    .contact-details p {
-        margin: 0.5rem 0;
-    }
-
-    .no-data {
-        text-align: center;
-        grid-column: 1 / -1;
-    }
-</style>
 {% endblock %} 

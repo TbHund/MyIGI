@@ -1,4 +1,9 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'main/css/pages/add_review.css' %}">
+{% endblock %}
 
 {% block title %}Добавить отзыв - Отель{% endblock %}
 
@@ -33,106 +38,4 @@
         <button type="submit" class="submit-button">Отправить отзыв</button>
     </form>
 </div>
-
-<style>
-    .add-review-page {
-        max-width: 600px;
-        margin: 2rem auto;
-        padding: 2rem;
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-
-    .add-review-page h1 {
-        color: #2c5282;
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-
-    .review-form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .rating-section {
-        text-align: center;
-    }
-
-    .rating-section label {
-        display: block;
-        color: #4a5568;
-        margin-bottom: 0.5rem;
-    }
-
-    .star-rating {
-        display: inline-flex;
-        flex-direction: row-reverse;
-        gap: 0.25rem;
-    }
-
-    .star-rating input {
-        display: none;
-    }
-
-    .star-rating label {
-        font-size: 2rem;
-        color: #cbd5e0;
-        cursor: pointer;
-        transition: color 0.2s;
-    }
-
-    .star-rating label:hover,
-    .star-rating label:hover ~ label,
-    .star-rating input:checked ~ label {
-        color: #ecc94b;
-    }
-
-    .form-group {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .form-group label {
-        color: #4a5568;
-    }
-
-    .form-group textarea {
-        padding: 0.75rem;
-        border: 1px solid #e2e8f0;
-        border-radius: 4px;
-        resize: vertical;
-        font-size: 1rem;
-    }
-
-    .form-group textarea:focus {
-        outline: none;
-        border-color: #4299e1;
-        box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
-    }
-
-    .submit-button {
-        background: #2c5282;
-        color: white;
-        border: none;
-        padding: 0.75rem;
-        border-radius: 4px;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.2s;
-    }
-
-    .submit-button:hover {
-        background: #2a4365;
-    }
-
-    @media (max-width: 640px) {
-        .add-review-page {
-            padding: 1rem;
-            margin: 1rem;
-        }
-    }
-</style>
 {% endblock %} 
