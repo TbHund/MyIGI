@@ -1,8 +1,107 @@
-th, td {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: left;
+/*_______________list_______________________*/
+.company-info-list {
+  list-style: decimal;
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
 }
+
+.company-info-list li:first-child {
+  border-top: 5px solid black;
+  padding-top: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.company-info-list li:last-child {
+  border-bottom: 5px solid black;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+
+.company-info-list li:nth-child(even) {
+  background-color: #3b92ea;
+}
+
+.company-info-list li:nth-child(odd) {
+  background-color: #d53333;
+}
+/*_______________list_______________________*/
+
+/*_______________table_______________________*/
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+caption {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #0576e8;
+}
+
+thead tr:first-child {
+  background: linear-gradient(135deg, #3498db, #11d933);
+  color: white;
+  font-size: 1.1em;
+}
+
+thead tr:last-child {
+  background-color: #34495e;
+  color: white;
+}
+
+td:first-child, th:first-child {
+  font-weight: bold;
+  border-left: 3px solid #e74c3c;
+}
+
+td:last-child, th:last-child {
+  border-right: 3px solid #27ae60;
+  text-align: center;
+}
+/*_______________table_______________________*/
+
+/*_______________form_______________________*/
+input:enabled, 
+select:enabled, 
+textarea:enabled, 
+button:enabled {
+    border: 1px solid #3498db;
+    background-color: white;
+}
+
+input:required,
+select:required,
+textarea:required {
+    border: 1px solid #ff6b6b;
+    background-color: white;
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled,
+button:disabled {
+    background-color: #2e12bb;
+    border: 5px dotted #ecce25;
+    color: white;
+    cursor: not-allowed;
+}
+
+input:out-of-range {
+    background-color: #ffe6e6;
+    border-color: #ea16d5;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    accent-color: #9208c8e7;
+}
+/*_______________form_______________________*/
 
 .pets-container {
     display: grid;
