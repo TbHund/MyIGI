@@ -1,40 +1,110 @@
 .faq-page {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .faq-list {
-    margin-top: 2rem;
+    margin-top: 30px;
 }
 
 .faq-item {
-    background-color: #fff;
-    padding: 1.5rem;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 1.5rem;
+    overflow: hidden;
 }
 
-.question {
-    color: #2c5282;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #edf2f7;
+.faq-item details {
+    background: white;
+    border: 3px solid #4c93da;
+}
+
+.faq-item summary {
+    padding: 15px;
+    background: #4c93da;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    transition: background 0.3s ease;
+}
+
+.faq-item summary:hover {
+    background: #e9ecef;
 }
 
 .answer {
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+details[open] .answer {
+    padding: 15px;
+    max-height: 500px;
 }
 
 .faq-meta {
-    font-size: 0.9rem;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
     color: #666;
-    text-align: right;
 }
 
 .date {
     font-style: italic;
+}
+
+/*preloader*/
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.dots-loader {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 50%;
+    animation: dotPulse 1.4s ease-in-out infinite both;
+}
+
+.dot:nth-child(1) { animation-delay: -0.32s; }
+.dot:nth-child(2) { animation-delay: -0.16s; }
+.dot:nth-child(3) { animation-delay: 0s; }
+
+@keyframes dotPulse {
+    0%, 80%, 100% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    40% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+}
+
+.preloader.hidden {
+    opacity: 0;
+    pointer-events: none;
 }

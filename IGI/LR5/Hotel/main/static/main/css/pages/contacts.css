@@ -8,22 +8,28 @@
 }
 
 .contacts-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
     margin-top: 2rem;
 }
 
 .contact-card {
     background-color: #fff;
     border-radius: 8px;
+    border: 2px solid black;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-photo {
     height: 250px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .contact-photo img {
@@ -34,6 +40,9 @@
 
 .contact-info {
     padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info h2 {
@@ -51,18 +60,23 @@
     color: #2d3748;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    flex-grow: 1;
 }
 
 .contact-details {
     border-top: 1px solid #edf2f7;
     padding-top: 1rem;
+    margin-top: auto;
 }
 
 .contact-details p {
     margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .no-data {
     text-align: center;
-    grid-column: 1 / -1;
+    width: 100%;
 }

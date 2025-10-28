@@ -11,12 +11,19 @@
     padding-left: 0;
 }
 
+/*_______________новости_______________________*/
 .news-alert {
-    background-color: #e3f2fd;
-    padding: 15px;
-    margin-bottom: 20px;
-    border-radius: 4px;
+    position: fixed;
+    top: 200px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    z-index: 1000;
 }
+/*_______________новости_______________________*/
 
 .content-wrapper {
     display: flex;
@@ -270,4 +277,359 @@ button[type="submit"]:hover {
     font-size: 0.9em;
     text-align: center;
     margin-top: 10px;
+}
+
+/*_______________партнеры_______________________*/
+.partner-figure {
+    margin: 0;
+    text-align: center;
+}
+
+.partner-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.8);
+}
+
+.partner-caption {
+    font: 600 14px/1.2 Arial, sans-serif;
+    font-kerning: normal;
+    color: #333;
+    margin-top: 8px;
+}
+/*_______________партнеры_______________________*/
+.banner-animation-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Расстояние между картинками */
+    flex-wrap: nowrap; /* Запрет переноса на новую строку */
+}
+
+.scene {
+    position: relative;
+    background: #5dacfa;
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    overflow: hidden;
+}
+
+.road {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    background: #333;
+}
+
+.road-line {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        to right,
+        yellow,
+        yellow 20px,
+        transparent 20px,
+        transparent 40px
+    );
+}
+
+.person {
+    position: absolute;
+    bottom: 30%;
+    left: 10%;
+    width: 50px;
+    height: 100px;
+    animation: walk 7.5s linear forwards; /* Ускорено в 2 раза */
+    z-index: 10;
+}
+
+.person-body {
+    position: absolute;
+    width: 27px;
+    height: 50px;
+    background: #f91414;
+    border: 1px solid #000;
+    top: 50px;
+    left: 12px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.person-head {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #000;
+    background: #d5aa7f;
+    border-radius: 50%;
+    top: 25px;
+    left: 12px;
+}
+
+.person-leg-left, .person-leg-right {
+    position: absolute;
+    width: 8px;
+    height: 44px;
+    background: #001aff;
+    border-radius: 3px;
+    border: 1px solid #000;
+    bottom: -45px;
+    right: 50px;
+    animation: walk-legs 1s 6; /* 15 повторений = 7.5 секунд */
+    transform-origin: top center;
+    animation-fill-mode: forwards;
+}
+
+.person-leg-left {
+    left: 13px;
+    animation-delay: 0.25s;
+}
+
+.person-leg-right {
+    right: 13px;
+}
+
+.house {
+    position: absolute;
+    bottom: 30%;
+    right: 20%;
+    width: 100px;
+    height: 100px;
+    animation: house-grow 7.5s linear forwards; /* Ускорено в 2 раза */
+    transform-origin: bottom center;
+    z-index: 5;
+}
+
+.house-body {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: #fbc39c;
+    border: 1px solid #000;
+    bottom: 0;
+}
+
+.house-roof {
+    position: absolute;
+    width: 120%;
+    height: 40%;
+    background: #A52A2A;
+    border: 1px solid #000;
+    top: -13%;
+    left: -10%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.house-door {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background: #654321;
+    bottom: 0;
+    left: 50px;
+}
+
+.house-window {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #87CEEB;
+    border: 1px solid #000;
+    top: 20px;
+    left: 15px;
+}
+
+.hotel-name {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FF5722;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    opacity: 0;
+    animation: show-name 2.5s 5s forwards; /* Ускорено в 2 раза */
+}
+
+.cloud {
+    position: absolute;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+.cloud-1 {
+    width: 100px;
+    height: 60px;
+    top: 10%;
+    left: 5%;
+    animation: cloud-move 10s linear infinite; /* Ускорено в 2 раза */
+}
+
+.cloud-2 {
+    width: 120px;
+    height: 70px;
+    top: 20%;
+    left: 40%;
+    animation: cloud-move 12.5s linear infinite; /* Ускорено в 2 раза */
+}
+
+.cloud-3 {
+    width: 80px;
+    height: 50px;
+    top: 15%;
+    left: 70%;
+    animation: cloud-move 9s linear infinite; /* Ускорено в 2 раза */
+}
+
+.tree {
+    position: absolute;
+    bottom: 30%;
+    z-index: 2;
+}
+
+.tree-trunk {
+    position: absolute;
+    width: 15px;
+    height: 60px;
+    background: #8B4513;
+    bottom: 0;
+    left: -7.5px;
+}
+
+.tree-top {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background: #228B22;
+    border-radius: 50%;
+    bottom: 55px;
+    left: -25px;
+}
+
+.tree-1 {
+    left: 20%;
+    animation: tree-pass 9s linear forwards; /* Ускорено в 2 раза */
+}
+
+.tree-2 {
+    left: 40%;
+    animation: tree-pass 9s linear forwards; /* Ускорено в 2 раза */
+}
+
+.tree-3 {
+    left: 60%;
+    animation: tree-pass 9s linear forwards; /* Ускорено в 2 раза */
+}
+
+.tree-4 {
+    left: 70%;
+    animation: tree-pass 9s linear forwards; /* Ускорено в 2 раза */
+}
+
+@keyframes walk {
+    0% {
+        left: 10%;
+    }
+    100% {
+        left: 70%;
+    }
+}
+
+@keyframes walk-legs {
+    0% {
+        transform: rotate(-5deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes house-grow {
+    0% {
+        transform: scale(0.5);
+    }
+    100% {
+        transform: scale(1.23);
+    }
+}
+
+@keyframes show-name {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@keyframes cloud-move {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px));
+    }
+}
+
+@keyframes tree-pass {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+/* Применение анимаций с остановкой в конце */
+.person {
+    animation: walk 5s linear forwards;
+}
+
+.house {
+    animation: house-grow 5s linear forwards;
+}
+
+.hotel-name {
+    animation: show-name 2.5s 5s forwards;
+}
+
+.cloud-1 {
+    animation: cloud-move 10s linear forwards;
+}
+
+.cloud-2 {
+    animation: cloud-move 12.5s linear forwards;
+}
+
+.cloud-3 {
+    animation: cloud-move 9s linear forwards;
+}
+
+.tree-1,
+.tree-2,
+.tree-3,
+.tree-4 {
+    animation: tree-pass 7.5s linear forwards;
 }

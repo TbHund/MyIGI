@@ -124,16 +124,23 @@
     <hr color="black" size="2">
 
     <article>
-        <h2><i>Цитаты</i></h2>
-        <q cite="http://en.wikipedia.org/wiki/Apple">The apple is
-        the pomaceous fruit of the apple tree.</q>
-        My favorite book on fruit is <cite>Fruit: Edible, Inedible, Incredible</cite>.
-
-        <blockquote cite="http://en.wikipedia.org/wiki/Apple">
-        The apple forms a tree that is small and deciduous, 
-        reaching 3 to 12 meters (9.8 to 39 ft) tall, with a 
-        broad, often densely twiggy crown.
+        <h2><i>Цитаты на разных языках</i></h2>
+        
+        <h3>Русские кавычки</h3>
+        <q lang="ru" cite="http://ru.wikipedia.org/wiki/Яблоко">Яблоко — это плод яблони.</q>
+        <blockquote lang="ru" cite="http://ru.wikipedia.org/wiki/Яблоко">
+        Яблоня — это дерево, которое может достигать высоты от 3 до 12 метров, 
+        с широкой, часто густой кроной.
         </blockquote>
+        
+        <h3>Английские кавычки</h3>
+        <q lang="en" cite="http://en.wikipedia.org/wiki/Apple">The apple is
+        the pomaceous fruit of the apple tree.</q>
+        
+        <h3>Немецкие кавычки</h3>
+        <q lang="de" cite="http://de.wikipedia.org/wiki/Apfel">Der Apfel ist
+        die Frucht des Apfelbaums.</q>
+        
     </article>
     <hr color="black" size="2">
 
@@ -203,7 +210,7 @@
         <picture>
             <source media="(max-width: 768px)" srcset="{% static 'main/images/advert1.jpg' %}">
             <source media="(max-width: 1024px)" srcset="{% static 'main/images/advert2.jpg' %}">
-            <img src="{% static 'main/images/trivago.png' %}"  alt="Описание">
+            <img src="{% static 'main/images/trivago.png' %}"  alt="Описание" class="logo-transform">
         </picture>
     </article>
     <hr color="black" size="2">
@@ -299,7 +306,19 @@
 </section>
 
 <section class="certificate">
-    <h1><b>СЕРТИФИКАТ</b></h1>
+    <div class="certificate">
+        <div class="certificate-content">
+            <h1 id="h-sertificate"><b>СЕРТИФИКАТ</b></h1>
+            <p class="award">Присвоение категории</p>
+            <div class="stars">★★★★★</div>
+            <p class="hotel-name">Отель "Trivago"</p>
+            <p class="description">Официально признан пятизвёздочным отелем</p>
+            <div class="signature">
+                <div class="line"></div>
+                <p>Комиссия по туризму</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="pets-container">

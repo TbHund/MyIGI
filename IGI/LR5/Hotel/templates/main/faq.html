@@ -9,7 +9,7 @@
 
 {% block content %}
 <div class="faq-page">
-    <h1 class="text-center">Словарь терминов и часто задаваемые вопросы</h1>
+    <h1 class="text-center">Часто задаваемые вопросы</h1>
     <div class="faq-list">
         {% if faqs %}
             {% for faq in faqs %}
@@ -28,6 +28,14 @@
         {% else %}
             <p class="text-center">В данный момент словарь терминов пуст.</p>
         {% endif %}
+    </div>
+</div>
+
+<div class="preloader">
+    <div class="dots-loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
     </div>
 </div>
 {% endblock %} 

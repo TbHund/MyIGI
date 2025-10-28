@@ -81,4 +81,22 @@
 
     {% block js_scripts %}{% endblock %}
 </body>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        const header = document.querySelector('header');
+        const body = document.body;
+        
+        const headerBottom = header.offsetTop + header.offsetHeight;
+        
+        if (window.pageYOffset > headerBottom) {
+            navbar.classList.add('fixed');
+            body.classList.add('navbar-fixed');
+        } else {
+            navbar.classList.remove('fixed');
+            body.classList.remove('navbar-fixed');
+        }
+    });
+</script>
 </html> 

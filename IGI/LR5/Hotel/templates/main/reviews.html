@@ -9,9 +9,9 @@
 
 {% block content %}
 <div class="reviews-page">
-    <h1>Отзывы наших гостей</h1>
-    <div class="add-review-button">
-        <a href="{% url 'add_review' %}" class="button">Оставить отзыв</a>
+    <h1 class="page-title">Отзывы наших гостей</h1>
+    <div class="action-button-container">
+        <a href="{% url 'add_review' %}" class="primary-button">Оставить отзыв</a>
     </div>
     <div class="reviews-list">
         {% if reviews %}
@@ -19,8 +19,8 @@
             <div class="review-card">
                 <div class="review-header">
                     <div class="review-info">
-                        <h2>{{ review.client.user.get_full_name }}</h2>
-                        <div class="rating">
+                        <h2 class="client-name">{{ review.client.user.get_full_name }}</h2>
+                        <div class="rating-stars">
                             {% for i in "12345"|make_list %}
                                 {% if forloop.counter <= review.rating %}
                                     <span class="star filled">★</span>
@@ -30,15 +30,15 @@
                             {% endfor %}
                         </div>
                     </div>
-                    <span class="date">{{ review.created_at|date:"d.m.Y" }}</span>
+                    <span class="review-date">{{ review.created_at|date:"d.m.Y" }}</span>
                 </div>
-                <div class="review-content">
+                <div class="review-text">
                     {{ review.text|linebreaks }}
                 </div>
             </div>
             {% endfor %}
         {% else %}
-            <p class="no-data">Пока нет отзывов. Будьте первым!</p>
+            <p class="empty-state-message">Пока нет отзывов. Будьте первым!</p>
         {% endif %}
     </div>
 </div>

@@ -1,3 +1,12 @@
+/*_______________fonts_______________________*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Основной шрифт */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+/*_______________fonts_______________________*/
+
 /*_______________list_______________________*/
 .company-info-list {
   list-style: decimal;
@@ -29,20 +38,6 @@
 /*_______________list_______________________*/
 
 /*_______________table_______________________*/
-table {
-  width: 80%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-family: Arial, sans-serif;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-caption {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #0576e8;
-}
 
 thead tr:first-child {
   background: linear-gradient(135deg, #3498db, #11d933);
@@ -103,6 +98,50 @@ input[type="radio"]:checked {
 }
 /*_______________form_______________________*/
 
+/*_______________цитаты_______________________*/
+/* Русские кавычки */
+q[lang="ru"], 
+blockquote[lang="ru"] {
+    quotes: '«' '»' '„' '"';
+}
+
+/* Английские кавычки */
+q[lang="en"], 
+blockquote[lang="en"] {
+    quotes: '"' '"' "'" "'";
+}
+
+/* Немецкие кавычки */
+q[lang="de"], 
+blockquote[lang="de"] {
+    quotes: '„' '"' '‚' "'";
+}
+
+q, blockquote {
+    quotes: '«' '»' '„' '"';
+    font-style: italic;
+    color: #666;
+}
+
+q {
+    display: inline;
+    padding: 2px 4px;
+    background-color: #f8f9fa;
+    border-left: 3px solid #007bff;
+    margin: 0 2px;
+}
+
+blockquote {
+    display: block;
+    margin: 20px 0;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #007bff;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+/*_______________цитаты_______________________*/
+
 .pets-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -130,3 +169,204 @@ input[type="radio"]:checked {
     object-fit: cover;
     transition: transform 0.3s ease;
 }
+
+.timeline-event::first-letter,
+.legal-list dd::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007bff;
+    float: left;
+    line-height: 0.8;
+    margin-right: 8px;
+    margin-top: 4px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.timeline-event::before {
+    content: "Before";
+    font-size: 1.1em;
+    color: #6f42c1;
+    margin-right: 5px;
+}
+
+.timeline-event::after {
+    content: "After";
+    font-size: 1.1em;
+    color: #dc3545;
+    margin-left: 5px;
+}
+
+/* Список с символами юникода */
+.timeline-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline-list li::before {
+    content: "\20aa  ";
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #007bff;
+}
+/*трансформация логотипа*/
+.logo-transform {
+    transition: transform 0.3s ease;
+}
+
+.logo-transform:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+/*трансформация логотипа*/
+
+.info-content::selection {
+    background-color: #6f42c1;
+    color: white;
+}
+
+/*_______________стили курсоров_______________________*/
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"], 
+button {
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover, 
+input[type="button"]:hover, 
+button:hover {
+    cursor: grab;
+}
+
+input[type="submit"]:active, 
+input[type="reset"]:active, 
+input[type="button"]:active, 
+button:active {
+    cursor: grabbing;
+}
+
+input[type="file"] {
+    cursor: copy;
+}
+
+input[type="file"]:hover {
+    cursor: alias;
+}
+/*_______________стили курсоров_______________________*/
+
+/*_______________медиа запросы_______________________*/
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    h1 {
+        font-size: 2rem;
+        color: #f820db;
+    }
+}
+/*_______________медиа запросы_______________________*/
+
+/*_______________СЕРТИФИКАТ_______________________*/
+.certificate {
+    padding: 50px;
+    background: 
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%23fffaf0"/><text x="50" y="50" font-family="Arial" font-size="12" fill="%23ffd700" text-anchor="middle">★</text></svg>');
+    -webkit-background: linear-gradient(135deg, #fff5e6, #ffebcc), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%23fffaf0"/><text x="50" y="50" font-family="Arial" font-size="12" fill="%23ffd700" text-anchor="middle">★</text></svg>');
+    -moz-background: linear-gradient(135deg, #fff5e6, #ffebcc), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100"><rect width="100" height="100" fill="%23fffaf0"/><text x="50" y="50" font-family="Arial" font-size="12" fill="%23ffd700" text-anchor="middle">★</text></svg>');
+}
+
+.certificate-content {
+    position: relative;
+    padding: 40px;
+    
+    border: 15px solid;
+    border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="none" stroke="%23ffd700" stroke-width="3"/></svg>') 20 round;
+    
+    -webkit-border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="none" stroke="%23ffd700" stroke-width="3"/></svg>') 20 round;
+    -moz-border-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40"><rect width="40" height="40" fill="none" stroke="%23ffd700" stroke-width="3"/></svg>') 20 round;
+    
+    background: linear-gradient(135deg, rgba(255,245,230,0.8), rgba(255,235,204,0.8));
+    text-align: center;
+    z-index: 1;
+}
+
+#h-sertificate {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    color: #8b4513;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.award {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.stars {
+    font-size: 48px;
+    color: #ffd700;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 5px;
+}
+
+.hotel-name {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.description {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+.signature {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.line {
+    width: 250px;
+    height: 2px;
+    background: #8b4513;
+    margin: 0 auto 8px;
+}
+
+.signature p {
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    font-weight: bold;
+}
+/*_______________СЕРТИФИКАТ_______________________*/
+
+/*_______________video, audio_______________________*/
+video {
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    background: #000;
+    
+    /* Граница */
+    border: 3px solid #333;
+}
+
+audio {
+    border-radius: 25px;
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+}
+/*_______________video, audio_______________________*/

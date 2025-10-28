@@ -37,14 +37,63 @@
     </article>
 </section>
 
-<section class="banner" style="max-width: 500px; text-align: center; padding: 20px 0; background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #ADD8E6 100%); color: white;">
-    <img src="{% static 'main/images/amogus.jpg' %}" 
-         alt="Trivago Hotel" 
-         height="200"
-         width="300"
-         title="Реклама"
-         style="border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
-</section>
+<div class="banner-animation-container">
+    <section class="banner" style="text-align: center; padding: 20px 0; background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #ADD8E6 100%); color: white;">
+        <img src="{% static 'main/images/amogus.jpg' %}" 
+            alt="Trivago Hotel" 
+            height="200"
+            width="300"
+            title="Реклама"
+            style="border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);">
+    </section>
+    
+    <div class="scene">
+        <div class="hotel-name">Trivago</div>
+        
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        
+        <div class="tree tree-1">
+            <div class="tree-trunk"></div>
+            <div class="tree-top"></div>
+        </div>
+        
+        <div class="tree tree-2">
+            <div class="tree-trunk"></div>
+            <div class="tree-top"></div>
+        </div>
+        
+        <div class="tree tree-3">
+            <div class="tree-trunk"></div>
+            <div class="tree-top"></div>
+        </div>
+        
+        <div class="tree tree-4">
+            <div class="tree-trunk"></div>
+            <div class="tree-top"></div>
+        </div>
+        
+        <div class="person">
+            <div class="person-head"></div>
+            <div class="person-body"></div>
+            <div class="person-leg-left"></div>
+            <div class="person-leg-right"></div>
+        </div>
+        
+        <div class="house">
+            <div class="house-roof"></div>
+            <div class="house-body">
+                <div class="house-door"></div>
+                <div class="house-window"></div>
+            </div>
+        </div>
+        
+        <div class="road">
+            <div class="road-line"></div>
+        </div>
+    </div>
+</div>
 <a href="#n1">См. список наших партнеров</a>
 
 <div class="main-container">
@@ -150,6 +199,7 @@
         {% endif %}
     {% endfor %}
 </section>
+
 {% endblock %} 
 
 {% block js_scripts %}
